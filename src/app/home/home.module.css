@@ -37,7 +37,7 @@
     .imagenSlider {
         position: absolute;
         z-index: 1;
-        width: 1400px !important;
+        width: 1530px !important;
         height: 400px;
         background-color: rgba(0, 0, 0, 0.8);
         filter:brightness(0.6);
