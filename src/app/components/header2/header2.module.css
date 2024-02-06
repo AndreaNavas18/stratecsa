@@ -1,0 +1,56 @@
+@media (min-width: 768px)  {
+    
+    .sectionNav {
+        background-color: #eaf7ff;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+    .divIcon {
+        display: flex;
+        flex-direction: row;
+        margin-left: 40px;
+        /* border-color: #009cda;
+        border-width: 1px;
+        border-radius: 3px; */
+        margin-bottom: 4px;
+    }
+    
+    .divNavBar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 5px;
+        margin-right: 40px;
+    }
+    
+    .iconStra {
+        width: 240px;
+        height: auto;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+    
+    .ulNav {
+        display: flex;
+        list-style: none;
+        gap: 5px;
+    }
+    
+    .liNav {
+        /* float: left; */
+        margin-right: 3px;
+        padding: 0 2px;
+        color: #717171;
+        border-radius: 5px;
+        padding: 5px;
+        font-weight: 200;
+    }
+    
+
+}

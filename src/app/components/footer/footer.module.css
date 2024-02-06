@@ -1,0 +1,194 @@
+@media (min-width: 768px)  {
+    .footer1 {
+        background-color: #f0efef;
+        margin-top: 16.5px;
+    }
+
+    .divFooter {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    .div1Footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .divRedes{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .divMapa{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .divMapa1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .divMapa2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .divMapa3{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .copyFooter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px
+    }
+
+    .copyRight{
+        color: rgb(66, 66, 66);
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .divIconF {
+        display: flex;
+        flex-direction: row;
+        margin-left: 35px;
+        margin-top: 10px;
+        /* border-color: #009cda;
+        border-width: 1px;
+        border-radius: 3px; */
+        margin-bottom: 8px;
+        padding: 2px;
+    }
+    
+    .iconStraF {
+        width: 180px;
+        height: 50px;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+
+    .divRedes {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .iconSocial {
+        width: 28px;
+        height: 28px;
+        fill: #009cda;
+    }
+    
+    .cRedes{
+        margin-right: 5px;
+    }
+
+    .redesTxt {
+        color: #393939;
+        font-size: 1rem;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+
+    .divNavBar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ulNav {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        gap: 5px;
+        margin-left: 25px;
+    }
+    
+    .liNav {
+        margin-right: 3px;
+        padding: 0 2px;
+        color: #393939;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .titleMapa {
+        color: #393939;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-left: 50px;
+        margin-bottom: 10px;
+    }
+
+    .divNavBar2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ulNav2 {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        gap: 5px;
+        margin-right: 25px;
+    }
+    
+    .liNav2 {
+        margin-right: 3px;
+        padding: 0 2px;
+        color: #393939;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .titleMapa2 {
+        color: #393939;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-right: 50px;
+        margin-bottom: 10px;
+    }
+
+    .titleMapa3 {
+        color: #393939;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-right: 35px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .ulNav3 {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        gap: 5px;
+        margin-right: 25px;
+    }
+    
+    .liNav3 {
+        margin-right: 3px;
+        padding: 0 2px;
+        color: #393939;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .subTitleMapa3 {
+        margin-right: 3px;
+        padding: 0 2px;
+        color: #393939;
+        font-weight: 600;
+        text-align: center;
+
+    }
+}
