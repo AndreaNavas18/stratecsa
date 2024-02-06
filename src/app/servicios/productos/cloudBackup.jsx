@@ -1,4 +1,5 @@
 import React from 'react';
+import Styles from './productos.module.css';
 
 const CloudBackup = ({ nombre, contenido }) => {
   const parrafColor = {
@@ -58,7 +59,7 @@ return (
           </div>
       </div>
       <div className={Styles.botonID}>
-          <button className={Styles.buttonP2}>Resguardar mis equipos</button>
+          <button className={Styles.buttonP2}>Solicitar información</button>
       </div>
   </div>
 );
