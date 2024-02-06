@@ -1,7 +1,14 @@
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('../../../../public/fonts/CenturyGothic.ttf') format('truetype');
+    /* Asegúrate de que la ruta sea correcta desde tu archivo CSS */
+  }
+  
 @media (min-width: 768px)  {
     
     .sectionNav {
-        background-color: #eaf7ff;
+        background-color: #ffffff;
+        font-family: 'Century Gothic', sans-serif;
     }
     
     .container {
@@ -26,7 +33,7 @@
         flex-direction: row;
         align-items: center;
         padding: 5px;
-        margin-right: 40px;
+        margin-right: 100px;
     }
     
     .iconStra {
@@ -49,7 +56,12 @@
         color: #717171;
         border-radius: 5px;
         padding: 5px;
-        font-weight: 200;
+        font-weight: 400;
+    }
+
+    .liNav:hover {
+    
+        font-weight: 800;
     }
     
 

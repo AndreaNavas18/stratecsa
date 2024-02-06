@@ -70,7 +70,11 @@ export default function Seccion4() {
       );
 
       const divS4Styles = {
-        backgroundImage: `url(/img/prueba3.jpg)`,
+        backgroundImage: `url(/new/final1.jpeg)`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        height: '100%', 
+        width: '100%', 
       };
 
     return(

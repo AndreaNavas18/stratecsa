@@ -16,22 +16,27 @@ function Header() {
                 <a className={Styles.cRedes} href="https://www.facebook.com/">
                     <img
                         className={Styles.iconSocial}
-                        src="/img/facebook.png"/>
+                        src="/logos/straface.png"/>
                 </a>
                 <a className={Styles.cRedes} href="https://www.instagram.com/">
                     <img
                         className={Styles.iconSocial}
-                        src="/img/instagram.png"/>
-                </a>
-                <a className={Styles.cRedes} href="https://www.twitter.com/">
-                    <img
-                        className={Styles.iconSocial}
-                        src="/img/twitter.png"/>
+                        src="/logos/strains.png"/>
                 </a>
                 <a className={Styles.cRedes} href="https://www.linkedin.com/">
+                    <img
+                        className={Styles.iconSocial}
+                        src="/logos/stralink.png"/>
+                </a>
+                <a className={Styles.cRedes} href="https://www.whatsapp.com/">
                     <img 
                         className={Styles.iconSocial}
-                        src="/img/linkedin.png"/>
+                        src="/logos/strawhats.png"/>
+                </a>
+                <a className={Styles.cRedes} href="https://www.youtube.com/">
+                    <img 
+                        className={Styles.iconSocial}
+                        src="/logos/strayou.png"/>
                 </a>
 
             </div>
