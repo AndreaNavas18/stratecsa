@@ -8,10 +8,10 @@ import Styles from '../home.module.css';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const images = [
-    '/img/fondo1.jpg',
-    '/img/fondo2.jpg',
-    '/img/fondo3.png',
-    '/img/fondo4.png',
+    '/new/img4.jpg',
+    '/new/img9.jpg',
+    '/new/img14.jpg',
+    '/new/img1.jpg',
     // Agrega más URLs de imágenes según sea necesario
 ];
 
