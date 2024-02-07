@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 
 import Styles from '../home.module.css';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
@@ -15,7 +15,29 @@ const images = [
     // Agrega más URLs de imágenes según sea necesario
 ];
 
+// Componente personalizado para el botón de retroceso
+const CustomPrevButton = ({ onClick, ...rest }) => (
+    <button {...rest} onClick={onClick} className={Styles.btnBack}>
+        <img className={Styles.backSli} src="/new/backk.png"/>
+    </button>
+);
+
+// Componente personalizado para el botón de avance
+const CustomNextButton = ({ onClick, ...rest }) => (
+    <button {...rest} onClick={onClick} className={Styles.btnBef}>
+        <img className={Styles.sigSli} src="/new/sigg.png"/>
+    </button>
+);
+
 export default function CustomSlider() {
+
+    useEffect(() => {
+        // Preload images
+        images.forEach(imageUrl => {
+            const img = new Image();
+            img.src = imageUrl;
+        });
+    }, []);
       
     return (
         <>
@@ -28,6 +50,24 @@ export default function CustomSlider() {
                 interval={3000}
                 infiniteLoop={true}
                 dynamicHeight={true}
+                renderArrowPrev={(onClickHandler, hasPrev, label) =>
+                        hasPrev && (
+                            <CustomPrevButton
+                                onClick={onClickHandler}
+                                title={label}
+                                aria-label="Previous Slide"
+                            />
+                        )
+                    }
+                    renderArrowNext={(onClickHandler, hasNext, label) =>
+                        hasNext && (
+                            <CustomNextButton
+                                onClick={onClickHandler}
+                                title={label}
+                                aria-label="Next Slide"
+                            />
+                        )
+                    }
             >
                 {images.map((image, index) => (
                     <div key={index}>
@@ -52,14 +92,6 @@ export default function CustomSlider() {
                     >Contactanos
                     </button>
                 </div>
-                {/* <div className={Styles.btnsSlider}>
-                    <button className={Styles.btnBack} onClick={goToPrevious}>
-                        ←
-                    </button>
-                    <button className={Styles.btnBef} onClick={goToNext}>
-                        →
-                    </button>
-                </div> */}
             </section>
         </>
     );

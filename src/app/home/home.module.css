@@ -36,8 +36,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        margin-top: 50px;
-        margin-left: 70px;
+        margin-top: 120px;
+        margin-left: 90px;
         width: 40%;
         height: 300px;
         gap: 10px;
@@ -99,22 +99,24 @@
     }
 
     .btnBack {
-        background-color: #ffffff;
-        font-size: 15px;
-        color: #009cda;
-        padding: 10px;
-        z-index: 2;
-        border-radius: 999px;
-        font-weight: 900;
+        width: 50px;
+        position: absolute; /* Ajuste de posición */
+        top: 50%; /* Centrado vertical */
+        transform: translateY(-50%); /* Centrado vertical */
+        left: 20px; /* Ajuste de posición */
+        z-index: 10; /* Asegurar que estén encima de las imágenes del slider */
     }
     .btnBef {
-        background-color: #ffffff;
-        font-size: 15px;
-        color: #009cda;
-        padding: 10px;
-        z-index: 2;
-        border-radius: 999px;
+        width: 50px;
+        position: absolute; /* Ajuste de posición */
+        top: 50%; /* Centrado vertical */
+        transform: translateY(-50%); /* Centrado vertical */
+        right: 20px; /* Ajuste de posición */
+        z-index: 10;
 
+    }
+    
+    .backSli, .sigSli {
     }
 
     .section2 {
