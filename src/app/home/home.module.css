@@ -138,7 +138,6 @@
         align-items: center;
         padding: 60px 100px 60px 100px;
         gap: 20px;
-        border-radius: 5px;
     }
 
     .divLogoS2 {
@@ -413,6 +412,7 @@
     .buttonS4:hover {
         transform: scale(1.1);
         transition: transform 0.3s ease;
+        background-color: #dfdfdf;
     }
 
     /* .buttonS4.color1 {
