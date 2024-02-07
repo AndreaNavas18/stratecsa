@@ -10,6 +10,10 @@ function Footer1() {
         width: '100%', 
       };
 
+      const palabColor = {
+        color: '#009cda',
+      }
+
 
     return(
         <div>
@@ -112,7 +116,7 @@ function Footer1() {
                         <h2 className={Styles.titleSusF1}>SUSCRÍBETE AHORA</h2>
                         <p className={Styles.parrafoSusF1}>Ofertas exclusivas solo para nuestros suscriptores</p>
                         <div className={Styles.divCorreo}>
-                            <input className={Styles.inputF1} type="text" placeholder="Correo electrónico"/>
+                            <input className={Styles.inputF1} type="text" placeholder="Escribe tu correo "/>
                             <button className={Styles.btnCorreo}>
                                 <a href="/#">
                                     <img className={Styles.avionF1} src="/new/avion.png"/>
@@ -124,7 +128,8 @@ function Footer1() {
                 </div>
                 <div className={Styles.seccion2}>
                     <div className={Styles.divCopyF1}>
-                        <h2 className={Styles.copyF1}>Creado e inspirado por Stratecsa 2024</h2>
+                        <h2 className={Styles.copyF1}>Creado e inspirado por 
+                        <span style={palabColor}> Stratecsa</span> 2024</h2>
                     </div>
                 </div>
             </footer>
