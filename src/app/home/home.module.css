@@ -370,7 +370,7 @@
         color: #ffffff;
         margin-bottom: 20px;
         z-index: 2;
-        font-weight: 700;
+        font-weight: 800;
     }
 
     .descripS4{
@@ -381,6 +381,7 @@
         text-align: center;
         margin-left: 300px;
         margin-right: 300px;
+        font-weight: 600;
     }
 
     .botonesS4 {

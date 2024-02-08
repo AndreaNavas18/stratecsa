@@ -1,16 +1,6 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useState} from 'react';
 import Styles from './servicios.module.css';
-import InternetDedicado from './productos/internetDedicado';
-import EnlaceDatos from './productos/enlaceDatos';
-import ComunicacionesUnif from './productos/comunicacionesUnif';
-import SecurityCloud from './productos/securityCloud';
-import Colocation from './productos/colocation';
-import ServidorDed from './productos/servidorDed';
-import CloudServer from './productos/cloudServer';
-import CloudBackup from './productos/cloudBackup';
-import CorreoCorp from './productos/correoCorp';
-import Outsourcing from './productos/outsourcing';
 
 const servicios = [
     {icono: "/logos/internet_ded.png", nombre: "Internet Dedicado", id: "internetDedicado"},
@@ -25,57 +15,68 @@ const servicios = [
     {icono: "/logos/outsourcing.png", nombre: "Outsourcing TIC", id: "outsourcingTIC"},
 ];
 
-
   const itemsPorPagina = 5;
+
+  const idToRoute = {
+    internetDedicado: "/servicios/internet-dedicado",
+    enlacededatos: "/servicios/enlace-datos",
+    comunicacionesUnificadas: "/servicios/comunicaciones-unificadas",
+    securityCloud: "/servicios/security-cloud",
+    colocation: "/servicios/colocation",
+    servidorDedicado: "/servicios/servidor-dedicado",
+    cloudServer: "/servicios/cloud-server",
+    cloudBackup: "/servicios/cloud-backup",
+    correoCorporativo: "/servicios/correo-corporativo",
+    outsourcingTIC: "/servicios/outsourcing",
+  };
 
 function Servicios() {
     const containerSty = {
         backgroundImage: `url(/img/pruebafondo1.png)`,
       };
 
-        const [paginaActual, setPaginaActual] = useState(0);
-        // const [seccionActiva, setSeccionActiva] = useState(null);
-        const [servicioActivo, setServicioActivo] = useState(null);
-        const [servicioSeleccionado, setServicioSeleccionado] = useState(null);
+      const [paginaActual, setPaginaActual] = useState(0);
 
 
-        const mostrarBotones = servicios.slice(
-            paginaActual * itemsPorPagina,
-            (paginaActual + 1) * itemsPorPagina
-        );
-
-        const siguientePagina = () => {
-            setPaginaActual((prevPagina) => (prevPagina + 1) % Math.ceil(servicios.length / itemsPorPagina));
-        };
-
-        const anteriorPagina = () => {
-            setPaginaActual((prevPagina) => {
+      const mostrarBotones = servicios.slice(
+          paginaActual * itemsPorPagina,
+          (paginaActual + 1) * itemsPorPagina
+      );
+  
+      const siguientePagina = () => {
+          setPaginaActual((prevPagina) => (prevPagina + 1) % Math.ceil(servicios.length / itemsPorPagina));
+      };
+  
+      const anteriorPagina = () => {
+          setPaginaActual((prevPagina) => {
             const nuevaPagina = (prevPagina - 1 + Math.ceil(servicios.length / itemsPorPagina)) % Math.ceil(servicios.length / itemsPorPagina);
             return nuevaPagina;
-            });
+          });
         };
-
-        const mostrarBoton = (servicio, index) => (
-            <button 
-                key={index} 
-                className={Styles.buttonS4}
-                onClick={() => seleccionarServicio(servicio.id)}
-            >
-              <img
-                className={Styles.iconoServicioS4}
-                src={servicio.icono} 
-                />
-                {servicio.nombre}
-            </button>
-          );
-
-        //   const mostrarSeccion = (id) => {
-        //     setSeccionActiva(id);
-        //   };
-
-          const seleccionarServicio = (idServicio) => {
-            setServicioSeleccionado(idServicio);
-          };
+  
+        const handleClick = (id) => {
+          const ruta = idToRoute[id];
+          if (ruta) {
+            window.location.href = ruta;
+          } else {
+            console.error(`No se encontró una ruta para el ID ${id}`);
+          }
+        };
+      
+      const mostrarBoton = (servicio, index) => (
+          <button 
+              key={index} 
+              className={Styles.buttonS4}
+              onClick={() => handleClick(servicio.id)}
+              // onClick={() => seleccionarServicio(servicio.id)}
+          >
+            <img
+              className={Styles.iconoServicioS4}
+              src={servicio.icono} 
+              />
+              {servicio.nombre}
+          </button>
+        );
 
 
     return (
@@ -97,11 +98,11 @@ function Servicios() {
                     </div>
 
                 {/* slide  */}
-                <div className={Styles.botonesS4}>
+                 <div className={Styles.botonesS4}>
                         {mostrarBotones.map((servicio, index) => 
                         mostrarBoton(servicio, index)
                         )}
-                </div>
+                    </div>
                     <div className={Styles.controlesSlider}>
                         <button 
                         // className={Styles.buttonS4} 
@@ -112,37 +113,7 @@ function Servicios() {
                         </button>
                     </div>
             </div>
-            <div>
-                {servicioSeleccionado === 'internetDedicado' && <InternetDedicado />}
-                {servicioSeleccionado === 'enlacededatos' && <EnlaceDatos />}
-                {servicioSeleccionado === 'comunicacionesUnificadas' && <ComunicacionesUnif />}
-                {servicioSeleccionado === 'securityCloud' && <SecurityCloud />}
-                {servicioSeleccionado === 'colocation' && <Colocation />}
-                {servicioSeleccionado === 'servidorDedicado' && <ServidorDed />}
-                {servicioSeleccionado === 'cloudServer' && <CloudServer />}
-                {servicioSeleccionado === 'cloudBackup' && <CloudBackup />}
-                {servicioSeleccionado === 'correoCorporativo' && <CorreoCorp />}
-                {servicioSeleccionado === 'outsourcingTIC' && <Outsourcing />}
-
-                {/* {servicios.map((servicio) => (
-                <div key={servicio.id} style={{ display: seccionActiva === servicio.id ? 'block' : 'none' }}>
-                    <div className={Styles.containerServicios}> 
-                        <h2>{servicio.nombre}</h2>
-                        <p></p>
-                    </div>
-                </div>
-                ))} */}
-            </div>
-            {/* <div>
-                <div id='internetDedicado'>
-                    <h2>Internet dedicado</h2>
-                    <p>Internet dedicado</p>
-                </div>
-                <div id='enlacededatos'>
-                    <h2>Enlace de datos</h2>
-                    <p>Enlace de datos</p>
-                </div>
-            </div> */}
+          &nbsp;
         </>
     );
 }

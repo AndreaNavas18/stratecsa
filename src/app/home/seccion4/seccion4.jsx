@@ -1,25 +1,39 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Styles from '../home.module.css';
 
-const servicios = [
-    {icono: "/logos/internet_ded.png", nombre: "Internet Dedicado"},
-    {icono: "/logos/enlace.png", nombre: "Enlace de Datos"},
-    {icono: "/logos/comun_uni.png", nombre: "Comunicaciones Unificadas"},
-    {icono: "/logos/sec_cloud.png", nombre: "Security Cloud"},
-    {icono: "/logos/colocation.png", nombre: "Colocation"},
-    {icono: "/logos/servidor.png", nombre: "Servidor Dedicado"},
-    {icono: "/logos/cloud_server.png", nombre: "Cloud Server"},
-    {icono: "/logos/cloud_backup.png", nombre: "Cloud Backup"},
-    {icono: "/logos/correo.png", nombre: "Correo Corporativo"},
-    {icono: "/logos/outsourcing.png", nombre: "Outsourcing TIC"},
-  ];
+  const servicios = [
+    {icono: "/logos/internet_ded.png", nombre: "Internet Dedicado", id: "internetDedicado"},
+    {icono: "/logos/enlace.png", nombre: "Enlace de Datos", id: "enlacededatos"},
+    {icono: "/logos/comun_uni.png", nombre: "Comunicaciones Unificadas", id: "comunicacionesUnificadas"},
+    {icono: "/logos/sec_cloud.png", nombre: "Security Cloud", id: "securityCloud"},
+    {icono: "/logos/colocation.png", nombre: "Colocation", id: "colocation"},
+    {icono: "/logos/servidor.png", nombre: "Servidor Dedicado", id: "servidorDedicado"},
+    {icono: "/logos/cloud_server.png", nombre: "Cloud Server", id: "cloudServer"},
+    {icono: "/logos/cloud_backup.png", nombre: "Cloud Backup", id: "cloudBackup"},
+    {icono: "/logos/correo.png", nombre: "Correo Corporativo", id: "correoCorporativo"},
+    {icono: "/logos/outsourcing.png", nombre: "Outsourcing TIC", id: "outsourcingTIC"},
+];
 
   const itemsPorPagina = 5;
+
+  const idToRoute = {
+    internetDedicado: "/servicios/internet-dedicado",
+    enlacededatos: "/servicios/enlace-datos",
+    comunicacionesUnificadas: "/servicios/comunicaciones-unificadas",
+    securityCloud: "/servicios/security-cloud",
+    colocation: "/servicios/colocation",
+    servidorDedicado: "/servicios/servidor-dedicado",
+    cloudServer: "/servicios/cloud-server",
+    cloudBackup: "/servicios/cloud-backup",
+    correoCorporativo: "/servicios/correo-corporativo",
+    outsourcingTIC: "/servicios/outsourcing",
+  };
 
 export default function Seccion4() {
 
     const [paginaActual, setPaginaActual] = useState(0);
+
 
     const mostrarBotones = servicios.slice(
         paginaActual * itemsPorPagina,
@@ -36,30 +50,22 @@ export default function Seccion4() {
           return nuevaPagina;
         });
       };
-      
-    //   const obtenerClaseBoton = (index) => {
-    //     const color1 = ['button1', 'button5', 'button9'];
-    //     const color2 = ['button2', 'button6', 'button10'];
-    //     const color3 = ['button3', 'button7', 'button11'];
-    //     const color4 = ['button4', 'button8', 'button12'];
-      
-    //     if (color1.includes(`button${index + 1}`)) {
-    //       return 'color1';
-    //     } else if (color2.includes(`button${index + 1}`)) {
-    //       return 'color2';
-    //     } else if (color3.includes(`button${index + 1}`)) {
-    //         return 'color3';
-    //     } else if (color4.includes(`button${index + 1}`)) {
-    //         return 'color4';
-    //     } else {
-    //         return ''; // Puedes manejar otros casos según sea necesario
-    //     }
-    // };
+
+      const handleClick = (id) => {
+        const ruta = idToRoute[id];
+        if (ruta) {
+          window.location.href = ruta;
+        } else {
+          console.error(`No se encontró una ruta para el ID ${id}`);
+        }
+      };
     
     const mostrarBoton = (servicio, index) => (
         <button 
             key={index} 
             className={Styles.buttonS4}
+            onClick={() => handleClick(servicio.id)}
+            // onClick={() => seleccionarServicio(servicio.id)}
         >
           <img
             className={Styles.iconoServicioS4}

@@ -18,7 +18,7 @@ function Header2() {
                                 <a href="/home">Inicio</a>
                             </li>
                             <li className={Styles.liNav}>
-                                <a href="/servicios">Servicios</a>
+                                <a href="/servicios/internet-dedicado">Servicios</a>
                             </li>
                             <li className={Styles.liNav}>
                                 <a href="/nosotros">Acerca de nosotros</a>

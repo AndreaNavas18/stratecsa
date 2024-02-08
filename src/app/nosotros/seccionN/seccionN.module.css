@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('../../../../public/fonts/CenturyGothic.ttf') format('truetype');
+    /* Asegúrate de que la ruta sea correcta desde tu archivo CSS */
+}
+    
+
+@media (min-width: 768px)  {
+
+.seccion3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Century Gothic', sans-serif;
+
+}
+
+.div2S3{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.card1S3{
+    width: 30%;
+    height: 220px;
+    background-color:  	#ffffff;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-top: 20px;
+}
+
+.card1S3:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+.card2S3{
+    width: 30%;
+    height: 220px;
+    background-color:  	#ffffff;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-top: 20px;
+
+
+}
+
+.card2S3:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    background-color: #f9f9f9;
+
+}
+
+.card3S3{
+    width: 30%;
+    height: 220px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-top: 20px;
+
+}
+
+.card3S3:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    background-color: #f9f9f9;
+
+}
+
+.pG {
+    font-size: 14px;
+    font-weight:400;
+    color: #464646;
+    text-align: center;
+    margin-bottom: 15px;
+
+}
+
+.imgP {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+}

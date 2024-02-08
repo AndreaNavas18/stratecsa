@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('../../../public/fonts/CenturyGothic.ttf') format('truetype');
+    /* Asegúrate de que la ruta sea correcta desde tu archivo CSS */
+  }
+  
+@media (min-width: 768px)  {
+    .container {
+        width: 100%;
+        height: 150px;
+        background-size: cover;
+        display: flex;
+        font-family: 'Century Gothic', sans-serif;
+    }
+
+    .titleSR {
+        display: flex;
+        color: white;
+        font-size:50px;
+        font-weight: 700;
+        margin-left: 100px;
+        margin-top: 50px;
+    }
+
+    .container2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 1000px;
+        margin: 0 auto;
+        font-family: 'Century Gothic', sans-serif;
+        margin-top: 25px;
+    }
+
+    .seccionNN {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 1000px;
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+
+    .titleNosotros {
+        color: rgb(70, 70, 70);
+        font-weight:bold;
+        font-size: 25px;
+        margin-top: 25px;
+        margin-left: 10px;
+    
+    }
+
+    .parrafosP {
+        color: #464646;
+        text-align: justify;
+        font-size: 15px;
+    
+    }
+
+    .ulP {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    
+    }
+    
+    .liP {
+        color: rgb(70, 70, 70);
+        font-size: 15px;
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    
+    }
+
+    .imgP {
+        width: 15px;
+        height: 15px;
+    
+    }
+
+    .containMv {
+        font-family: 'Century Gothic', sans-serif;
+        display: flex;
+        flex-direction: row;
+        height: 400px;
+        background-color: rgba(42, 42, 42, 0.932);
+        gap: 80px;
+        margin-top: 20px;
+
+    }
+
+    .titleMV {
+        color: white;
+        font-size: 25px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .titleMV:hover {
+        transform: scale(1.1);
+        color: #009cda;
+    }
+
+    .parrafosMV {
+        color: white;
+        text-align: justify;
+        font-size: 17px;
+    }
+
+    .div1MV, .div2MV {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div1MV {
+        margin-left: 30px;
+    }
+    .div2MV {
+        margin-right: 30px;
+
+    }
+}
