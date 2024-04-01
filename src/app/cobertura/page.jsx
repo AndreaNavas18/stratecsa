@@ -17,15 +17,15 @@ function Cobertura() {
                 <div className={Styles.divCards}>
 
                     <a className={Styles.card1} href='/cobertura/colombia'>
-                        <img src="/new/colombia1.png" className={Styles.imgPC}/>
+                        <img src="/new/colom.png" className={Styles.imgPC}/>
                        <h1 className={Styles.titleCB}>Colombia</h1>
                     </a>
                     <a className={Styles.card2} href='/cobertura/brasil'>
-                        <img src="/new/brasil1.png" className={Styles.imgP}/>
+                        <img src="/new/brazil.png" className={Styles.imgP}/>
                         <h1 className={Styles.titleCB}>Brasil</h1>
                     </a>
                     <a className={Styles.card3} href='/cobertura/latinoamerica' >
-                        <img src="/new/latin1.png" className={Styles.imgP}/>
+                        <img src="/new/latin.png" className={Styles.imgP}/>
                         <h1 className={Styles.titleCB}>Latinoamérica</h1>
                     </a>
                 </div>

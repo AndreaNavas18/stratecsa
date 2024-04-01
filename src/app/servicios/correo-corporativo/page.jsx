@@ -40,7 +40,7 @@ function CorreoCorporativo() {
                     </div>
                     <div className={Styles.seccion2}>
                         <div className={Styles.divImg}>
-                            <img src="/new/img19.jpg" className={Styles.img2P}/>
+                            <img src="/new/img33.jpeg" className={Styles.img2P}/>
                         </div>
                         <div className={Styles.divCont}>
                             <h1 className={Styles.title2P}>¿Cuales son los beneficios del Correo Corporativo?</h1>
