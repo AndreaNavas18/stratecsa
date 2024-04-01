@@ -84,9 +84,23 @@
         background-color: #ededed;
 
     }
+
+    .inputCT2 {
+        display: flex;
+        width: 1090px;
+        height: 50px;
+        border-radius: 3px;
+        border: 1px solid #d3d3d3;
+        padding: 5px;
+        font-size: 15px;
+        font-weight: 500;
+        background-color: #ededed;
+
+    }
+
     .textAreaCT {
         display: flex;
-        width: 720px;
+        width: 1090px;
         height: 250px;
         border-radius: 3px;
         border: 1px solid #d3d3d3;
@@ -117,7 +131,7 @@
         width: 200px;
         height: 40px;
         border-radius: 5px;
-        background-color: #1d507d;
+        background-color: #009cda;
         color: white;
         font-size: 20px;
         font-weight: 600;
@@ -131,6 +145,77 @@
     .botonCT:hover {
         transform: scale(1.1);
         transition: transform 0.3s ease;
+    }
+
+    .contLocationCT {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-left: 100px;
+    }
+
+    .divmapaCT {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .firstDiv {
+        display: flex;
+        flex-direction: row;
+        margin-left: 40px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    .backS4 {
+        width: 50px;
+        height: auto;
+    }
+
+    .titleLCT2 {
+        color: #009cda;
+        font-size: 25px;
+        font-weight: 700;
+        margin-top: 20px;
+        margin-bottom: 18px;
+
+    }
+
+    .titleCT2 {
+        color: #009cda;
+        margin-top: 5px;
+
+    }
+
+    .parrPRIN {
+        margin-left: 30px;
+        font-size: 17px;
+        font-weight: 500;
+        color: #555555;
+        text-align: justify;
+        margin-right: 20px;
+    }
+    
+    .textoCTT {
+        margin-left: 15px;
+    }
+
+    .parrafoCT3 {
+        color: #555555;
+        font-size: 15px;
+        font-weight: 500;
+        margin-top: 5px;
+
+    }
+
+    .locacionCT {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contdivsCTT {
+        margin-top: 30px;
+        
     }
 
 

@@ -13,27 +13,27 @@ function Header() {
                 Contactanos
             </button>
             <div className={Styles.divRedes}>
-                <a className={Styles.cRedes} href="https://www.facebook.com/">
+                <a className={Styles.cRedes} href="https://www.facebook.com/Stratecsa?locale=es_LA" target="_blank" rel="noopener noreferrer">
                     <img
                         className={Styles.iconSocial}
                         src="/logos/straface.png"/>
                 </a>
-                <a className={Styles.cRedes} href="https://www.instagram.com/">
+                <a className={Styles.cRedes} href="https://www.instagram.com/stratecsa/" target="_blank" rel="noopener noreferrer">
                     <img
                         className={Styles.iconSocial}
                         src="/logos/strains.png"/>
                 </a>
-                <a className={Styles.cRedes} href="https://www.linkedin.com/">
+                <a className={Styles.cRedes} href="linkedin.com/company/stratecsahttps://www.youtube.com/channel/UCuGt4UxB2RHM9BoRumkYo1w" target="_blank" rel="noopener noreferrer">
                     <img
                         className={Styles.iconSocial}
                         src="/logos/stralink.png"/>
                 </a>
-                <a className={Styles.cRedes} href="https://www.whatsapp.com/">
+                <a className={Styles.cRedes} href="https://wa.link/7kydod" target="_blank" rel="noopener noreferrer">
                     <img 
                         className={Styles.iconSocial}
                         src="/logos/strawhats.png"/>
                 </a>
-                <a className={Styles.cRedes} href="https://www.youtube.com/">
+                <a className={Styles.cRedes} href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
                     <img 
                         className={Styles.iconSocial}
                         src="/logos/strayou.png"/>
