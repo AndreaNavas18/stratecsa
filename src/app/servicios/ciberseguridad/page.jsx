@@ -18,7 +18,12 @@ function Ciberseguridad() {
                     <div className={Styles.seccion1}>
                         <h1 className={Styles.titleP}>Ciberseguridad</h1>
                         <p className={Styles.parrafosP}>
-                        Descripcion ciberseguridad
+                        <span style={parrafColor}>Protección Avanzada para tu Empresa con Soluciones de Ciberseguridad </span>
+                        Asegura las operaciones de tu empresa con una red de ciberseguridad robusta, confiable y segura.
+                        <br/>
+                        Con nuestro servicio de ciberseguridad empresarial, tu compañía disfrutará de protección avanzada contra amenazas digitales,
+                         manteniendo tus comunicaciones y datos seguros en todo momento. Nuestra solución de seguridad en la nube (Cloud Security) 
+                         opera con los más altos estándares internacionales.
                         </p>
                         &nbsp;
                         <p className={Styles.parrafosP}>
@@ -28,46 +33,50 @@ function Ciberseguridad() {
                             <ul className={Styles.ulP}>
                                 <li className={Styles.liP}>
                                     <img src="/img/cheque(1).png" className={Styles.imgP}/>
-                                    <span style={parrafColor}>Caracteristica 1 </span>
-                                    Descripcion de la caracteristica
+                                    Servicio de 
+                                    <span style={parrafColor}>protección  </span>
+                                    completa contra todo tipo de amenazas.
                                 </li>
                                 <li className={Styles.liP}>
                                     <img src="/img/cheque(1).png" className={Styles.imgP}/>
-                                    <span style={parrafColor}>Caracteristica 2</span>
-                                    Descripcion de la caracteristica
+                                    Herramientas avanzadas de 
+                                    <span style={parrafColor}>detección de amenazas </span>
+                                    y respuestas a incidentes.
                                 </li>
                                 <li className={Styles.liP}>
                                     <img src="/img/cheque(1).png" className={Styles.imgP}/>
-                                    Caracteristica 3
-                                    <span style={parrafColor}>Descripcion de la caracteristica</span>
+                                    Protege tus datos y aplicaciones en la nube, 
+                                    <span style={parrafColor}>garantizando </span>
+                                    su integridad y confidencialidad.
                                 </li>
                                 <li className={Styles.liP}>
                                     <img src="/img/cheque(1).png" className={Styles.imgP}/>
-                                    <span style={parrafColor}>Caracteristica 4</span>
-                                    Descripcion de la caracteristica
+                                    Formación en ciberseguridad para tu equipo, para que puedan 
+                                    <span style={parrafColor}>identificar y evitar </span>
+                                    amenazas
                                 </li>
                                 
                             </ul>
                     </div>
                     <div className={Styles.seccion2}>
                         <div className={Styles.divImg}>
-                            <img src="/new/img19.jpeg" className={Styles.img2P}/>
+                            <img src="/new/img39.jpeg" className={Styles.img2P}/>
                         </div>
                         <div className={Styles.divCont}>
                             <h1 className={Styles.title2P}>¿Cuales son los beneficios de la Ciberseguridad?</h1>
-                            <p className={Styles.parrafosP2}><span style={parrafColor}>1) Conexión estable y rápida: </span> 
-                            Transfiere datos a tus clientes u otras empresas de manera eficiente.</p>
-                            <p className={Styles.parrafosP2}><span style={parrafColor}>2) Respaldo eléctrico: </span> 
-                            Garantizamos el suministro eléctrico sin interrupciones para los dispositivos de red.</p>
-                            <p className={Styles.parrafosP2}><span style={parrafColor}>3) Estabilidad y redundancia: </span> 
-                            Las redes se conforman de sistemas que sirven de respaldo entre sí para mantener activo el servicio.</p>
-                            <p className={Styles.parrafosP2}><span style={parrafColor}>4) Escalabilidad de conectividad: </span> 
-                            Capacidad de adaptación de la red respecto al crecimiento del tráfico y necesidades del cliente.</p>
-                            <p className={Styles.parrafosP2}><span style={parrafColor}>5) Seguridad en redes: </span> 
-                            Se manejan protocolos de seguridad que permiten la protección de los datos e información del cliente.</p>
-                            <p className={Styles.parrafosP2}><span style={parrafColor}>6) Sistemas de monitoreo: </span> 
-                            Permiten el monitoreo constante de la actividad de la red, disponibilidad y rendimiento del servicio, 
-                            así como de los dispositivos que la componen.</p>
+                            <p className={Styles.parrafosP2}><span style={parrafColor}>1) Tranquilidad: </span> 
+                            Sabrás que tu empresa está protegida contra las amenazas digitales, lo que te permitirá 
+                            centrarte en lo que realmente importa: hacer crecer tu negocio.</p>
+                            <p className={Styles.parrafosP2}><span style={parrafColor}>2) Reducción de riesgos: </span> 
+                            Al proteger tu empresa contra las amenazas digitales, reduces el riesgo de sufrir interrupciones 
+                            en tus operaciones o pérdidas financieras debido a un ciberataque.</p>
+                            <p className={Styles.parrafosP2}><span style={parrafColor}>3) Confianza de los clientes: </span> 
+                            Al demostrar que tomas en serio la ciberseguridad, ganarás la confianza de tus clientes, lo que 
+                            puede ayudarte a atraer y retener a más clientes.</p>
+                            <p className={Styles.parrafosP2}><span style={parrafColor}>4) Competitividad: </span> 
+                            En un mundo cada vez más digital, tener una sólida estrategia de ciberseguridad puede darte una ventaja competitiva.</p>
+                            <p className={Styles.parrafosP2}><span style={parrafColor}>5) Cumplimiento de Normativas: </span> 
+                            Al cumplir con las normativas de seguridad de la información, evitarás posibles sanciones y mejorará tu reputación en el mercado.</p>
                         </div>
                     </div>
                     <div className={Styles.botonID}>

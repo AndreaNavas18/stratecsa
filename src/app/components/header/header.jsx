@@ -7,11 +7,12 @@ function Header() {
             <img
                 className={Styles.iconBusqueda} 
                 src="/img/lupa.png"/>
-            <button
-                className={Styles.buttonContact}
-            >
-                Contactanos
-            </button>
+            
+            <a 
+                href='/contacto' 
+                className={Styles.buttonContact}>
+                    Contactanos
+            </a>
             <div className={Styles.divRedes}>
                 <a className={Styles.cRedes} href="https://www.facebook.com/Stratecsa?locale=es_LA" target="_blank" rel="noopener noreferrer">
                     <img
@@ -23,7 +24,7 @@ function Header() {
                         className={Styles.iconSocial}
                         src="/logos/strains.png"/>
                 </a>
-                <a className={Styles.cRedes} href="linkedin.com/company/stratecsahttps://www.youtube.com/channel/UCuGt4UxB2RHM9BoRumkYo1w" target="_blank" rel="noopener noreferrer">
+                <a className={Styles.cRedes} href="https://www.linkedin.com/company/stratecsa" target="_blank" rel="noopener noreferrer">
                     <img
                         className={Styles.iconSocial}
                         src="/logos/stralink.png"/>
