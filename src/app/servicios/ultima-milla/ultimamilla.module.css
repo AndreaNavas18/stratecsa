@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'Century Gothic';
+    /* src: url('../../public/fonts/CenturyGothic.ttf') format('truetype'); */
+    src: url('../../../../public/fonts/CenturyGothic.ttf') format('truetype');
+    /* Asegúrate de que la ruta sea correcta desde tu archivo CSS */
+}
+
+@media (min-width: 768px)  {
+
+.containerP {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Century Gothic', sans-serif;
+
+}
+
+.seccion1 {
+
+}
+
+.titleP {
+    margin-top: 15px;
+    color: #009cda;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+
+}
+
+.parrafosP {
+    color: rgb(70, 70, 70);
+    text-align: justify;
+    font-size: 15px;
+
+
+}
+
+.ulP {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+
+}
+
+.liP {
+    color: rgb(70, 70, 70);
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+
+}
+
+.imgP {
+    width: 15px;
+    height: 15px;
+
+}
+
+.seccion2 {
+    background-color: rgb(226, 226, 226);
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+.divImg {
+    width: 40%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+}
+
+.divCont {
+    width: 60%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.img2P {
+    width: fit-content;
+    height: 100%;
+}
+
+.title2P {
+    font-weight: 600;
+    font-size: 22px;
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+
+}
+
+.parrafosP2 {
+    font-size: 15px;
+    color: rgb(70, 70, 70);
+    margin-left: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.botonID {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonP2 {
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #009cda;
+    color: white;
+}
+
+.buttonP2:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+}
