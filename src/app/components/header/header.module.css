@@ -5,7 +5,71 @@
     src: url('../../../../public/fonts/CenturyGothic.ttf') format('truetype');
     /* Asegúrate de que la ruta sea correcta desde tu archivo CSS */
   }
+
+/* Estilos para moviles*/
+@media (max-width: 766px) {
+    .sectionHeaderM {
+        background-color: #efefef;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        /* padding: 10px 0; */
+        font-family: 'Century Gothic', sans-serif;
+    }
+
+    .divHeader1M {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+        gap: 10px;
+        padding: 5px;
+    }
+
+    .divRedesM {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .iconBusquedaM  {
+
+    }
+
+    .buttonContactM {
+        background-color: white;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 13px;
+        transition: all 0.3s;
+        color: #01788e;
+        font-weight: 500;
+
+
+    }
+
+    .buttonContactM:hover, .buttonContactM:active {
+        background-color: #01788e;
+        color: white;
+
+    }
+
+    .iconSocialM {
+        width: 22px;
+        height: 22px;
+        fill: #009cda;
+
+
+    }
+
+    .cRedesM{
+        margin-right: 2px;
+       
+    }
+}
+
   
+/* Estilos para pantallas grandes*/
 
 @media (min-width: 768px)  {
     
@@ -43,7 +107,6 @@
     
     .buttonContact {
         background-color: white;
-        color: #fff;
         padding: 10px 20px;
         border: none;
         border-radius: 5px;
