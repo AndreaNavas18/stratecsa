@@ -7,6 +7,7 @@
   /* Estilos para moviles*/
 @media (max-width: 766px) {
     .sectionNavM {
+        font-family: 'Century Gothic', sans-serif;
 
     }
 
@@ -32,17 +33,6 @@
 
     }
 
-    .divMenuMovil {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #009cda; /* Fondo blanco semi-transparente */
-        z-index: 999; /* Asegura que esté encima de todo el contenido */
-
-    }
-
     .navMovil {
         display: flex;
         flex-direction: row;
@@ -60,6 +50,17 @@
         /* --fa-primary-color: #009cda;
         --fa-secondary-color: #009cda; */
         color: #555555b9;
+    }
+
+    .divMenuMovil {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #009cda; /* Fondo blanco semi-transparente */
+        z-index: 999; /* Asegura que esté encima de todo el contenido */
+
     }
 
     .navM {
@@ -82,25 +83,32 @@
 
     .liMenuMovil {
         padding: 5px;
-        color: #009cda;
-        font-weight: 800;
+        color: #ffffff;
+        font-weight: 700;
         border-radius: 5px;
-        background-color: #ffffff;
         width: 200px;
         text-align: center;
-    
     }
 
     .closeButton {
         position: absolute;
         top: 10px;
-        right: 30px;
+        right: 35px;
         background: none;
         border: none;
         cursor: pointer;
-        color: #333; /* Color del icono */
-        font-size: 20px;
+        color: #004e6d; /* Color del icono */
+        font-size: 30px;
         z-index: 1000;
+        background-color: white;
+        border-radius: 20px;
+        padding: 3px 8px;
+    }
+
+    .iconChevron {
+        width: 18px;
+        color: #ffffff;
+        margin-left: 5px;
     }
 
 }

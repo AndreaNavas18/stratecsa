@@ -42,34 +42,34 @@ function SliderHome() {
 
   return (
     <>
-        <div className={Styles.sectionSlider}>
-        <Slider {...settings}>
-            {
-                sliders.map((slider, index) => {
-                    return (
-                        <div key={index} className={Styles.sliderSH}>
-                            <div className={Styles.divimgSH}>
-                                <img
-                                    className={Styles.imagenSH}
-                                    src={slider.imagen}
-                                    alt={slider.alt}
-                                />
+        <div className={`${Styles.sectionSlider} ${Styles.sectionSliderM}`}>
+            <Slider {...settings}>
+                {
+                    sliders.map((slider, index) => {
+                        return (
+                            <div key={index} className={`${Styles.sliderSH} ${Styles.sliderSHM}`}>
+                                <div className={`${Styles.divimgSH} ${Styles.divimgSHM}`}>
+                                    <img
+                                        className={`${Styles.imagenSH} ${Styles.imagenSHM}`}
+                                        src={slider.imagen}
+                                        alt={slider.alt}
+                                    />
+                                </div>
                             </div>
-                        </div>
-                    )
-                
-                })
-            }
-        </Slider>
-        <div className={Styles.divSlider}>
-                    <h1 className={Styles.titleSlider}>
+                        )
+                    
+                    })
+                }
+            </Slider>
+                <div className={`${Styles.divSlider} ${Styles.divSliderM}`}>
+                    <h1 className={`${Styles.titleSlider} ${Styles.titleSliderM}`}>
                     Creamos para ti una red más sólida, más rápida, más segura.
                     </h1>
-                    <p className={Styles.descripSlider}>
+                    <p className={`${Styles.descripSlider} ${Styles.descripSlider}`}>
                     Una red en la cual te conectes mas facil con tus clientes, 
                     con tus proveedores, con el mundo.
                     </p>
-                    <a href='/contacto' className={Styles.buttonSlider}>
+                    <a href='/contacto' className={`${Styles.buttonSlider} ${Styles.buttonSliderM}`}>
                         Contactanos
                     </a>
                     {/* <button
@@ -78,7 +78,6 @@ function SliderHome() {
                     </button> */}
                 </div>
         </div>
-
     </>
     );
 }

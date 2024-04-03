@@ -2,7 +2,7 @@
 import Styles from './header2.module.css';
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faUser, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faUser, faXmark, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 function Header2() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -10,6 +10,8 @@ function Header2() {
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
+
+
 
     return(
         <section className={`${Styles.sectionNav} ${Styles.sectionNavM}`}>
@@ -64,7 +66,8 @@ function Header2() {
                             <a href="/nosotros">Acerca de nosotros</a>
                         </li>
                         <li className={Styles.liMenuMovil}>
-                            <a href="/cobertura">Cobertura</a>
+                            <a href="">Cobertura</a>
+                            <FontAwesomeIcon icon={faChevronDown} className={Styles.iconChevron} />
                         </li>
                         <li className={Styles.liMenuMovil}>
                             <a href="/contacto">Contactenos</a>

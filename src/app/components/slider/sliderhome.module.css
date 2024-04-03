@@ -1,65 +1,118 @@
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('../../../../public/fonts/CenturyGothic.ttf') format('truetype');
+    /* Asegúrate de que la ruta sea correcta desde tu archivo CSS */
+  }
 
-.sectionSlider {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Century Gothic', sans-serif;
-    position: relative; 
-    width: 100%;
-    
-}
+  /* Estilos para moviles*/
+@media (max-width: 766px) {
 
-.imagenSH {
-    /* position: absolute; */
+    .sectionSliderM {
+        font-family: 'Century Gothic', sans-serif;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+
+    }
+
+    .imagenSHM {
         z-index: 1;
-        /* width: 1530px !important; */
         width: auto;
-        height: 500px;
-        background-color: rgba(0, 0, 0, 0.8);
-        filter:brightness(0.6);
+        height: 200px;
+        background-color: rgba(0, 0, 0, 0.747);
+        filter: brightness(0.6);
         left: 0;
-        /* object-fit: cover;
-        object-position: center; */
-}
+        
+    }
 
-.divSlider {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin-top: 120px;
-    margin-left: 90px;
-    width: 40%;
-    height: 300px;
-    gap: 10px;
-    padding-right: 90px;
-}
+    .divSliderM {
+        
+    }
 
-.titleSlider {
-    font-size: 30px;
-    color: #ffffff;
-    z-index: 2;
-    font-weight: bold;
-}
+    .titleSliderM {
+        
+    }
 
-.descripSlider{
-    font-size: 20px;
-    color: #ffffff;
-    z-index: 2;
+    .descripSliderM{
+        
+    }
+
+    .buttonSliderM {
+        
+    }
+
 
 }
 
-.buttonSlider {
-    color: #ffffff;
-    padding: 12px;
-    border-radius: 8px;
-    background-color: #009cda;
-    z-index: 2;
-    font-weight: bold;
-    margin-top: 10px;
+@media (min-width: 768px)  {
+
+    .sectionSlider {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Century Gothic', sans-serif;
+        position: relative; 
+        width: 100%;
+        
+    }
+    
+    .imagenSH {
+        /* position: absolute; */
+            z-index: 1;
+            /* width: 1530px !important; */
+            width: auto;
+            height: 500px;
+            background-color: rgba(0, 0, 0, 0.8);
+            filter:brightness(0.6);
+            left: 0;
+            /* object-fit: cover;
+            object-position: center; */
+    }
+    
+    .divSlider {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 120px;
+        margin-left: 90px;
+        width: 40%;
+        height: 300px;
+        gap: 10px;
+        padding-right: 90px;
+    }
+    
+    .titleSlider {
+        font-size: 30px;
+        color: #ffffff;
+        z-index: 2;
+        font-weight: bold;
+    }
+    
+    .descripSlider{
+        font-size: 20px;
+        color: #ffffff;
+        z-index: 2;
+    
+    }
+    
+    .buttonSlider {
+        color: #ffffff;
+        padding: 12px;
+        border-radius: 8px;
+        background-color: #009cda;
+        z-index: 2;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    
+    .buttonSlider:hover {
+        background-color: white;
+        color: #009cda;
+    }
+
+
 }
 
-.buttonSlider:hover {
-    background-color: white;
-    color: #009cda;
-}
+
