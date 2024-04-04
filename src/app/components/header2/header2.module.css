@@ -175,5 +175,7 @@
         font-weight: 800;
     }
     
-
+    .navMovilS {
+        display: none;
+    }
 }

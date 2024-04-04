@@ -9,52 +9,38 @@ import "slick-carousel/slick/slick.css";
 const sliders = [
     {
         id: 1,
-        imagen:  '/new/img4.jpg',
+        imagen:  '/new/caption1.jpg',
         alt: 'imagen1',
+        titulo: 'Cobertura exclusiva en Latinoamérica.',
+        parrafo: 'Conectamos empresas en toda Latinoamérica con soluciones tecnológicas de alto nivel.',
+        boton: 'Contactanos'
     },
     {
         id: 2,
-        imagen: '/new/img9.jpg',
+        imagen: '/new/caption2.jpg',
         alt: 'imagen2',
+        titulo: 'Tecnología que conecta.',
+        parrafo: ' Nuestra red de alta velocidad garantiza conexiones sólidas y seguras.',
+        boton: 'Contactanos'
     },
     {
         id: 3,
-        imagen: '/new/img14.jpg',
+        imagen: '/new/caption5.jpg',
         alt: 'imagen3',
+        titulo: 'Internet veloz y seguro para empresas.',
+        parrafo: 'Optimiza la productividad y protege tus datos con Stratecsa.',
+        boton: 'Contactanos'
     },
     {
         id: 4,
-        imagen: '/new/img1.jpg',
+        imagen: '/new/img4.jpg',
         alt: 'imagen4',
+        titulo: 'Seguridad y velocidad empresarial.',
+        parrafo: 'Confía en Stratecsa para proteger y acelerar tu negocio.',
+        boton: 'Contactanos'
     },
 ]
 
-const textosSliders = [
-    {
-        id: 1,
-        titulo: 'Creamos para ti una red más sólida, más rápida, más segura.',
-        descripcion: 'Una red en la cual te conectes mas facil con tus clientes, con tus proveedores, con el mundo.',
-        boton: 'Contactanos'
-    },
-    {
-        id: 2,
-        titulo: 'OK para ti una red más sólida, más rápida, más segura.',
-        descripcion: 'Una red en la cual te conectes mas facil con tus clientes, con tus proveedores, con el mundo.',
-        boton: 'Contactanos'
-    },
-    {
-        id: 3,
-        titulo: 'AJA para ti una red más sólida, más rápida, más segura.',
-        descripcion: 'Una red en la cual te conectes mas facil con tus clientes, con tus proveedores, con el mundo.',
-        boton: 'Contactanos'
-    },
-    {
-        id: 4,
-        titulo: 'EJE para ti una red más sólida, más rápida, más segura.',
-        descripcion: 'Una red en la cual te conectes mas facil con tus clientes, con tus proveedores, con el mundo.',
-        boton: 'Contactanos'
-    },
-]
 
     const settings = {
         autoplay: true,
@@ -63,7 +49,7 @@ const textosSliders = [
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-      };
+    };
 
 function SliderHome() {
 
@@ -82,15 +68,27 @@ function SliderHome() {
                                         alt={slider.alt}
                                     />
                                 </div>
+                                <div className={`${Styles.divSlider} ${Styles.divsito}`}>
+                                    <h1 className={`${Styles.titleSlider} ${Styles.titleSliderM}`}> 
+                                        {slider.titulo} 
+                                    </h1>
+                                    <p className={`${Styles.descripSlider} ${Styles.descripSliderM}`}>
+                                        {slider.parrafo}
+                                    </p>
+                                    <a href='/contacto' className={`${Styles.buttonSlider} ${Styles.buttonSliderM}`}>
+                                        {slider.boton}
+                                    </a>
+                                </div>
                             </div>
                         )
                     
                     })
                 }
             </Slider>
+            
             {/* AQUI VOY
             voy a crear otro slider con los textos, y lo pongo encima del otro slider */}
-                <div className={`${Styles.divSlider} ${Styles.divSliderM}`}>
+                {/* <div className={`${Styles.divSlider} ${Styles.divSliderM}`}>
                     <h1 className={`${Styles.titleSlider} ${Styles.titleSliderM}`}>
                     Creamos para ti una red más sólida, más rápida, más segura.
                     </h1>
@@ -100,12 +98,12 @@ function SliderHome() {
                     </p>
                     <a href='/contacto' className={`${Styles.buttonSlider} ${Styles.buttonSliderM}`}>
                         Contactanos
-                    </a>
+                    </a> */}
                     {/* <button
                         className={Styles.buttonSlider}
                     >Contactanos
                     </button> */}
-                </div>
+                {/* </div> */}
         </div>
     </>
     );

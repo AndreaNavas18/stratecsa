@@ -3,6 +3,85 @@
     src: url('../../../public/fonts/CenturyGothic.ttf') format('truetype');
     /* Asegúrate de que la ruta sea correcta desde tu archivo CSS */
   }
+
+/* Estilos para moviles*/
+@media (max-width: 766px) {
+
+    .containerM {
+        font-family: 'Century Gothic', sans-serif;
+        display: flex;
+        width: 100%;
+        background-size: cover;
+        height: 80px;
+
+    }
+
+    .titleSRM {
+        color : white;
+        font-size: 20px;
+        font-weight: 600;
+        margin-left: 20px;
+        margin-top: 20px;
+
+    }
+
+    .container2M {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-family: 'Century Gothic', sans-serif;
+        margin-top: 10px;
+
+    }
+
+    .titleNosotrosM {
+        color: rgb(70, 70, 70);
+        font-weight: bold;
+        font-size: 20px;
+        margin-left: 5px;
+    }
+
+    .parrafosPM {
+        color: #464646;
+        text-align: justify;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .spanPM {
+        color: #009cda;
+    }
+
+    .noneMovil {
+        display: none;
+    }
+
+    .seccionNNM {
+
+    }
+
+    .containMvM {
+
+    }
+
+    .div1MVM {
+
+    }
+
+    .titleMVM {
+
+    }
+
+    .div2MVM {
+
+    }
+
+
+
+
+}
   
 @media (min-width: 768px)  {
     .container {
@@ -54,7 +133,7 @@
         color: #464646;
         text-align: justify;
         font-size: 15px;
-    
+        margin-top: 10px;
     }
 
     .ulP {
@@ -122,5 +201,9 @@
     .div2MV {
         margin-right: 30px;
 
+    }
+
+    .nonePC {
+        display: none;
     }
 }

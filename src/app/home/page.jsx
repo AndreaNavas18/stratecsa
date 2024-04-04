@@ -3,6 +3,7 @@ import Seccion2 from './seccion2/seccion2';
 import Seccion4 from './seccion4/seccion4';
 import Seccionx from './seccionx/seccionx';
 import SliderHome from '../components/slider/sliderhome';
+import Load from '../components/load/load';
 
 
 function Home() {
@@ -10,6 +11,7 @@ function Home() {
     // Contiene todo
     <>
        {/* <CustomSlider /> */}
+       <Load />
        <SliderHome />
        <Seccion2 />
        <Seccionx />

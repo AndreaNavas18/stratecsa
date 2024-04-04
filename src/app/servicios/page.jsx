@@ -1,6 +1,7 @@
 "use client";
 import React, { useState} from 'react';
 import Styles from './servicios.module.css';
+import LoadCorto from '../components/load/loadcorto';
 
 const servicios = [
     {icono: "/logos/ultimamilla.png", nombre: "Ultima Milla y Datos", id: "ultimaMilla"},
@@ -86,6 +87,7 @@ function Servicios() {
     return (
         
         <>
+            <LoadCorto />
             <div className={`${Styles.container}`} style={containerSty}>
                 <h1 className={Styles.titleSR}>Servicios</h1>
             </div>

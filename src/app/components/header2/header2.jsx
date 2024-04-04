@@ -44,7 +44,7 @@ function Header2() {
                         </ul>
                     </nav>
                 </div>
-                <div className={`${Styles.navMovil}`}>
+                <div className={`${Styles.navMovil} ${Styles.navMovilS}`}>
                     <FontAwesomeIcon icon={faUser} className={Styles.iconClient} />
                     <FontAwesomeIcon icon={faBars} className={Styles.iconFabars} onClick={toggleMenu} />
 

@@ -1,5 +1,6 @@
 import Styles from './nosotros.module.css';
 import SeccionN from './seccionN/seccionN';
+import SeccionMovil from './seccionMovil/seccionMovil';
 
 function Nosotros() {
     const containerSty = {
@@ -17,18 +18,22 @@ function Nosotros() {
 
     return(
         <>
-            <div className={`${Styles.container}`} style={containerSty}>
-                <h1 className={Styles.titleSR}>Acerca de nosotros</h1>
+            <div className={`${Styles.container} ${Styles.containerM}`} style={containerSty}>
+                <h1 className={`${Styles.titleSR} ${Styles.titleSRM}`}>Acerca de nosotros</h1>
             </div>
 
-            <div className={Styles.container2}>
-                <h1 className={Styles.titleNosotros}>Stratecsa</h1>
-                <p className={Styles.parrafosP}>
-                <br/>
-                Somos un equipo tecnológico dispuesto a mejorar la experiencia de sus 
+            <div className={`${Styles.container2} ${Styles.container2M}`}>
+                <h1 className={`${Styles.titleNosotros} ${Styles.titleNosotrosM}`}>Stratecsa</h1>
+                <p className={`${Styles.parrafosP} ${Styles.parrafosPM}`}>
+                
+                Somos un 
+                <span className={Styles.spanPM}> equipo tecnológico </span> 
+                dispuesto a mejorar la experiencia de sus 
                 clientes a través de nuestro servicio para así generar conversiones.
                 <br/>
-                Somos una empresa de tecnología, proveedores de internet empresarial expertos 
+                Somos una empresa de tecnología, proveedores de internet
+                <span className={Styles.spanPM}> empresarial </span> 
+                expertos 
                 en el área de telecomunicaciones, diseñamos software a la medida.
                 </p>
                 &nbsp;
@@ -59,24 +64,29 @@ function Nosotros() {
 
             </div>
 
-            <div className={Styles.seccionNN}>
+            <div className={`${Styles.seccionNN} ${Styles.noneMovil}`}>
                 <SeccionN/>
             </div>
 
+            <div className={`${Styles.nonePC} ${Styles.seccionNNM}`}>
+                <SeccionMovil/>
+            </div>
+
             <div style={containerMV}>
-                <div className={Styles.containMv}>
-                    <div className={Styles.div1MV}>
-                        <h1 className={Styles.titleMV}>MISIÓN</h1>
-                        <p className={Styles.parrafosMV}>Ofrecer a nuestros clientes la más amplia gama de servicios y 
+                <div className={`${Styles.containMv} ${Styles.containMvM}`}>
+                    <div className={`${Styles.div1MV} ${Styles.div1MVM}`}>
+                        <h1 className={`${Styles.titleMV} ${Styles.titleMVM}`}>MISIÓN</h1>
+                        <p className={`${Styles.parrafosMV} ${Styles.parrafosMVM}`}>
+                        Ofrecer a nuestros clientes la más amplia gama de servicios y 
                         soluciones tecnológicas, que les permitan optimizar sus procesos, 
                         cumplir sus objetivos y productividad. Para ello implementamos 
                         soluciones prácticas adaptadas a sus necesidades y desarrollamos 
                         nuevas soluciones creativas. Nuestra base parte del aprovechamiento 
-                        de las nuevas redes., para aumentar la rentabilidad de  nuestros 
+                        de las nuevas redes, para aumentar la rentabilidad de  nuestros 
                         clientes.</p>
                     </div>
-                    <div className={Styles.div2MV}>
-                        <h1 className={Styles.titleMV}>VISIÓN</h1>
+                    <div className={`${Styles.div2MV} ${Styles.div2MVM}`}>
+                        <h1 className={`${Styles.titleMV} ${Styles.titleMVM}`}>VISIÓN</h1>
                         <p className={Styles.parrafosMV}>Queremos estar comprometidos con las 
                         necesidades de nuestros clientes de forma transparente y eficaz para 
                         convertirnos en su socio de confianza. En nuestra visión queremos ser 

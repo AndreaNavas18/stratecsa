@@ -18,10 +18,10 @@
 
     .imagenSHM {
         z-index: 1;
-        width: auto;
+        width: 100%;
         height: 200px;
-        background-color: rgba(0, 0, 0, 0.747);
-        filter: brightness(0.6);
+        background-color: rgba(0, 0, 0, 0.459);
+        filter: brightness(0.7);
         left: 0;
         
     }
@@ -34,22 +34,54 @@
         align-items: flex-start;
         margin-top: 120px;
         margin-left: 90px;
-        
+        z-index: 2;
     }
 
     .titleSliderM {
+        font-size: 15px;
+        color: #ffffff;
+        z-index: 2;
+        font-weight: bold;
         
     }
 
     .descripSliderM{
+        font-size: 11px;
+        color: #ffffff;
+        z-index: 2;
         
     }
 
     .buttonSliderM {
+        color: #ffffff;
+        padding: 8px;
+        border-radius: 8px;
+        background-color: #009cda;
+        z-index: 2;
+        font-weight: 600;
+        font-size: 11px;
+        margin-top: 10px;
         
     }
 
+    .divimgSHM {
+        /* z-index: 1; */
+    }
 
+    .divsito {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        z-index: 4;
+        top: 30px;
+        width: 280px;
+        margin-left: 10px;
+        margin-top: 20px;
+        gap: 5px;
+
+    }
 }
 
 @media (min-width: 768px)  {
@@ -66,8 +98,8 @@
     .imagenSH {
         /* position: absolute; */
             z-index: 1;
-            /* width: 1530px !important; */
-            width: auto;
+            width: 100% !important;
+            /* width: auto; */
             height: 500px;
             background-color: rgba(0, 0, 0, 0.8);
             filter:brightness(0.6);
@@ -82,12 +114,14 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        margin-top: 120px;
-        margin-left: 90px;
-        width: 40%;
+        margin-top: 50px;
+        margin-left: 40px;
         height: 300px;
         gap: 10px;
-        padding-right: 90px;
+        /*padding-right: 90px; */
+        z-index: 4;
+        top: 30px;
+        width: 30%;
     }
     
     .titleSlider {
