@@ -27,6 +27,13 @@
     }
 
     .divSliderM {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 120px;
+        margin-left: 90px;
         
     }
 

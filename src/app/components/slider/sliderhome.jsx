@@ -29,6 +29,33 @@ const sliders = [
     },
 ]
 
+const textosSliders = [
+    {
+        id: 1,
+        titulo: 'Creamos para ti una red más sólida, más rápida, más segura.',
+        descripcion: 'Una red en la cual te conectes mas facil con tus clientes, con tus proveedores, con el mundo.',
+        boton: 'Contactanos'
+    },
+    {
+        id: 2,
+        titulo: 'OK para ti una red más sólida, más rápida, más segura.',
+        descripcion: 'Una red en la cual te conectes mas facil con tus clientes, con tus proveedores, con el mundo.',
+        boton: 'Contactanos'
+    },
+    {
+        id: 3,
+        titulo: 'AJA para ti una red más sólida, más rápida, más segura.',
+        descripcion: 'Una red en la cual te conectes mas facil con tus clientes, con tus proveedores, con el mundo.',
+        boton: 'Contactanos'
+    },
+    {
+        id: 4,
+        titulo: 'EJE para ti una red más sólida, más rápida, más segura.',
+        descripcion: 'Una red en la cual te conectes mas facil con tus clientes, con tus proveedores, con el mundo.',
+        boton: 'Contactanos'
+    },
+]
+
     const settings = {
         autoplay: true,
         autoplaySpeed: 3000,
@@ -61,6 +88,8 @@ function SliderHome() {
                     })
                 }
             </Slider>
+            {/* AQUI VOY
+            voy a crear otro slider con los textos, y lo pongo encima del otro slider */}
                 <div className={`${Styles.divSlider} ${Styles.divSliderM}`}>
                     <h1 className={`${Styles.titleSlider} ${Styles.titleSliderM}`}>
                     Creamos para ti una red más sólida, más rápida, más segura.
