@@ -18,7 +18,7 @@ export default function Seccion2() {
                         <a href="/home">
                             <img
                                 className={`${Styles.iconStraS2} ${Styles.iconStraS2M}`}
-                                src="/new/banner1.png"/>
+                                src="/new/banner3.png"/>
                         </a>
                     </div>
                 </div>

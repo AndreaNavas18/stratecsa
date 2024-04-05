@@ -12,7 +12,14 @@ const sliders = [
         imagen:  '/new/caption1.jpg',
         alt: 'imagen1',
         titulo: 'Cobertura exclusiva en Latinoamérica.',
-        parrafo: 'Conectamos empresas en toda Latinoamérica con soluciones tecnológicas de alto nivel.',
+        parrafo: (
+            <>
+                Como Stratecsa, nos expandimos por toda Latinoamérica con una cobertura exclusiva.
+                <br/>
+                Conectamos empresas y personas en la región con soluciones tecnológicas avanzadas.
+            </>
+
+        ),
         boton: 'Contactanos'
     },
     {
@@ -20,7 +27,14 @@ const sliders = [
         imagen: '/new/caption2.jpg',
         alt: 'imagen2',
         titulo: 'Tecnología que conecta.',
-        parrafo: ' Nuestra red de alta velocidad garantiza conexiones sólidas y seguras.',
+        parrafo: (
+            <>
+                Transmitimos nuestra capacidad para unir personas, empresas y oportunidades a través de la tecnología.
+                <br/>
+                Nuestra red de alta velocidad garantiza conexiones sólidas y seguras.
+            </>
+
+        ),
         boton: 'Contactanos'
     },
     {
@@ -28,7 +42,13 @@ const sliders = [
         imagen: '/new/caption5.jpg',
         alt: 'imagen3',
         titulo: 'Internet veloz y seguro para empresas.',
-        parrafo: 'Optimiza la productividad y protege tus datos con Stratecsa.',
+        parrafo:(
+            <>
+                Ofrecemos una conexión a Internet rápida y segura, diseñada exclusivamente para empresas. 
+                <br/>
+                Optimiza la productividad y protege tus datos con Stratecsa.
+            </>
+        ),
         boton: 'Contactanos'
     },
     {
@@ -36,7 +56,13 @@ const sliders = [
         imagen: '/new/img4.jpg',
         alt: 'imagen4',
         titulo: 'Seguridad y velocidad empresarial.',
-        parrafo: 'Confía en Stratecsa para proteger y acelerar tu negocio.',
+        parrafo: (
+            <>
+                Priorizamos la seguridad cibernética y la velocidad en la gestión de datos empresariales. 
+                <br/>
+                Confía en Stratecsa para proteger y acelerar tu negocio.
+            </>
+        ),
         boton: 'Contactanos'
     },
 ]
