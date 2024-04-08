@@ -111,24 +111,6 @@ function SliderHome() {
                 }
             </Slider>
             
-            {/* AQUI VOY
-            voy a crear otro slider con los textos, y lo pongo encima del otro slider */}
-                {/* <div className={`${Styles.divSlider} ${Styles.divSliderM}`}>
-                    <h1 className={`${Styles.titleSlider} ${Styles.titleSliderM}`}>
-                    Creamos para ti una red más sólida, más rápida, más segura.
-                    </h1>
-                    <p className={`${Styles.descripSlider} ${Styles.descripSlider}`}>
-                    Una red en la cual te conectes mas facil con tus clientes, 
-                    con tus proveedores, con el mundo.
-                    </p>
-                    <a href='/contacto' className={`${Styles.buttonSlider} ${Styles.buttonSliderM}`}>
-                        Contactanos
-                    </a> */}
-                    {/* <button
-                        className={Styles.buttonSlider}
-                    >Contactanos
-                    </button> */}
-                {/* </div> */}
         </div>
     </>
     );

@@ -60,7 +60,7 @@
         z-index: 2;
         font-weight: 600;
         font-size: 11px;
-        margin-top: 10px;
+        margin-top: 3px;
         
     }
 
@@ -76,9 +76,9 @@
         align-items: flex-start;
         z-index: 4;
         top: 30px;
-        width: 280px;
+        width: 300px;
         margin-left: 10px;
-        margin-top: 20px;
+        margin-top: 5px;
         gap: 5px;
 
     }
