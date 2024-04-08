@@ -1,5 +1,4 @@
 "use client";
-import Image from 'next/image';
 import Styles from './sliderhome.module.css';
 import React from "react";
 import Slider from "react-slick";

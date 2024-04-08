@@ -1,5 +1,7 @@
-import Slider from "react-slick";
+"use client";
 import Styles from './seccionxslider.module.css';
+import React from "react";
+import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 
@@ -66,13 +68,13 @@ function SeccionXSlider() {
                  <div className={Styles.sliderMM}>
                     <Slider {...settings}>
                         {
-                            sliders.map((slider, index) => (
+                            sliders.map((slider, index) => {
                                 <div key={index} className={Styles.cardMM}>
                                     <img src={slider.imagen} alt={slider.alt} className={Styles.imagenMM} />
                                     <h2 className={Styles.titleXMM}>{slider.titulo}</h2>
                                     <p className={Styles.parrafoMM}>{slider.parrafo}</p>
                                 </div>
-                            ))
+                        })
                         }
                     </Slider>
                  </div>
