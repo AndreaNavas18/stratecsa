@@ -1,5 +1,5 @@
 import Styles from './seccionx.module.css';
-import SeccionXSlider from './seccionXSlider/seccionXSlider';
+import SeccionXSlider from '../seccionxslider/seccionxslider';
 
 const sxbg = {
     backgroundImage: `url(/new/img5.jpg)`,
