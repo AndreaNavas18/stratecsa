@@ -15,10 +15,10 @@ export default function Seccion2() {
                 </div>
                 <div className={`${Styles.divLogoS2} ${Styles.divLogoS2M}`}>
                     <div className={`${Styles.divIconS2} ${Styles.divIconS2M}`}>
-                        <a href="/home">
+                        <a href="/">
                             <img
                                 className={`${Styles.iconStraS2} ${Styles.iconStraS2M}`}
-                                src="/new/banner3.png"/>
+                                src="/new/banner4.png"/>
                         </a>
                     </div>
                 </div>

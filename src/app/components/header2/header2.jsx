@@ -17,7 +17,7 @@ function Header2() {
         <section className={`${Styles.sectionNav} ${Styles.sectionNavM}`}>
             <div className={`${Styles.container} ${Styles.containerM}`}>
                 <div className={`${Styles.divIcon} ${Styles.divIconM}`}>
-                    <a href="/home">
+                    <a href="/">
                         <img
                             className={`${Styles.iconStra} ${Styles.iconStraM}`}
                             src="/img/logofinal.png"/>
@@ -27,7 +27,7 @@ function Header2() {
                     <nav>
                         <ul className={Styles.ulNav}>
                             <li className={Styles.liNav}>
-                                <a href="/home">Inicio</a>
+                                <a href="/">Inicio</a>
                             </li>
                             <li className={Styles.liNav}>
                                 <a href="/servicios/internet-dedicado">Servicios</a>
@@ -57,7 +57,7 @@ function Header2() {
                 <nav className={Styles.navM}>
                     <ul className={Styles.ulMenuMovil}>
                         <li className={Styles.liMenuMovil}>
-                            <a href="/home">Inicio</a>
+                            <a href="/">Inicio</a>
                         </li>
                         <li className={Styles.liMenuMovil}>
                             <a href="/servicios/internet-dedicado">Servicios</a>

@@ -28,7 +28,7 @@ function Footer1() {
             <footer className={`${Styles.footer1} ${Styles.noneMovil}`} style={backFooter}>
                 <div className={Styles.seccion1}>
                     <div className={Styles.div1F1}>
-                        <a href="/home">
+                        <a href="/">
                             <img className={Styles.logoF1} src="/img/logofinal.png"/>
                         </a>
 
@@ -256,7 +256,7 @@ function Footer1() {
                     </div>
 
                     <div className={Styles.seccion2M}>
-                            <a href="/home">
+                            <a href="/">
                                 <img className={Styles.logoF1M} src="/img/logofinal.png"/>
                             </a>
                             <h2 className={Styles.copyF1M}>© 2024 Stratecsa sas </h2>

@@ -18,7 +18,7 @@ const sliders = [
         imagen:  '/new/img24.png',
         alt: 'imagen2',
         titulo: 'Servicio personalizado',
-        parrafo: 'En Stratecsa los clientes son la prioridad, asi que contamos con múltiples servicios que te ayudarán a solucionar tus problemas IT y a cumplir tus metas.',
+        parrafo: 'Contamos con múltiples servicios que te ayudarán a cumplir tus metas.',
     },
     {
         id: 3,
@@ -39,44 +39,47 @@ const sliders = [
 
 const settings = {
     autoplay: true,
-    dots: true,
     autoplaySpeed: 3000,
     infinite: true,
     speed: 500,
     slidesToShow: 2,
-    slidesToScroll: 2,
-    // appendDots: dots => (
-    //     <div
-    //       style={{
-    //         borderRadius: "10px",
-    //         padding: "10px",
-    //         margin: "0 auto",
-    //         backgroundColor: "#f1f1f1",
-    //         display: "flex",
-    //         justifyContent: "center",
-    //         alignItems: "center",
-    //       }}
-    //     >
-    //       <ul style={{ margin: "0px" }}> {dots} </ul>
-    //     </div>
-    //   ),
+    slidesToScroll: 1,
 };
+
+const divS4Styles = {
+    backgroundImage: `url(/new/chica.jpg)`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    height: '100%', 
+    width: '100%', 
+  };
+
+  const divSobre = {
+    backgroundColor: 'rgba(255, 255, 255, 0.8)',
+  }
 
 function SeccionXSlider() {
         return (
             <>
-                 <div className={Styles.sliderMM}>
+                 <div className={Styles.sliderMM} style={divS4Styles}>
+                 <div style={divSobre}>
                     <Slider {...settings}>
                         {
                             sliders.map((slider, index) => {
-                                <div key={index} className={Styles.cardMM}>
-                                    <img src={slider.imagen} alt={slider.alt} className={Styles.imagenMM} />
-                                    <h2 className={Styles.titleXMM}>{slider.titulo}</h2>
-                                    <p className={Styles.parrafoMM}>{slider.parrafo}</p>
-                                </div>
+                                return(
+                                <>
+                                        <div key={index} className={Styles.cardMM}>
+                                            <img src={slider.imagen} alt={slider.alt} className={Styles.imagenMM} />
+                                            <h2 className={Styles.titleXMM}>{slider.titulo}</h2>
+                                            <p className={Styles.parrafoMM}>{slider.parrafo}</p>
+                                        </div>
+                                    
+                                </>
+                            )
                         })
                         }
                     </Slider>
+                    </div>
                  </div>
             </>
         );

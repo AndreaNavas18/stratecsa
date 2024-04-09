@@ -6,7 +6,7 @@ export default function Footer() {
             <div className={Styles.divFooter}>
                 <div className={Styles.div1Footer}>
                     <div className={Styles.divIconF}>
-                        <a href="/home">
+                        <a href="/">
                             <img
                                 className={Styles.iconStraF}
                                 src="/img/logofinal.png"/>
@@ -42,7 +42,7 @@ export default function Footer() {
                         <nav>
                             <ul className={Styles.ulNav}>
                                 <li className={Styles.liNav}>
-                                    <a href="/home">Inicio</a>
+                                    <a href="/">Inicio</a>
                                 </li>
                                 <li className={Styles.liNav}>
                                     <a href="/servicios">Servicios</a>
@@ -64,7 +64,7 @@ export default function Footer() {
                         <nav>
                             <ul className={Styles.ulNav2}>
                                 <li className={Styles.liNav2}>
-                                    <a href="/home">Amplia cobertura</a>
+                                    <a href="/">Amplia cobertura</a>
                                 </li>
                                 <li className={Styles.liNav2}>
                                     <a href="/servicios">Servicio personalizado</a>
