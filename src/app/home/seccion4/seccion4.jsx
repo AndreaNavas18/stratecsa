@@ -3,7 +3,9 @@ import React, { useState, useEffect } from 'react';
 import Styles from '../home.module.css';
 
   const servicios = [
+    {icono: "/logos/ultimamilla.png", nombre: "Ultima Milla y Datos", id: "ultimaMilla"},
     {icono: "/logos/internet_ded.png", nombre: "Internet Dedicado", id: "internetDedicado"},
+    {icono: "/logos/ciberseguridad1.png", nombre: "Ciberseguridad", id: "ciberSeguridad"},
     {icono: "/logos/enlace.png", nombre: "Enlace de Datos", id: "enlacededatos"},
     {icono: "/logos/comun_uni.png", nombre: "Comunicaciones Unificadas", id: "comunicacionesUnificadas"},
     {icono: "/logos/sec_cloud.png", nombre: "Security Cloud", id: "securityCloud"},
@@ -15,10 +17,12 @@ import Styles from '../home.module.css';
     {icono: "/logos/outsourcing.png", nombre: "Outsourcing TIC", id: "outsourcingTIC"},
 ];
 
-  const itemsPorPagina = 5;
+  const itemsPorPagina = 4;
 
   const idToRoute = {
+    ultimaMilla: "/servicios/ultima-milla",
     internetDedicado: "/servicios/internet-dedicado",
+    ciberSeguridad: "/servicios/ciberseguridad",
     enlacededatos: "/servicios/enlace-datos",
     comunicacionesUnificadas: "/servicios/comunicaciones-unificadas",
     securityCloud: "/servicios/security-cloud",
