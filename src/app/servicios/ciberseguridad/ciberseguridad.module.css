@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Century Gothic';
+    /* src: url('../../public/fonts/CenturyGothic.ttf') format('truetype'); */
+    src: url('../../../../public/fonts/CenturyGothic.ttf') format('truetype');
+    /* Asegúrate de que la ruta sea correcta desde tu archivo CSS */
+}
+
+@media (min-width: 768px)  {
+
+
+    
+}

@@ -1,8 +1,8 @@
 import React from 'react';
-import Servicios from '../../servicios/page';
+import Servicios from '../page';
 import Styles from '../ultima-milla/ultimamilla.module.css';
 
-function UltimaMilla() {
+function RedMpls() {
     const parrafColor = {
         color: '#009cda', 
     }
@@ -15,7 +15,7 @@ function UltimaMilla() {
             <div>
                 <div className={Styles.containerP}>
                     <div className={Styles.seccion1}>
-                        <h1 className={Styles.titleP}>Ultima Milla y Datos</h1>
+                        <h1 className={Styles.titleP}>Red MPLS</h1>
                         <p className={Styles.parrafosP}>
                         Con la última milla de Stratecsa, te conectamos con velocidad y eficiencia a través del tramo 
                         final de una fibra óptica. Ofrecemos servicios de transmisión de datos y conectividad de red 
@@ -82,4 +82,4 @@ function UltimaMilla() {
     );
 }
 
-export default UltimaMilla;
+export default RedMpls;

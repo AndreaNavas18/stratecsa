@@ -182,4 +182,111 @@
     .navMovilS {
         display: none;
     }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        margin-right: 3px;
+        padding: 0 2px;
+        color: #717171;
+        border-radius: 5px;
+        padding: 5px;
+        font-weight: 400;
+        font-family: 'Century Gothic', sans-serif;
+
+    }
+
+    .toggleButton {
+        background-color: #ffffff;
+        color: #717171;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .menuItems {
+        background-color: #ffffff;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 50;
+        list-style-type: none;
+        visibility: hidden; 
+        position: absolute; 
+        overflow-y: auto; 
+        overflow-x: hidden;
+        max-height: 200px !important;
+        opacity: 0; 
+        transition: max-height 0.5s ease-out, opacity 0.3s ease-out;
+    }
+
+    .menuVisible {
+        visibility: visible; 
+        max-height: 500px; 
+        opacity: 1;
+    }
+
+    .menuItems li{
+        padding: 8px 16px;
+    }
+
+    .menuItems li a {
+        display: block;
+        text-decoration: none;
+        color: #717171;
+    }
+
+    .menuItems li a:hover {
+        background-color: #f1f1f1;
+    }
+
+    .subMenu {
+        color: #717171;
+        padding: 5px;
+        font-weight: 400;
+
+    }
+
+    .menuVisible2 {
+        visibility: visible; /* Muestra el menú desplegable */
+        max-height: 500px; /* Establece una altura máxima para el menú */
+        opacity: 1;
+    }
+
+    .menuVisible3 {
+        visibility: visible; /* Muestra el menú desplegable */
+        max-height: 500px; /* Establece una altura máxima para el menú */
+        opacity: 1;
+    }
+
+    .menuItems::-webkit-scrollbar {
+        width: 8px; /* Ancho de la barra de desplazamiento */
+    }
+    
+    .menuItems::-webkit-scrollbar-track {
+        background: #f1f1f1; /* Color de fondo de la pista de desplazamiento */
+    }
+    
+    .menuItems::-webkit-scrollbar-thumb {
+        background: #009cda; /* Color del pulgar de desplazamiento */
+        border-radius: 4px; /* Borde redondeado del pulgar de desplazamiento */
+    }
+    
+    .menuItems::-webkit-scrollbar-thumb:hover {
+        background: #555; /* Cambio de color al pasar el cursor sobre el pulgar */
+    }
+
+    /* Estilo para barras de desplazamiento en Firefox */
+    .menuItems {
+        scrollbar-width: thin; /* Ancho de la barra de desplazamiento */
+    }
+
+    .menuItems {
+        scrollbar-color: #009cda #f1f1f1; /* Color del pulgar y pista de desplazamiento */
+    }
+    
+
+    /* .menuItems li:first-child {
+        border-radius: 5px 5px 0 0;
+    } */
 }
