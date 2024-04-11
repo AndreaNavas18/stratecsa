@@ -28,8 +28,9 @@
     }
 
     .iconStraM {
-        width: 100px;
+        width: 120px;
         height: auto;
+        margin-left: 10px;
 
     }
 
@@ -39,14 +40,17 @@
         padding: 5px;
         gap: 5px;
     }
+
     .iconFabars {
         width: 25px;
+        height: 25px;
         color: #009cdab9;
 
     }
 
     .iconClient {
-        width: 20px;
+        width: 25px;
+        height: 25px;
         /* --fa-primary-color: #009cda;
         --fa-secondary-color: #009cda; */
         color: #555555b9;

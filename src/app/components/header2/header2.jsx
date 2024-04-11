@@ -45,7 +45,9 @@ function Header2() {
                     </nav>
                 </div>
                 <div className={`${Styles.navMovil} ${Styles.navMovilS}`}>
-                    <FontAwesomeIcon icon={faUser} className={Styles.iconClient} />
+                    <a href='https://www.stratecsa.cloud'>
+                        <FontAwesomeIcon icon={faUser} className={Styles.iconClient} />
+                    </a>
                     <FontAwesomeIcon icon={faBars} className={Styles.iconFabars} onClick={toggleMenu} />
 
                 </div>

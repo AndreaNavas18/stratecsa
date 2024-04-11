@@ -1,12 +1,79 @@
 @media( max-width: 766px){
 
+    .seccion4sliderM {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Century Gothic', sans-serif;
+        
+    }
+    .contentM {
+        padding-bottom: 30px;
+        padding-top: 30px;
+        background-color: rgba(0, 0, 0, 0.329);
+
+    }
+    .tituloS4M {
+        font-size: 25px;
+        color: #ffffff;
+        margin-bottom: 10px;
+        font-weight: 700;
+        text-align: center;
+
+    }
+    .parrafoS4M {
+        font-size: 17px;
+        color: #ffffff;
+        margin-bottom: 20px;
+        text-align: justify;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-weight: 500;
+
+    }
+    .tamanoSliderM {
+       
+
+    }
+
+    .botonesS4M {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 20px;
+        
+
+    }
+    .buttonS4M {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        padding: 10px;
+        border-radius: 10px;
+        z-index: 2;
+        font-weight: 500;
+        background-color: white;
+        color: #009cda;
+        font-size: 12px;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Century Gothic', sans-serif;
+
+    }
+    .iconoServicioS4M {
+        width: 35px;
+        margin-right: 5px;
+        border-radius: 12px;
+        padding: 5px;
+
+    }
+
 }
 
 @media( min-width: 768px){
 
     .seccion4slider {
         display: flex;
-        max-height: 600px;
+        max-height: 700px;
         font-family: 'Century Gothic', sans-serif;
     }
 
@@ -16,7 +83,17 @@
         background-size: cover;
         overflow: hidden;
         /* position: relative; */
-        padding-bottom: 10px;
+        padding-bottom: 50px;
+        padding-top: 30px;
+    }
+
+    .content::before {
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0);
+        filter:brightness(0.6);
     }
     
     .tituloS4 {
@@ -38,7 +115,7 @@
         margin-left: 300px;
         margin-right: 300px;
         font-weight: 600;
-}
+    }
 
     .buttonS4 {
         display: flex;
@@ -50,6 +127,7 @@
         font-weight: 600;
         background-color: white;
         color: #009cda;
+        font-size: 12px;
         justify-content: center;
         align-items: center;
         font-family: 'Century Gothic', sans-serif;
@@ -66,7 +144,7 @@
         flex-direction: row;
         justify-content: center;
         margin-top: 20px;
-        
+        width: 180px;
       
     }
 
@@ -75,5 +153,11 @@
         margin-right: 5px;
         border-radius: 12px;
         padding: 5px;
+    }
+
+    .tamanoSlider {
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

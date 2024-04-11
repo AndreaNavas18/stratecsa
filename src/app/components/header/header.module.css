@@ -36,11 +36,11 @@
 
     .buttonContactM {
         background-color: white;
-        padding: 5px 10px;
+        padding: 8px 12px;
         border: none;
         border-radius: 5px;
         cursor: pointer;
-        font-size: 13px;
+        font-size: 15px;
         transition: all 0.3s;
         color: #01788e;
         font-weight: 500;
@@ -55,8 +55,8 @@
     }
 
     .iconSocialM {
-        width: 22px;
-        height: 22px;
+        width: 26px;
+        height: 26px;
         fill: #009cda;
 
 
@@ -64,6 +64,7 @@
 
     .cRedesM{
         margin-right: 2px;
+        padding-bottom: 5px;
        
     }
 }

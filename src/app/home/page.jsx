@@ -16,7 +16,6 @@ function Home() {
        <SliderHome />
        <Seccion2 />
        <Seccionx />
-       <Seccion4 />
        <Seccion4Slider />
     </>
   );

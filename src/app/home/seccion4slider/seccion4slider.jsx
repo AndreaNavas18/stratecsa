@@ -32,7 +32,7 @@ const servicios = [
     },
     {
         icono: "/logos/comun_uni.png", 
-        nombre: "Comunicaciones Unificadas", 
+        nombre: "Comunicacion Unificada", 
         id: "comunicacionesUnificadas",
         url: "/servicios/comunicaciones-unificadas"
     },
@@ -87,6 +87,20 @@ const settings = {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 766,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                speed: 500,
+                
+            }
+        }
+    ]
 };
 
 const divS4Styles = {
@@ -101,28 +115,28 @@ const divS4Styles = {
 function Seccion4Slider () {
     return(
         <>
-            <div className={Styles.seccion4slider} style={divS4Styles}>
-                <div className={Styles.content}>
-                    <h2 className={Styles.tituloS4}>Nuestros Servicios</h2>
-                    <p className={Styles.parrafoS4}>
+            <div className={`${Styles.seccion4slider} ${Styles.seccion4sliderM}`} style={divS4Styles}>
+                <div className={`${Styles.content} ${Styles.contentM}`}>
+                    <h2 className={`${Styles.tituloS4} ${Styles.tituloS4M}`}>Nuestros Servicios</h2>
+                    <p className={`${Styles.parrafoS4} ${Styles.parrafoS4M}`}>
                         Contamos con múltiples servicios y productos de excelente calidad que
                         te ayudarán a dar solución a tus problemas IT, para que cumplas con tus
                         objetivos empresariales.
                     </p>
-                    <div>
+                    <div className={`${Styles.tamanoSlider} ${Styles.tamanoSliderM}`}>
                         <Slider {...settings}>
                             {
                                 servicios.map((servicio, index) => {
                                     return(
                                     <>
-                                        <div className={Styles.botonesS4}>
+                                        <div className={`${Styles.botonesS4} ${Styles.botonesS4M}`}>
                                                 <button 
                                                     key={index} 
-                                                    className={Styles.buttonS4}
+                                                    className={`${Styles.buttonS4} ${Styles.buttonS4M}`}
                                                     onClick={() => window.location.href = servicio.url}
                                                 >
                                                 <img
-                                                    className={Styles.iconoServicioS4}
+                                                    className={`${Styles.iconoServicioS4} ${Styles.iconoServicioS4M}`}
                                                     src={servicio.icono} 
                                                     />
                                                     {servicio.nombre}
