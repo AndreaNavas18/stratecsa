@@ -113,6 +113,17 @@
         height: 700px;
     }
 
+    .mapaLat {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .imgLat {
+        width: 650px;
+        height: auto;
+    }
+
     .ulP {
         display: flex;
         flex-direction: column;

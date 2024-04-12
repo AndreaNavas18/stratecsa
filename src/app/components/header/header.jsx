@@ -9,9 +9,9 @@ function Header() {
                 src="/img/lupa.png"/> */}
             
             <a 
-                href='/contacto' 
+                href='https://www.stratecsa.cloud' 
                 className={`${Styles.buttonContact} ${Styles.buttonContactM}`}>
-                    Contactanos
+                    Zona Clientes
             </a>
             <div className={`${Styles.divRedes} ${Styles.divRedesM}`}>
                 <a className={`${Styles.cRedes} ${Styles.cRedesM}`} href="https://www.facebook.com/Stratecsa?locale=es_LA" target="_blank" rel="noopener noreferrer">

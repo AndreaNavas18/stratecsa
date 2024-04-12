@@ -56,11 +56,11 @@ function Brasil() {
                         </button>
                     </div>
                 </div>
-                <div className={`${Styles.mapaBra} ${Styles.mapaBraM}`}>
+                <div className={`${Styles.mapaLat} ${Styles.mapaLatM}`}>
                     <img 
                         src="/img/latam.png" 
                         alt="Latam" 
-                        className={`${Styles.imgBra} ${Styles.imgBraM}`}
+                        className={`${Styles.imgLat} ${Styles.imgLatM}`}
                     />
                 </div>
             </div>
