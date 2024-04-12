@@ -1,5 +1,7 @@
-import Servicios from '../../servicios/page';
+"use client";
+import Servicios from '../../servicios/page.jsx';
 import Styles from '../productos/productos.module.css';
+import React from "react";
 
 function InternetDedicado() {
     const parrafColor = {

@@ -1,27 +1,27 @@
-// "use client";
-// import Styles from '../../home/home.module.css';
-// import React, { useEffect, useState } from 'react';
+"use client";
+import Styles from '../../home/home.module.css';
+import React, { useEffect, useState } from 'react';
 
-// function Load() {
+function Load() {
 
-//     const [isLoading, setIsLoading] = useState(true);
+    const [isLoading, setIsLoading] = useState(true);
 
-//     useEffect(() => {
-//         // Ocultar el GIF de carga después de 4 segundos
-//         setTimeout(() => {
-//             setIsLoading(false);
-//         }, 2100);
-//     }, []);
+    useEffect(() => {
+        // Ocultar el GIF de carga después de 4 segundos
+        setTimeout(() => {
+            setIsLoading(false);
+        }, 2100);
+    }, []);
 
-//     return (
-//        <>
-//             {isLoading && (
-//                 <div className={`${Styles.load} ${Styles.active}`}>
-//                     <img src="/img/pcfinal.gif" className={Styles.gifload} alt='Cargando...' />
-//                 </div>
-//             )}
-//         </>
-//     );
-// }
+    return (
+       <>
+            {isLoading && (
+                <div className={`${Styles.load} ${Styles.active}`}>
+                    <img src="/img/final.gif" className={Styles.gifload} alt='Cargando...' />
+                </div>
+            )}
+        </>
+    );
+}
 
-// export default Load;
+export default Load;

@@ -1,51 +1,9 @@
 "use client";
-import Ciber from './ciberseguridad.module.css';
 import Styles from '../productos/productos.module.css';
 import React from "react";
 import Servicios from '../../servicios/page.jsx';
-import Slider from "react-slick";
-import "slick-carousel/slick/slick-theme.css";
-import "slick-carousel/slick/slick.css";
-
-const sliders = [
-    {
-        id: 1,
-        imagen:  '/logos/internet_ded.png',
-        alt: 'imagen1',
-        titulo: 'Internet Dedicado',
-    },
-    {
-        id: 2,
-        imagen:  '/logos/ciberseguridad1.png',
-        alt: 'imagen2',
-        titulo: 'Ciberseguridad',
-    },
-    {
-        id: 3,
-        imagen:  '/logos/ultimamilla.png',
-        alt: 'imagen3',
-        titulo: 'Red MPLS',
-    },
-    {
-        id: 4,
-        imagen:  '/logos/cloud_backup.png',
-        alt: 'imagen4',
-        titulo: 'Cloud Backup',
-    },
-    
-]
-
-const settings = {
-    autoplay: true,
-    autoplaySpeed: 3000,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-};
 
 function Ciberseguridad() {
-
     
     const parrafColor = {
         color: '#009cda', 

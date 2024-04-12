@@ -1,5 +1,6 @@
+"use client";
 import React from 'react';
-import Servicios from '../../servicios/page';
+import Servicios from '../../servicios/page.jsx';
 import Styles from '../productos/productos.module.css';
 
 function ServidorDedicado () {

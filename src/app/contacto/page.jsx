@@ -5,7 +5,7 @@ import GoogleMapComponent from '../googlemaps';
 function Contacto () {
 
   const containerSty = {
-    backgroundImage: `url(/new/img38.jpg)`,
+    backgroundImage: `url(/new/contacto4.png)`,
   };
 
   return (
