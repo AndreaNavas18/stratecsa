@@ -25,7 +25,7 @@ function Brasil() {
                         <li className={Styles.liP}>
                             <span style={parrafColor}>STRATECSA </span>
                             ofrece soluciones de conectividad en los 
-                            <span style={parrafColor}> 32 países </span> 
+                            <span style={parrafColor}> 31 países </span> 
                             de América Latina y el Caribe, 
                             adaptándose a las características únicas de cada país. 
                         </li>
