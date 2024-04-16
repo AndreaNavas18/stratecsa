@@ -2,6 +2,7 @@
 import React from 'react';
 import Servicios from '../../servicios/page.jsx';
 import Styles from '../productos/productos.module.css';
+import Beneficios from '../../components/beneficios/beneficios.jsx';
 
 function SecurityCloud () {
   const parrafColor = {
@@ -10,6 +11,40 @@ function SecurityCloud () {
   const carac = {
     fontWeight: '600',
   }
+
+  const datosSliders = [
+        {
+            imagen: '/new/img15.jpeg',
+            span: 'Accesibilidad. ',
+            parrafo: 'Acceder a la información desde cualquier dispositivo móvil.',
+        },
+        {
+            imagen: '/new/img15.jpeg',
+            span: 'Tranquilidad. ',
+            parrafo: 'Stratecsa se encargará de la instalación y las actualizaciones.',
+        },
+        {
+            imagen: '/new/img15.jpeg',
+            span: 'Protección en tiempo real. ',
+            parrafo: 'Con un antivirus en la nube se está protegido en tiempo real en contra de las múltiples amenazas a las que día a día estamos expuestos en la Internet.',
+        },
+        {
+            imagen: '/new/img15.jpeg',
+            span: 'Compatibilidad. ',
+            parrafo: 'La tecnología en la nube cuentan con una altísima compatibilidad con cualquier sistema operativo o equipo.',
+        },
+        {
+            imagen: '/new/img15.jpeg',
+            span: 'Reducción de costos. ',
+            parrafo: 'El sistema de pago y aumento de licencias para equipos es más cómodo para una empresa.',
+        },
+        {
+            imagen: '/new/img15.jpeg',
+            span: 'Seguridad. ',
+            parrafo: 'Antivirus con tecnología en la nube aumenta su seguridad.',
+        },
+    
+  ];
 return (
     <div>
     <Servicios />
@@ -54,7 +89,7 @@ return (
                         </ul>
                     
                 </div>
-                <div className={Styles.seccion2}>
+                <div className={`${Styles.seccion2} ${Styles.noneM}`}>
                     <div className={Styles.divImg}>
                         <img src="/new/img15.jpeg" className={Styles.img2P}/>
                     </div>
@@ -74,6 +109,9 @@ return (
                         <p className={Styles.parrafosP2}><span style={parrafColor}>6) Seguridad. </span> 
                         Antivirus con tecnología en la nube aumenta su seguridad.</p>
                     </div>
+                </div>
+                <div className={`${Styles.seccion2} ${Styles.nonePC}`}>
+                    <Beneficios datosSliders={datosSliders} />
                 </div>
                 <div className={Styles.botonID}>
                     <button className={Styles.buttonP2}>Solicitar información</button>

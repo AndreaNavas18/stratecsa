@@ -2,11 +2,45 @@
 import React from 'react';
 import Servicios from '../../servicios/page.jsx';
 import Styles from '../productos/productos.module.css';
+import Beneficios from '../../components/beneficios/beneficios.jsx';
 
 function EnlaceDatos() {
     const parrafColor = {
         color: '#009cda', 
     }
+
+    const datosSliders = [
+        {
+            imagen: '/new/img10.jpg',
+            span: 'Mayor productividad. ',
+            parrafo: 'Promoción, venta y atención a pedidos en línea con mejores tiempos de respuesta.',
+        },
+        {
+            imagen: '/new/img10.jpg',
+            span: 'Seguridad. ',
+            parrafo: 'Servicio seguro, tienes un canal dedicado solo para ti.',
+        },
+        {
+            imagen: '/new/img10.jpg',
+            span: 'Menor inversión. ',
+            parrafo: 'Transmite y vigila grandes volúmenes de información en línea, disminuye las inversiones de software.',
+        },
+        {
+            imagen: '/new/img10.jpg',
+            span: 'Red dedicado veloz. ',
+            parrafo: 'Servicio único para tu empresa, canal exclusivo de alto rendimiento, usuarios protegidos de interrupción alguna.',
+        },
+        {
+            imagen: '/new/img10.jpg',
+            span: 'Ips múltiples. ',
+            parrafo: 'Podrás generar tantas IPs como necesites y eliminarlas cuando lo desees.',
+        },
+        {
+            imagen: '/new/img10.jpg',
+            span: 'Estabilidad. ',
+            parrafo: 'Tendrás el ancho de banda que requieres, sin que ningún fallo de la red arruine tu trabajo o el de tu equipo.',
+        },
+    ];
     return (
         <div>
         <Servicios />
@@ -49,7 +83,7 @@ function EnlaceDatos() {
                             visita de pre-viabilidad técnica.
                             </p>
                     </div>
-                    <div className={Styles.seccion2}>
+                    <div className={`${Styles.seccion2} ${Styles.noneM}`}>
                         <div className={Styles.divImg}>
                             <img src="/new/img10.jpg" className={Styles.img2P}/>
                         </div>
@@ -62,6 +96,9 @@ function EnlaceDatos() {
                             <p className={Styles.parrafosP2}><span style={parrafColor}>5) Ips múltiples.</span> Podrás generar tantas IPs como necesites y eliminarlas cuando lo desees.</p>
                             <p className={Styles.parrafosP2}><span style={parrafColor}>6) Estabilidad.</span> Tendrás el ancho de banda que requieres, sin que ningún fallo de la red arruine tu trabajo o el de tu equipo.</p>
                         </div>
+                    </div>
+                    <div className={`${Styles.seccion2} ${Styles.nonePC}`}>
+                        <Beneficios datosSliders={datosSliders} />
                     </div>
                     <div className={Styles.botonID}>
                         <button className={Styles.buttonP2}>Solicitar información</button>

@@ -2,6 +2,7 @@
 import React from 'react';
 import Servicios from '../../servicios/page.jsx';
 import Styles from '../productos/productos.module.css';
+import Beneficios from '../../components/beneficios/beneficios.jsx';
 
 function CloudBackup () {
   const parrafColor = {
@@ -10,6 +11,41 @@ function CloudBackup () {
   const carac = {
     fontWeight: '600',
   }
+
+    const datosSliders = [
+        {
+            imagen: '/new/img35.jpeg',
+            span: 'Respaldo. ',
+            parrafo: 'Copia de seguridad en la nube.',
+        },
+        {
+            imagen: '/new/img35.jpeg',
+            span: 'Ahorro costos. ',
+            parrafo: 'Optimiza sus costos y el retorno de su inversión.',
+        },
+        {
+            imagen: '/new/img35.jpeg',
+            span: 'Fácil acceso. ',
+            parrafo: 'Puedes acceder a ello cuando lo necesites.',
+        },
+        {
+            imagen: '/new/img35.jpeg',
+            span: 'Flexibilidad. ',
+            parrafo: 'Flexible y adaptable a las necesidades de su empresa.',
+        },
+        {
+            imagen: '/new/img35.jpeg',
+            span: 'Ahorro espacio. ',
+            parrafo: 'No requiere equipamiento adicional al de un acceso dedicado normal.',
+        },
+        {
+            imagen: '/new/img35.jpeg',
+            span: 'Diferencia de consumo. ',
+            parrafo: 'Permite diferenciar el consumo entrante y saliente, tanto nacional como internacional.',
+        },
+    ];
+
+
 return (
     <div>
     <Servicios />
@@ -42,7 +78,7 @@ return (
                         
                     </ul>
             </div>
-            <div className={Styles.seccion2}>
+            <div className={`${Styles.seccion2} ${Styles.noneM}`}>
                 <div className={Styles.divImg}>
                     <img src="/new/img35.jpeg" className={Styles.img2P}/>
                 </div>
@@ -61,6 +97,9 @@ return (
                     <p className={Styles.parrafosP2}><span style={parrafColor}>6) Diferencia de consumo. </span> 
                     Permite diferenciar el consumo entrante y saliente, tanto nacional como internacional.</p>
                 </div>
+            </div>
+            <div className={`${Styles.seccion2} ${Styles.nonePC}`}>
+                <Beneficios datosSliders={datosSliders} />
             </div>
             <div className={Styles.botonID}>
                 <button className={Styles.buttonP2}>Solicitar información</button>

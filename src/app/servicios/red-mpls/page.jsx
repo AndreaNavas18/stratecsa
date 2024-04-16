@@ -1,7 +1,10 @@
 "use client";
 import React from 'react';
 import Servicios from '../../servicios/page.jsx';
-import Styles from '../red-mpls/ultimamilla.module.css';
+// import Styles from '../red-mpls/ultimamilla.module.css';
+import Styles from '../productos/productos.module.css';
+
+import Beneficios from '../../components/beneficios/beneficios.jsx';
 
 function RedMpls() {
     const parrafColor = {
@@ -10,6 +13,39 @@ function RedMpls() {
     const carac = {
       fontWeight: '600',
     }
+
+    const datosSliders = [
+        {
+            imagen: '/new/img40.jpeg',
+            span: 'Conexión estable y rápida. ',
+            parrafo: 'Transfiere datos a tus clientes u otras empresas de manera eficiente.',
+        },
+        {
+            imagen: '/new/img40.jpeg',
+            span: 'Respaldo eléctrico. ',
+            parrafo: 'Garantizamos el suministro eléctrico sin interrupciones para los dispositivos de red.',
+        },
+        {
+            imagen: '/new/img40.jpeg',
+            span: 'Estabilidad y redundancia. ',
+            parrafo: 'Las redes se conforman de sistemas que sirven de respaldo entre sí para mantener activo el servicio.',
+        },
+        {
+            imagen: '/new/img40.jpeg',
+            span: 'Escalabilidad de conectividad. ',
+            parrafo: 'Capacidad de adaptación de la red respecto al crecimiento del tráfico y necesidades del cliente.',
+        },
+        {
+            imagen: '/new/img40.jpeg',
+            span: 'Seguridad en redes. ',
+            parrafo: 'Se manejan protocolos de seguridad que permiten la protección de los datos e información del cliente.',
+        },
+        {
+            imagen: '/new/img40.jpeg',
+            span: 'Sistemas de monitoreo. ',
+            parrafo: 'Permiten el monitoreo constante de la actividad de la red, disponibilidad y rendimiento del servicio, así como de los dispositivos que la componen.',
+        },
+    ];
     return (
         <div>
         <Servicios />
@@ -50,7 +86,7 @@ function RedMpls() {
                                 
                             </ul>
                     </div>
-                    <div className={Styles.seccion2}>
+                    <div className={`${Styles.seccion2} ${Styles.noneM}`}>
                         <div className={Styles.divImg}>
                             <img src="/new/img40.jpeg" className={Styles.img2P}/>
                         </div>
@@ -70,6 +106,9 @@ function RedMpls() {
                             Permiten el monitoreo constante de la actividad de la red, disponibilidad y rendimiento del servicio, 
                             así como de los dispositivos que la componen.</p>
                         </div>
+                    </div>
+                    <div className={`${Styles.seccion2} ${Styles.nonePC}`}>
+                        <Beneficios datosSliders={datosSliders} />
                     </div>
                     <div className={Styles.botonID}>
                         <button className={Styles.buttonP2}>Solicitar información</button>

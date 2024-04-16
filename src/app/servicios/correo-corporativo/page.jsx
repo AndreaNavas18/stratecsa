@@ -2,6 +2,7 @@
 import React from 'react';
 import Servicios from '../../servicios/page.jsx';
 import Styles from '../productos/productos.module.css';
+import Beneficios from '../../components/beneficios/beneficios.jsx';
 
 function CorreoCorporativo() {
     const parrafColor = {
@@ -9,7 +10,42 @@ function CorreoCorporativo() {
     }
     const carac = {
         fontWeight: '600',
-      }
+    }
+
+    const datosSliders = [
+        {
+            imagen: '/new/img33.jpeg',
+            span: 'Clientes felices. ',
+            parrafo: 'Proporcionar una gran experiencia para impulsar las ventas futuras.',
+        },
+        {
+            imagen: '/new/img33.jpeg',
+            span: 'Medir y mejorar su servicio. ',
+            parrafo: 'Puedes ver cuando el tráfico es más pesado, y planificar el futuro.',
+        },
+        {
+            imagen: '/new/img33.jpeg',
+            span: 'Antispam personalizado. ',
+            parrafo: 'Esta herramienta de software se encarga de tener un control personalizado de cada uno de los correos que llegan al servidor.',
+        },
+        {
+            imagen: '/new/img33.jpeg',
+            span: 'Flexibilidad. ',
+            parrafo: 'Flexible y adaptable a las necesidades de su empresa.',
+        },
+        {
+            imagen: '/new/img33.jpeg',
+            span: 'Email corporativo. ',
+            parrafo: 'Brinda alta disponibilidad, eficiencia y una excelente funcionalidad, Solución segura y eficiente genera mayor confianza.',
+        },
+        {
+            imagen: '/new/img33.jpeg',
+            span: 'Seguridad. ',
+            parrafo: 'La seguridad es un aspecto fundamental a la hora gestionar una cuenta de correo electrónico.',
+        },
+    ];
+
+
     return (
         <div>
         <Servicios />
@@ -40,7 +76,7 @@ function CorreoCorporativo() {
                                 
                             </ul>
                     </div>
-                    <div className={Styles.seccion2}>
+                    <div className={`${Styles.seccion2} ${Styles.noneM}`}>
                         <div className={Styles.divImg}>
                             <img src="/new/img33.jpeg" className={Styles.img2P}/>
                         </div>
@@ -61,6 +97,9 @@ function CorreoCorporativo() {
                             <p className={Styles.parrafosP2}><span style={parrafColor}>6) Seguridad. </span> 
                             La seguridad es un aspecto fundamental a la hora gestionar una cuenta de correo electrónico.</p>
                         </div>
+                    </div>
+                    <div className={`${Styles.seccion2} ${Styles.nonePC}`}>
+                        <Beneficios datosSliders={datosSliders} />
                     </div>
                     <div className={Styles.botonID}>
                         <button className={Styles.buttonP2}>Solicitar información</button>

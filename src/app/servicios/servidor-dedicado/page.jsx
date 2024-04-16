@@ -2,6 +2,8 @@
 import React from 'react';
 import Servicios from '../../servicios/page.jsx';
 import Styles from '../productos/productos.module.css';
+import Beneficios from '../../components/beneficios/beneficios.jsx';
+
 
 function ServidorDedicado () {
   const parrafColor = {
@@ -10,6 +12,39 @@ function ServidorDedicado () {
   const carac = {
     fontWeight: '600',
   }
+
+  const datosSliders = [
+    {
+        imagen: '/new/img19.jpeg',
+        span: 'Rendimiento. ',
+        parrafo: 'Favorece el rendimiento de sitios web y aplicaciones.',
+    },
+    {
+        imagen: '/new/img19.jpeg',
+        span: 'Autonomía. ',
+        parrafo: 'Con esta solución tendrás total control sobre el ambiente de tu hosting.',
+    },
+    {
+        imagen: '/new/img19.jpeg',
+        span: 'Estabilidad. ',
+        parrafo: 'Otro aspecto significativo del servidor dedicado es la estabilidad, que suele ser superior por el hecho de ser exclusivo.',
+    },
+    {
+        imagen: '/new/img19.jpeg',
+        span: 'Seguridad. ',
+        parrafo: 'La preocupación por la seguridad se vuelve mucho menor para quien opta por un servidor dedicado.',
+    },
+    {
+        imagen: '/new/img19.jpeg',
+        span: 'Exclusividad. ',
+        parrafo: 'Espacio de almacenamiento superior, para aprovechar al máximo todos y cada uno de los recursos del mismo.',
+    },
+    {
+        imagen: '/new/img19.jpeg',
+        span: 'Accesibilidad. ',
+        parrafo: 'Libertad a la hora de acceder al mismo. De esta manera, puedes aprovechar tú espacio de almacenamiento.',
+    },
+  ];
 return (
     <div>
     <Servicios />
@@ -44,7 +79,7 @@ return (
                             
                         </ul>
                 </div>
-                <div className={Styles.seccion2}>
+                <div className={`${Styles.seccion2} ${Styles.noneM}`}>
                     <div className={Styles.divImg}>
                         <img src="/new/img19.jpeg" className={Styles.img2P}/>
                     </div>
@@ -64,6 +99,9 @@ return (
                         <p className={Styles.parrafosP2}><span style={parrafColor}>6) Accesibilidad.</span> 
                         Libertad a la hora de acceder al mismo. De esta manera, puedes aprovechar tú espacio de almacenamiento.</p>
                     </div>
+                </div>
+                <div className={`${Styles.seccion2} ${Styles.nonePC}`}>
+                    <Beneficios datosSliders={datosSliders} />
                 </div>
                 <div className={Styles.botonID}>
                     <button className={Styles.buttonP2}>Resguardar mis equipos</button>

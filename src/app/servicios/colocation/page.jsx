@@ -2,6 +2,8 @@
 import React from 'react';
 import Servicios from '../../servicios/page.jsx';
 import Styles from '../productos/productos.module.css';
+import Beneficios from '../../components/beneficios/beneficios.jsx';
+
 
 function Colocation () {
   const parrafColor = {
@@ -10,6 +12,40 @@ function Colocation () {
   const carac = {
     fontWeight: '600',
   }
+
+  const datosSliders = [
+    {
+        imagen: '/new/img17.jpg',
+        span: 'Escalabilidad bajo demanda. ',
+        parrafo: 'Stratecsa ofrece la escalabilidad necesaria para responder con rapidez a nuevas demandas de espacio y/o potencia eléctrica.',
+    },
+    {
+        imagen: '/new/img17.jpg',
+        span: 'Equipo técnico especializado. ',
+        parrafo: 'Stratecsa será el encargado de suministrar el personal técnico dedicado en exclusiva a la infraestructura.',
+    },
+    {
+        imagen: '/new/img17.jpg',
+        span: 'Mayor disponibilidad. ',
+        parrafo: 'Al optar por servicios de colocation profesionales se logra así una disponibilidad de casi el 100%, regulada por acuerdos de nivel de servicio.',
+    },
+    {
+        imagen: '/new/img17.jpg',
+        span: 'Conectividad múltiple. ',
+        parrafo: 'En un centro de datos especializado se multiplica la oferta de proveedores de telecomunicaciones y servicios cloud',
+    },
+    {
+        imagen: '/new/img17.jpg',
+        span: 'Disponibilidad de asesorías. ',
+        parrafo: 'Nuestro equipo estará siempre disponible para cuando lo necesite.',
+    },
+    {
+        imagen: '/new/img17.jpg',
+        span: 'Valor agregado para su negocio. ',
+        parrafo: 'Dele un valor agregado a su negocio con el mejor servicio de Colocation del país.',
+    },
+  ];
+
 return (
     <div>
     <Servicios />
@@ -47,7 +83,7 @@ return (
                             coordenadas para viabilidad técnica.
                         </p>
                 </div>
-                <div className={Styles.seccion2}>
+                <div className={`${Styles.seccion2} ${Styles.noneM}`}>
                     <div className={Styles.divImg}>
                         <img src="/new/img17.jpg" className={Styles.img2P}/>
                     </div>
@@ -69,6 +105,9 @@ return (
                         <p className={Styles.parrafosP2}><span style={parrafColor}>6) Valor agregado para su negocio. </span> 
                         Dele un valor agregado a su negocio con el mejor servicio de Colocation del país.</p>
                     </div>
+                </div>
+                <div className={`${Styles.seccion2} ${Styles.nonePC}`}>
+                    <Beneficios datosSliders={datosSliders} />
                 </div>
                 <div className={Styles.botonID}>
                     <button className={Styles.buttonP2}>Resguardar mis equipos</button>

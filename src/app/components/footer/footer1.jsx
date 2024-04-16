@@ -182,28 +182,40 @@ function Footer1() {
                         <nav>
                             <ul className={Styles.ulNavF1M}>
                                 <li className={Styles.liNavF1M}>
-                                    <a href="/servicios">Internet dedicado</a>
+                                    <a href="/servicios/internet-dedicado">Internet dedicado</a>
                                 </li>
                                 <li className={Styles.liNavF1M}>
-                                    <a href="/servicios">Ultima milla</a>
+                                    <a href="/servicios/ciberseguridad">Ciberseguridad</a>
                                 </li>
                                 <li className={Styles.liNavF1M}>
-                                    <a href="/servicios">Ciberseguridad</a>
+                                    <a href="/servicios/red-mpls">Red MPLS</a>
                                 </li>
                                 <li className={Styles.liNavF1M}>
-                                    <a href="/#">Enlace de datos</a>
+                                    <a href="/servicios/cloud-backup">Cloud Backup</a>
                                 </li>
                                 <li className={Styles.liNavF1M}>
-                                    <a href="/#">Comunicaciones unificadas</a>
+                                    <a href="/servicios/cloud-server">Cloud server</a>
                                 </li>
                                 <li className={Styles.liNavF1M}>
-                                    <a href="/#">Servidor dedicado</a>
+                                    <a href="/servicios/colocation">Colocation</a>
                                 </li>
                                 <li className={Styles.liNavF1M}>
-                                    <a href="/#">Colocation</a>
+                                    <a href="/servicios/comunicaciones-unificadas">Comunicaciones unificadas</a>
                                 </li>
                                 <li className={Styles.liNavF1M}>
-                                    <a href="/#">Cloud server</a>
+                                    <a href="/servicios/enlace-datos">Enlace de datos</a>
+                                </li>
+                                <li className={Styles.liNavF1M}>
+                                    <a href="/servicios/outsourcing">Outsourcing TIC</a>
+                                </li>
+                                <li className={Styles.liNavF1M}>
+                                    <a href="/servicios/servidor-dedicado">Servidor dedicado</a>
+                                </li>
+                                <li className={Styles.liNavF1M}>
+                                    <a href="/servicios/security-cloud">Security Cloud</a>
+                                </li>
+                                <li className={Styles.liNavF1M}>
+                                    <a href="/servicios/correo-corporativo">Correo corporativo</a>
                                 </li>
                             </ul>
                         </nav>

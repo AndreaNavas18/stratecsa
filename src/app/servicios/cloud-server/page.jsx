@@ -2,6 +2,8 @@
 import React from 'react';
 import Servicios from '../../servicios/page.jsx';
 import Styles from '../productos/productos.module.css';
+import Beneficios from '../../components/beneficios/beneficios.jsx';
+
 
 function CloudServer () {
     const parrafColor = {
@@ -10,6 +12,42 @@ function CloudServer () {
     const carac = {
       fontWeight: '600',
     }
+
+    const datosSliders = [
+        {
+            imagen: '/new/img34.jpeg',
+            span: 'Monitoreo. ',
+            parrafo: 'Obtendrá reportes y monitoreo de sus servicio en tiempo real.',
+        },
+        {
+            imagen: '/new/img34.jpeg',
+            span: 'Escalabilidad. ',
+            parrafo: 'Posibilidad de aumentar la cantidad de almacenamiento.',
+        },
+        {
+            imagen: '/new/img34.jpeg',
+            span: 'Ahorro de costos. ',
+            parrafo: 'Servicios adaptados a cada necesidad de tu empresa.',
+        },
+        {
+            imagen: '/new/img34.jpeg',
+            span: 'Olvídate de los problemas de rendimiento. ',
+            parrafo: 'Aumentar los recursos y la capacidad de tu servidor siempre que lo necesitas.',
+        },
+        {
+            imagen: '/new/img34.jpeg',
+            span: 'Seguridad. ',
+            parrafo: 'Mayor seguridad con el mejor servicio de cloud server de país.',
+        },
+        {
+            imagen: '/new/img34.jpeg',
+            span: 'Aumento en la productividad. ',
+            parrafo: 'Mayor productividad para tu empresa.',
+        },
+    ];
+
+
+
   return (
         <div>
             <Servicios />
@@ -50,7 +88,7 @@ function CloudServer () {
                                 </ul>
                             
                         </div>
-                        <div className={Styles.seccion2}>
+                        <div className={`${Styles.seccion2} ${Styles.noneM}`}>
                             <div className={Styles.divImg}>
                                 <img src="/new/img34.jpeg" className={Styles.img2P}/>
                             </div>
@@ -69,6 +107,9 @@ function CloudServer () {
                                 <p className={Styles.parrafosP2}><span style={parrafColor}>6) Aumento en la productividad. </span> 
                                 Mayor productividad para tu empresa.</p>
                             </div>
+                        </div>
+                        <div className={`${Styles.seccion2} ${Styles.nonePC}`}>
+                            <Beneficios datosSliders={datosSliders} />
                         </div>
                         <div className={Styles.botonID}>
                             <button className={Styles.buttonP2}>Solicitar información</button>

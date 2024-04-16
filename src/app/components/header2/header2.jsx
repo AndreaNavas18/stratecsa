@@ -145,7 +145,7 @@ function Header2() {
                                                 <a href='/servicios/cloud-server'>Cloud Server</a>
                                             </li>
                                             <li className={Styles.subMenu}>
-                                                <a href='/servicios/Colocation'>Colocation</a>
+                                                <a href='/servicios/colocation'>Colocation</a>
                                             </li>
                                             <li className={Styles.subMenu}>
                                                 <a href='/servicios/comunicaciones-unificadas'>Comunicaciones Unificadas</a>
@@ -242,7 +242,7 @@ function Header2() {
                                         <a href='/servicios/cloud-server'>Cloud Server</a>
                                     </li>
                                     <li className={Styles.subMenuM}>
-                                        <a href='/servicios/Colocation'>Colocation</a>
+                                        <a href='/servicios/colocation'>Colocation</a>
                                     </li>
                                     <li className={Styles.subMenuM}>
                                         <a href='/servicios/comunicaciones-unificadas'>Comunicaciones Unificadas</a>

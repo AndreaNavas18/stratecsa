@@ -2,6 +2,7 @@
 import React from 'react';
 import Servicios from '../../servicios/page.jsx';
 import Styles from '../productos/productos.module.css';
+import Beneficios from '../../components/beneficios/beneficios.jsx';
 
 function Outsourcing() {
     const parrafColor = {
@@ -10,6 +11,40 @@ function Outsourcing() {
     const carac = {
         fontWeight: '600',
       }
+
+
+    const datosSliders = [
+        {
+            imagen: '/new/img36.jpeg',
+            span: 'Reducción de costos. ',
+            parrafo: 'Reduce los costos por los servicios de TI.',
+        },
+        {
+            imagen: '/new/img36.jpeg',
+            span: 'Facilidad de gestión. ',
+            parrafo: 'Optimiza sus costos y el retorno de su inversión.',
+        },
+        {
+            imagen: '/new/img36.jpeg',
+            span: 'Seguimiento profesional de incidentes. ',
+            parrafo: 'En Stratecsa contamos con herramientas para el seguimiento profesional de incidentes.',
+        },
+        {
+            imagen: '/new/img36.jpeg',
+            span: 'Soporte a tiempo. ',
+            parrafo: 'Nuestro equipo estará disponible para ti siempre que lo necesites.',
+        },
+        {
+            imagen: '/new/img36.jpeg',
+            span: 'Asistencia multicanal inmediata. ',
+            parrafo: 'Tendrás varios medios de contacto a disposición del usuario hace que sea más fácil para él pedir soporte ya que cada cliente tiene un medio de comunicación preferido.',
+        },
+        {
+            imagen: '/new/img36.jpeg',
+            span: 'Mayores ganancias. ',
+            parrafo: 'Cuando una empresa tiene una mesa de ayuda inadecuada, ésto genera la insatisfacción del cliente.',
+        },
+    ];
     return (
         <div>
         <Servicios />
@@ -41,7 +76,7 @@ function Outsourcing() {
                                 
                             </ul>
                     </div>
-                    <div className={Styles.seccion2}>
+                    <div className={`${Styles.seccion2} ${Styles.noneM}`}>
                         <div className={Styles.divImg}>
                             <img src="/new/img36.jpeg" className={Styles.img2P}/>
                         </div>
@@ -61,6 +96,9 @@ function Outsourcing() {
                             <p className={Styles.parrafosP2}><span style={parrafColor}>6) Mayores ganancias. </span> 
                             Cuando una empresa tiene una mesa de ayuda inadecuada, ésto genera la insatisfacción del cliente.</p>
                         </div>
+                    </div>
+                    <div className={`${Styles.seccion2} ${Styles.nonePC}`}>
+                        <Beneficios datosSliders={datosSliders} />
                     </div>
                     <div className={Styles.botonID}>
                         <button className={Styles.buttonP2}>Solicitar información</button>

@@ -2,6 +2,8 @@
 import Styles from '../productos/productos.module.css';
 import React from "react";
 import Servicios from '../../servicios/page.jsx';
+import Beneficios from '../../components/beneficios/beneficios.jsx';
+
 
 function Ciberseguridad() {
     
@@ -11,6 +13,38 @@ function Ciberseguridad() {
     const carac = {
       fontWeight: '600',
     }
+
+    const datosSliders = [
+        {
+            imagen: '/new/img39.jpeg',
+            span: 'Tranquilidad',
+            parrafo: 'Sabrás que tu empresa está protegida contra las amenazas digitales, lo que te permitirá centrarte en lo que realmente importa: hacer crecer tu negocio.',
+        },
+        {
+            imagen: '/new/img39.jpeg',
+            span: 'Reducción de riesgos',
+            parrafo: 'Al proteger tu empresa contra las amenazas digitales, reduces el riesgo de sufrir interrupciones en tus operaciones o pérdidas financieras debido a un ciberataque.',
+        },
+        {
+            imagen: '/new/img39.jpeg',
+            span: 'Confianza de los clientes',
+            parrafo: 'Al demostrar que tomas en serio la ciberseguridad, ganarás la confianza de tus clientes, lo que puede ayudarte a atraer y retener a más clientes.',
+        },
+        {
+            imagen: '/new/img39.jpeg',
+            span: 'Competitividad',
+            parrafo: 'En un mundo cada vez más digital, tener una sólida estrategia de ciberseguridad puede darte una ventaja competitiva.',
+        },
+        {
+            imagen: '/new/img39.jpeg',
+            span: 'Cumplimiento de Normativas',
+            parrafo: 'Al cumplir con las normativas de seguridad de la información, evitarás posibles sanciones y mejorará tu reputación en el mercado.',
+        },
+
+
+    ];
+
+
     return(
         <>
             <div>
@@ -61,7 +95,7 @@ function Ciberseguridad() {
                                 
                             </ul>
                     </div>
-                    <div className={Styles.seccion2}>
+                    <div className={`${Styles.seccion2} ${Styles.noneM}`}>
                         <div className={Styles.divImg}>
                             <img src="/new/img39.jpeg" className={Styles.img2P}/>
                         </div>
@@ -81,6 +115,9 @@ function Ciberseguridad() {
                             <p className={Styles.parrafosP2}><span style={parrafColor}>5) Cumplimiento de Normativas: </span> 
                             Al cumplir con las normativas de seguridad de la información, evitarás posibles sanciones y mejorará tu reputación en el mercado.</p>
                         </div>
+                    </div>
+                    <div className={`${Styles.seccion2} ${Styles.nonePC}`}>
+                        <Beneficios datosSliders={datosSliders} />
                     </div>
                     <div className={Styles.botonID}>
                         <button className={Styles.buttonP2}>Solicitar información</button>

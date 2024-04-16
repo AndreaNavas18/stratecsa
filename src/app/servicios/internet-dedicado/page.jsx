@@ -12,14 +12,34 @@ function InternetDedicado() {
     const datosSliders = [
         {
             imagen: '/benf/intded.png',
-            span: 'El valor agregado de ',
-            parrafo: 'Stratecsa es su rápido tiempo de respuesta',
+            span: 'Mayor productividad. ',
+            parrafo: 'Promoción, venta y atención a pedidos en línea con mejores tiempos de respuesta.',
         },
         {
             imagen: '/benf/intded.png',
-            span: 'Segundo slider',
-            parrafo: 'Stratecsa con múltiples servicios para darte solución inmediata.',
-        }
+            span: 'Seguridad. ',
+            parrafo: 'Servicio seguro, tienes un canal dedicado solo para ti.',
+        },
+        {
+            imagen: '/benf/intded.png',
+            span: 'Menor inversión. ',
+            parrafo: 'Transmite y vigila grandes volúmenes de información en línea, disminuye las inversiones de software.',
+        },
+        {
+            imagen: '/benf/intded.png',
+            span: 'Red dedicado veloz. ',
+            parrafo: 'Servicio único para tu empresa, canal exclusivo de alto rendimiento, usuarios protegidos de interrupción alguna.',
+        },
+        {
+            imagen: '/benf/intded.png',
+            span: 'Ips múltiples. ',
+            parrafo: 'Podrás generar tantas IPs como necesites y eliminarlas cuando lo desees.',
+        },
+        {
+            imagen: '/benf/intded.png',
+            span: 'Estabilidad. ',
+            parrafo: 'Tendrás el ancho de banda que requieres, sin que ningún fallo de la red arruine tu trabajo o el de tu equipo.',
+        },
 
     ];
 

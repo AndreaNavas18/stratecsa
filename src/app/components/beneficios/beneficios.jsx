@@ -21,8 +21,10 @@ export default function Beneficios({ datosSliders}) {
                     {datosSliders.map((slider, index) => (
                         <div key={index} className={Styles.card}>
                             <img src={slider.imagen} alt={slider.alt} className={Styles.imagen} />
-                            <span className={Styles.span}>{slider.span}</span>
-                            <p className={Styles.parrafo}>{slider.parrafo}</p>
+                            <div className={Styles.letras}>
+                                <span className={Styles.span}>{slider.span}</span>
+                                <p className={Styles.parrafo}>{slider.parrafo}</p>
+                            </div>
                         </div>
                     ))}
                 </Slider>

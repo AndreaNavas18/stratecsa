@@ -2,11 +2,47 @@
 import React from 'react';
 import Servicios from '../../servicios/page.jsx';
 import Styles from '../productos/productos.module.css';
+import Beneficios from '../../components/beneficios/beneficios.jsx';
 
 function ComunicacionesUnificadas() {
     const parrafColor = {
         color: '#009cda', 
     }
+
+    const datosSliders = [
+        {
+            imagen: '/new/img13.jpg',
+            span: 'Fácil instalación y manejo. ',
+            parrafo: 'PBX permite aprovechar la potencia avanzada de procesamiento de una computadora y la interfaz de usuario.',
+        },
+        {
+            imagen: '/new/img13.jpg',
+            span: 'Fácil de administrar. ',
+            parrafo: 'Servicio seguro, tienes un canal dedicado solo para ti.',
+        },
+        {
+            imagen: '/new/img13.jpg',
+            span: 'Menor inversión. ',
+            parrafo: 'Disminuye las inversiones significativamente en líneas telefónicas.',
+        },
+        {
+            imagen: '/new/img13.jpg',
+            span: 'Escalable. ',
+            parrafo: 'Una computadora estándar puede manejar fácilmente un gran número de líneas telefónicas y extensiones.',
+        },
+        {
+            imagen: '/new/img13.jpg',
+            span: 'Mejor servicio al cliente. ',
+            parrafo: 'Mayor agilidad para la atención de tus clientes.',
+        },
+        {
+            imagen: '/new/img13.jpg',
+            span: 'Mayor productividad. ',
+            parrafo: 'para tu empresa con el mejor sistema de comunicaciones unificadas.',
+        },
+
+    ];
+
     return (
         <div>
         <Servicios />
@@ -57,7 +93,7 @@ function ComunicacionesUnificadas() {
                             </ul>
                         {/* &nbsp; */}
                     </div>
-                    <div className={Styles.seccion2}>
+                    <div className={`${Styles.seccion2} ${Styles.noneM}`}>
                         <div className={Styles.divImg}>
                             <img src="/new/img13.jpg" className={Styles.img2P}/>
                         </div>
@@ -70,6 +106,9 @@ function ComunicacionesUnificadas() {
                             <p className={Styles.parrafosP2}><span style={parrafColor}>5) Mejor servicio al cliente.</span> Mayor agilidad para la atención de tus clientes.</p>
                             <p className={Styles.parrafosP2}><span style={parrafColor}>6) Mayor productividad.</span> para tu empresa con el mejor sistema de comunicaciones unificadas.</p>
                         </div>
+                    </div>
+                    <div className={`${Styles.seccion2} ${Styles.nonePC}`}>
+                        <Beneficios datosSliders={datosSliders} />
                     </div>
                     <div className={Styles.botonID}>
                         <button className={Styles.buttonP2}>Solicitar información</button>
