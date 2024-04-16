@@ -1,8 +1,9 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from '../app/components/header/header'
-import Header2 from './components/header2/header2'
-import Footer1 from './components/footer/footer1'
+import Header from '../app/components/header/header';
+import Header2 from './components/header2/header2';
+import Footer1 from './components/footer/footer1';
+import '@fortawesome/fontawesome-svg-core/styles.css';
 
 const inter = Inter({ subsets: ["latin"] });
 

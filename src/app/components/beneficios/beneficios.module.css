@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('../../../../public/fonts/CenturyGothic.ttf') format('truetype');
+    /* Asegúrate de que la ruta sea correcta desde tu archivo CSS */
+}
+
+/* Estilos para moviles*/
+@media (max-width: 766px) {
+    
+.slider {
+    font-family: 'Century Gothic', sans-serif;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-bottom: 10px;
+    height: 200px;
+}
+
+.imagen {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    /* Asi centro la imagen */
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.span {
+    font-size: 15px;
+    text-align: center;
+    color: #009cda;
+    font-weight:400;
+
+}
+
+.parrafo {
+    font-size: 15px;
+    text-align: center;
+    color: #464646;
+    font-weight:400;
+
+}
+}

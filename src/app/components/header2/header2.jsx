@@ -2,33 +2,23 @@
 import Styles from './header2.module.css';
 import React, { useState, useRef, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faUser, faXmark, faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faUser, faXmark, faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
 function Header2() {
     const [menuVisible, setMenuVisible] = useState(false);
     const [menuVisible2, setMenuVisible2] = useState(false);
     const [menuVisible3, setMenuVisible3] = useState(false);
-    const menuRef = useRef(null);
-    const menuRef3 = useRef(null);
+    const [menuVisible4, setMenuVisible4] = useState(false);
+    const [menuVisible5, setMenuVisible5] = useState(false);
+
+
+    const menuRef4 = useRef(null);
+    const menuRef5 = useRef(null);
 
 
     useEffect(() => {
         const handleClickOutside = (event) => {
-            if (menuRef.current && !menuRef.current.contains(event.target)) {
-                setMenuVisible(false);
-            }
-        };
-
-        document.addEventListener('click', handleClickOutside);
-
-        return () => {
-            document.removeEventListener('click', handleClickOutside);
-        };
-    }, []);
-
-    useEffect(() => {
-        const handleClickOutside = (event) => {
-            if (menuRef3.current && !menuRef3.current.contains(event.target)) {
+            if (menuRef4.current && !menuRef4.current.contains(event.target)) {
                 setMenuVisible3(false);
             }
         };
@@ -40,17 +30,75 @@ function Header2() {
         };
     }, []);
     
-    const toggleMenu = () => {
-        setMenuVisible(!menuVisible);
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (menuRef5.current && !menuRef5.current.contains(event.target)) {
+                setMenuVisible5(false);
+            }
+        };
+
+        document.addEventListener('click', handleClickOutside);
+
+        return () => {
+            document.removeEventListener('click', handleClickOutside);
+        };
+    }, []);
+
+    //Menu Cobertura desktop
+    const handleMouseEnter = () => {
+        setMenuVisible(true);
     };
+    
+    const handleMouseLeave = () => {
+        setMenuVisible(false);
+    };
+
+    const handleMenuMouseEnter = () => {
+        setMenuVisible(true);
+    };
+    
+    const handleMenuMouseLeave = () => {
+        setMenuVisible(false);
+    };
+    const chevronIcon = menuVisible ? faChevronUp : faChevronDown;
+
 
     const toggleMenu2 = () => {
         setMenuVisible2(!menuVisible2);
     }
 
-    const toggleMenu3 = () => {
-        setMenuVisible3(!menuVisible3);
+    //Menu Servicios desktop
+    const handleMouseEnter3 = () => {
+        setMenuVisible3(true);
+    };
+    
+    const handleMouseLeave3 = () => {
+        setMenuVisible3(false);
+    };
+
+    const handleMenuMouseEnter3 = () => {
+        setMenuVisible3(true);
+    };
+    
+    const handleMenuMouseLeave3 = () => {
+        setMenuVisible3(false);
+    };
+
+    const chevronIcon3 = menuVisible3 ? faChevronUp : faChevronDown;
+
+
+    const toggleMenu4 = () => {
+        setMenuVisible4(!menuVisible4);
     }
+
+    const chevronIcon4 = menuVisible4 ? faChevronUp : faChevronDown;
+
+    const toggleMenu5 = () => {
+        setMenuVisible5(!menuVisible5);
+    }
+
+    const chevronIcon5 = menuVisible5 ? faChevronUp : faChevronDown;
+
 
     return(
         <section className={`${Styles.sectionNav} ${Styles.sectionNavM}`}>
@@ -68,13 +116,19 @@ function Header2() {
                             <li className={Styles.liNav}>
                                 <a href="/">Inicio</a>
                             </li>
-                            <div className={Styles.dropdown} ref={menuRef3}>
+                            <div className={Styles.dropdown} >
                                 <li>
-                                    <button className={Styles.toggleButton} onClick={toggleMenu3}>
+                                    <button className={Styles.toggleButton}
+                                    onMouseEnter={handleMouseEnter3}
+                                    onMouseLeave={handleMouseLeave3}
+                                    >
                                         Servicios
-                                        <FontAwesomeIcon icon={faChevronDown} className={Styles.iconChevron} />
+                                        <FontAwesomeIcon icon={chevronIcon3} className={Styles.iconChevron} />
                                     </button>
-                                        <ul className={`${Styles.menuItems} ${menuVisible3 ? Styles.menuVisible3 : ''}`}>
+                                        <ul className={`${Styles.menuItems} ${menuVisible3 ? Styles.menuVisible3 : ''}`}
+                                        onMouseEnter={handleMenuMouseEnter3}
+                                        onMouseLeave={handleMenuMouseLeave3}
+                                        >
                                             <li className={Styles.subMenu}>
                                                 <a href='/servicios/internet-dedicado'>Internet Dedicado</a>
                                             </li>
@@ -117,13 +171,19 @@ function Header2() {
                             <li className={Styles.liNav}>
                                 <a href="/nosotros">Acerca de nosotros</a>
                             </li>
-                            <div className={Styles.dropdown} ref={menuRef}>
+                            <div className={Styles.dropdown}>
                                 <li>
-                                    <button className={Styles.toggleButton} onClick={toggleMenu}>
+                                    <button className={Styles.toggleButton}
+                                    onMouseEnter={handleMouseEnter}
+                                    onMouseLeave={handleMouseLeave}
+                                    >
                                         Cobertura
-                                        <FontAwesomeIcon icon={faChevronDown} className={Styles.iconChevron} />
+                                        <FontAwesomeIcon icon={chevronIcon} className={Styles.iconChevron} />
                                     </button>
-                                        <ul className={`${Styles.menuItems} ${menuVisible ? Styles.menuVisible : ''}`}>
+                                        <ul className={`${Styles.menuItems} ${menuVisible ? Styles.menuVisible : ''}`}
+                                         onMouseEnter={handleMenuMouseEnter}
+                                         onMouseLeave={handleMenuMouseLeave}
+                                         >
                                             <li className={Styles.subMenu}>
                                                 <a href='/cobertura/colombia'>Colombia</a>
                                             </li>
@@ -143,9 +203,9 @@ function Header2() {
                     </nav>
                 </div>
                 <div className={`${Styles.navMovil} ${Styles.navMovilS}`}>
-                    <a href='https://www.stratecsa.cloud'>
+                    {/* <a href='https://www.stratecsa.cloud'>
                         <FontAwesomeIcon icon={faUser} className={Styles.iconClient} />
-                    </a>
+                    </a> */}
                     <FontAwesomeIcon icon={faBars} className={Styles.iconFabars} onClick={toggleMenu2} />
 
                 </div>
@@ -158,17 +218,75 @@ function Header2() {
                     <ul className={Styles.ulMenuMovil}>
                         <li className={Styles.liMenuMovil}>
                             <a href="/">Inicio</a>
-                        </li>
-                        <li className={Styles.liMenuMovil}>
-                            <a href="/servicios/internet-dedicado">Servicios</a>
-                        </li>
+                        </li> 
+                        <div className={Styles.dropdownM} ref={menuRef4}>
+                            <li className={Styles.liMenuMovil}>
+                                <button className={Styles.toggleButtonM} onClick={toggleMenu4}>
+                                    Servicios
+                                    <FontAwesomeIcon icon={chevronIcon4} className={Styles.iconChevronM} />
+                                </button>
+                                <ul className={`${Styles.menuItemsM} ${menuVisible4 ? Styles.menuVisible4 : ''}`}>
+                                    <li className={Styles.subMenuM}>
+                                        <a href='/servicios/internet-dedicado'>Internet Dedicado</a>
+                                    </li>
+                                    <li className={Styles.subMenuM}>
+                                        <a href='/servicios/ciberseguridad' >Ciberseguridad</a>
+                                    </li>
+                                    <li className={Styles.subMenuM}>
+                                        <a href='/servicios/red-mpls' >Red MPLS</a>
+                                    </li>
+                                    <li className={Styles.subMenuM}>
+                                        <a href='/servicios/cloud-backup'>Cloud Backup</a>
+                                    </li>
+                                    <li className={Styles.subMenuM}>
+                                        <a href='/servicios/cloud-server'>Cloud Server</a>
+                                    </li>
+                                    <li className={Styles.subMenuM}>
+                                        <a href='/servicios/Colocation'>Colocation</a>
+                                    </li>
+                                    <li className={Styles.subMenuM}>
+                                        <a href='/servicios/comunicaciones-unificadas'>Comunicaciones Unificadas</a>
+                                    </li>
+                                    <li className={Styles.subMenuM}>
+                                        <a href='/servicios/enlace-datos'>Enlace de Datos</a>
+                                    </li>
+                                    <li className={Styles.subMenuM}>
+                                        <a href='/servicios/outsourcing'>Outsourcing TIC</a>
+                                    </li>
+                                    <li className={Styles.subMenuM}>
+                                        <a href='/servicios/servidor-dedicado'>Servidor Dedicado</a>
+                                    </li>
+                                    <li className={Styles.subMenuM}>
+                                        <a href='/servicios/security-cloud'>Security Cloud</a>
+                                    </li>
+                                    <li className={Styles.subMenuM}>
+                                        <a href='/servicios/correo-corporativo'>Correo Corporativo</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </div>
                         <li className={Styles.liMenuMovil}>
                             <a href="/nosotros">Acerca de nosotros</a>
                         </li>
-                        <li className={Styles.liMenuMovil}>
-                            <a href="">Cobertura</a>
-                            <FontAwesomeIcon icon={faChevronDown} className={Styles.iconChevron} />
-                        </li>
+                        <div className={Styles.dropdownM} ref={menuRef5}>
+                            <li className={Styles.liMenuMovil}>
+                                <button className={Styles.toggleButtonM} onClick={toggleMenu5}>
+                                    Cobertura
+                                    <FontAwesomeIcon icon={chevronIcon5} className={Styles.iconChevronM} />
+                                </button>
+                                <ul className={`${Styles.menuItemsM} ${menuVisible5 ? Styles.menuVisible5 : ''}`}>
+                                    <li className={Styles.subMenuM}>
+                                        <a href='/cobertura/colombia'>Colombia</a>
+                                    </li>
+                                    <li className={Styles.subMenuM}>
+                                        <a href='/cobertura/brasil' >Brasil</a>
+                                    </li>
+                                    <li className={Styles.subMenuM}>
+                                        <a href='/cobertura/latinoamerica' >Latinoamérica</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </div>
                         <li className={Styles.liMenuMovil}>
                             <a href="/contacto">Contactenos</a>
                         </li>

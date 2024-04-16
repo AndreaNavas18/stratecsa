@@ -42,9 +42,11 @@
     }
 
     .iconFabars {
-        width: 25px;
-        height: 25px;
+        width: 35px;
+        height: 35px;
         color: #009cdab9;
+        padding-top: 2px;
+        font-size: 25px;
 
     }
 
@@ -109,11 +111,69 @@
         padding: 3px 8px;
     }
 
-    .iconChevron {
+    .iconChevronM {
         width: 18px;
         color: #ffffff;
         margin-left: 5px;
     }
+
+    .toggleButtonM {
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+
+    
+    .menuItemsM {
+        min-width: 160px;
+        z-index: 50;
+        list-style-type: none;
+        visibility: hidden; 
+        position: relative; 
+        overflow-y: auto; 
+        overflow-x: hidden;
+        max-height: 0;
+        opacity: 0; 
+        transition: max-height 0.5s ease-out, opacity 0.3s ease-out;
+    }
+
+    .subMenuM {
+        padding: 5px;
+        font-weight: 400;
+
+    }
+
+    .menuVisible4 {
+        visibility: visible; /* Muestra el menú desplegable */
+        max-height: 500px; /* Establece una altura máxima para el menú */
+        opacity: 1;
+        margin-top: 8px;
+    }
+
+    .menuVisible5 {
+        visibility: visible; /* Muestra el menú desplegable */
+        max-height: 500px; /* Establece una altura máxima para el menú */
+        opacity: 1;
+        margin-top: 8px;
+
+    }
+
+    .dropdownM {
+        position: relative;
+        display: inline-block;
+        margin-right: 3px;
+        padding: 0 2px;
+        color: #717171;
+        border-radius: 5px;
+        padding: 5px;
+        font-weight: 400;
+        font-family: 'Century Gothic', sans-serif;
+        z-index: 1000;
+
+    }
+
+
+
 
 }
 

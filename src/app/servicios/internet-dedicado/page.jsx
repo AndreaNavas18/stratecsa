@@ -2,11 +2,27 @@
 import Servicios from '../../servicios/page.jsx';
 import Styles from '../productos/productos.module.css';
 import React from "react";
+import Beneficios from '../../components/beneficios/beneficios.jsx';
 
 function InternetDedicado() {
     const parrafColor = {
         color: '#009cda', 
     }
+
+    const datosSliders = [
+        {
+            imagen: '/benf/intded.png',
+            span: 'El valor agregado de ',
+            parrafo: 'Stratecsa es su rápido tiempo de respuesta',
+        },
+        {
+            imagen: '/benf/intded.png',
+            span: 'Segundo slider',
+            parrafo: 'Stratecsa con múltiples servicios para darte solución inmediata.',
+        }
+
+    ];
+
     return (
         <div>
         <Servicios />
@@ -56,7 +72,7 @@ function InternetDedicado() {
                             coordenadas para viabilidad técnica.
                         </p>
                 </div>
-                <div className={Styles.seccion2}>
+                <div className={`${Styles.seccion2} ${Styles.noneM}`}>
                     <div className={Styles.divImg}>
                         <img src="/new/img11.jpg" className={Styles.img2P}/>
                     </div>
@@ -69,6 +85,9 @@ function InternetDedicado() {
                         <p className={Styles.parrafosP2}><span style={parrafColor}>5) Ips múltiples.</span> Podrás generar tantas IPs como necesites y eliminarlas cuando lo desees.</p>
                         <p className={Styles.parrafosP2}><span style={parrafColor}>6) Estabilidad.</span> Tendrás el ancho de banda que requieres, sin que ningún fallo de la red arruine tu trabajo o el de tu equipo.</p>
                     </div>
+                </div>
+                <div className={`${Styles.seccion2} ${Styles.nonePC}`}>
+                    <Beneficios datosSliders={datosSliders} />
                 </div>
                 <div className={Styles.botonID}>
                     <button className={Styles.buttonP2}>Solicitar información</button>
