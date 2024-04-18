@@ -24,40 +24,40 @@ function Contacto () {
           <div className={`${Styles.contenedor3} ${Styles.contenedor3M}`}>
             <div className={`${Styles.contenedor4} ${Styles.contenedor4M}`}>
               <label className={`${Styles.labelCT} ${Styles.labelCTM}`}>Nombre</label>
-              <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="text" placeholder="John Smith" />
+              <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="text" placeholder="John Smith" name='nombre' />
             </div>
             <div className={`${Styles.contenedor4} ${Styles.contenedor4M}`}>
               <label className={`${Styles.labelCT} ${Styles.labelCTM}`}>Empresa</label>
-              <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="text" placeholder="Stratecsa SAS" />
+              <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="text" placeholder="Stratecsa SAS" name='empresa' />
             </div>
             <div className={`${Styles.contenedor4} ${Styles.contenedor4M}`}>
               <label className={`${Styles.labelCT} ${Styles.labelCTM}`}>País</label>
-              <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="text" placeholder="Colombia" />
+              <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="text" placeholder="Colombia" name='pais' />
             </div>
           </div>
           <div className={`${Styles.contenedor3} ${Styles.contenedor3M}`}>
             <div className={`${Styles.contenedor4} ${Styles.contenedor4M}`}>
                 <label className={`${Styles.labelCT} ${Styles.labelCTM}`}>Provincia</label>
-                <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="text" placeholder="Valle del Cauca" />
+                <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="text" placeholder="Valle del Cauca" name='provincia' />
             </div>
             <div className={`${Styles.contenedor4} ${Styles.contenedor4M}`}>
               <label className={`${Styles.labelCT} ${Styles.labelCTM}`}>Teléfono</label>
-              <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="tel" placeholder="320 550 1223" />
+              <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="tel" placeholder="320 550 1223" name='telefono' />
             </div>
             <div className={`${Styles.contenedor4} ${Styles.contenedor4M}`}>
               <label className={`${Styles.labelCT} ${Styles.labelCTM}`}>Correo</label>
-              <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="email" placeholder="Correo" />
+              <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="email" placeholder="Correo" name='correo' />
             </div>
           </div>
           <div className={`${Styles.contenedor3} ${Styles.contenedor3M}`}>
             <div className={`${Styles.contenedor4} ${Styles.contenedor4M}`}>
               <label className={`${Styles.labelCT} ${Styles.labelCTM}`}>Asunto</label>
-              <input className={`${Styles.inputCT2} ${Styles.inputCT2M}`} type="text" placeholder="Asunto" />
+              <input className={`${Styles.inputCT2} ${Styles.inputCT2M}`} type="text" placeholder="Asunto" name='asunto' />
             </div>
           </div>
           <div className={`${Styles.contenedor5} ${Styles.contenedor5M}`}>
             <label className={`${Styles.labelCT} ${Styles.labelCTM}`}>Mensaje</label>
-            <textarea className={Styles.textAreaCT} placeholder="Mensaje"></textarea>
+            <textarea className={Styles.textAreaCT} placeholder="Mensaje" name='mensaje' ></textarea>
           </div>
           <div className={`${Styles.contenedor6} ${Styles.contenedor6M}`}>
             <button className={`${Styles.botonCT} ${Styles.botonCTM}`} type="submit">Enviar</button>
@@ -70,11 +70,11 @@ function Contacto () {
           <div className={`${Styles.contenedor3} ${Styles.contenedor3M}`}>
             <div className={`${Styles.contenedor4} ${Styles.contenedor4M}`}>
               <label className={`${Styles.labelCT} ${Styles.labelCTM}`}>Nombre</label>
-              <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="text" placeholder="John Smith" />
+              <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="text" placeholder="John Smith" name='nombre' />
             </div>
             <div className={`${Styles.contenedor4} ${Styles.contenedor4M}`}>
               <label className={`${Styles.labelCT} ${Styles.labelCTM}`}>Empresa</label>
-              <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="text" placeholder="Stratecsa SAS" />
+              <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="text" placeholder="Stratecsa SAS" name='empresa' />
             </div>
             
           </div>
@@ -82,11 +82,11 @@ function Contacto () {
           <div className={`${Styles.contenedor3} ${Styles.contenedor3M}`}>
             <div className={`${Styles.contenedor4} ${Styles.contenedor4M}`}>
               <label className={`${Styles.labelCT} ${Styles.labelCTM}`}>País</label>
-              <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="text" placeholder="Colombia" />
+              <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="text" placeholder="Colombia" name='pais' />
             </div>
             <div className={`${Styles.contenedor4} ${Styles.contenedor4M}`}>
                 <label className={`${Styles.labelCT} ${Styles.labelCTM}`}>Provincia</label>
-                <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="text" placeholder="Valle del Cauca" />
+                <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="text" placeholder="Valle del Cauca" name='provincia' />
             </div>
            
           </div>
@@ -94,21 +94,21 @@ function Contacto () {
           <div className={`${Styles.contenedor3} ${Styles.contenedor3M}`}>
             <div className={`${Styles.contenedor4} ${Styles.contenedor4M}`}>
               <label className={`${Styles.labelCT} ${Styles.labelCTM}`}>Teléfono</label>
-              <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="tel" placeholder="320 550 1223" />
+              <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="tel" placeholder="320 550 1223" name='telefono' />
             </div>
             <div className={`${Styles.contenedor4} ${Styles.contenedor4M}`}>
               <label className={`${Styles.labelCT} ${Styles.labelCTM}`}>Correo</label>
-              <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="email" placeholder="Correo" />
+              <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="email" placeholder="Correo" name='correo' />
             </div>
             
           </div>
           <div className={`${Styles.contenedor5} ${Styles.contenedor5M}`}>
             <div className={`${Styles.contenedor4} ${Styles.contenedor44M}`}>
               <label className={`${Styles.labelCT} ${Styles.labelCTM}`}>Asunto</label>
-              <input className={`${Styles.inputCT2} ${Styles.inputCT2M}`} type="text" placeholder="Asunto" />
+              <input className={`${Styles.inputCT2} ${Styles.inputCT2M}`} type="text" placeholder="Asunto" name='asunto' />
             </div>
             <label className={`${Styles.labelCT} ${Styles.labelCTM}`}>Mensaje</label>
-            <textarea className={`${Styles.textAreaCT} ${Styles.textAreaCTM}`} placeholder="Mensaje"></textarea>
+            <textarea className={`${Styles.textAreaCT} ${Styles.textAreaCTM}`} placeholder="Mensaje" name='mensaje' ></textarea>
           </div>
 
           <div className={`${Styles.contenedor6} ${Styles.contenedor6M}`}>

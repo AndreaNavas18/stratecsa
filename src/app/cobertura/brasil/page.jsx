@@ -16,11 +16,13 @@ function Brasil() {
           <div className={`${Styles.container}`} style={containerSty}>
                 <h1 className={Styles.titleSR}>Cobertura</h1>
             </div>
-          &nbsp;
+            <div className={Styles.noneM}>
+                &nbsp;
+            </div>
             <div className={`${Styles.contenedorCol} ${Styles.contenedorColM}`}>
-                <div className={`${Styles.textBra} ${Styles.textBraM}`}>
-                    <h1 className={`${Styles.titleP} ${Styles.titlePM}`}>Conectate en Brasil</h1>
-                    <p className={`${Styles.parrafosC} ${Styles.parrafosCM}`}>¡Todos os nossos serviços em todo o país!</p>
+                <div className={`${Styles.textBra} ${Styles.textM}`}>
+                    <h1 className={`${Styles.titleP} ${Styles.noneM}`}>Conectate en Brasil</h1>
+                    <p className={`${Styles.parrafosC} ${Styles.noneM}`}>¡Todos os nossos serviços em todo o país!</p>
                     <ul className={Styles.ulP}>
                         <li className={Styles.liP}>
                             <span style={parrafColor}>STRATECSA </span>
@@ -62,6 +64,10 @@ function Brasil() {
                         alt="Brasil" 
                         className={`${Styles.imgBra} ${Styles.imgBraM}`}
                     />
+                </div>
+                <div className={Styles.nonePc}>
+                    <h1 className={`${Styles.titleP} ${Styles.titlePM}`}>Conectate en Brasil</h1>
+                    <p className={`${Styles.parrafosC} ${Styles.parrafosCM}`}>¡Todos os nossos serviços em todo o país!</p>
                 </div>
             </div>
         </>

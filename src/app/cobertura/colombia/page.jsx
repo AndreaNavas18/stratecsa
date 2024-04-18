@@ -16,11 +16,13 @@ function Colombia() {
           <div className={`${Styles.container}`} style={containerSty}>
                 <h1 className={Styles.titleSR}>Cobertura</h1>
             </div>
-          &nbsp;
+            <div className={Styles.noneM}>
+                &nbsp;
+            </div>
             <div className={`${Styles.contenedorCol} ${Styles.contenedorColM}`}>
-                <div className={`${Styles.textCol} ${Styles.textColM}`}>
-                    <h1 className={`${Styles.titleP} ${Styles.titlePM}`}>Conectate en Colombia</h1>
-                    <p className={`${Styles.parrafosC} ${Styles.parrafosCM}`}>Todos nuestros servicios a nivel nacional</p>
+                <div className={`${Styles.textCol} `}>
+                    <h1 className={`${Styles.titleP} ${Styles.noneM}`}>Conectate en Colombia</h1>
+                    <p className={`${Styles.parrafosC} ${Styles.noneM}`}>Todos nuestros servicios a nivel nacional</p>
                     <ul className={Styles.ulP}>
                         <li className={Styles.liP}>
                             <span style={parrafColor}>Extensa Red: </span>
@@ -41,7 +43,7 @@ function Colombia() {
                     </ul>
                     <p className={`${Styles.parrafosP} ${Styles.parrafosPM}`}>Nuestra es de fibra óptica nos permite proporcionar servicios de telecomunicaciones robustos y eficientes
                     , conectando a una gran parte de la población colombiana.</p>
-                    <div>
+                    <div className={Styles.div22}>
                         <Departamentos />
                     </div>
                     <div>
@@ -56,6 +58,10 @@ function Colombia() {
                         alt="Colombia" 
                         className={`${Styles.imgCol} ${Styles.imgColM}`}
                     />
+                </div>
+                <div className={Styles.nonePc}>
+                    <h1 className={`${Styles.titleP} ${Styles.titlePM}`}>Conectate en Colombia</h1>
+                    <p className={`${Styles.parrafosC} ${Styles.parrafosCM}`}>Todos nuestros servicios a nivel nacional</p>
                 </div>
             </div>
         </>
