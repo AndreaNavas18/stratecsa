@@ -55,12 +55,11 @@ function Ciberseguridad() {
                     <div className={Styles.seccion1}>
                         <h1 className={Styles.titleP}>Ciberseguridad</h1>
                         <p className={Styles.parrafosP}>
-                        <span style={parrafColor}>Protección Avanzada para tu Empresa con Soluciones de Ciberseguridad </span>
-                        Asegura las operaciones de tu empresa con una red de ciberseguridad robusta, confiable y segura.
+                        <span style={parrafColor}>Protección Avanzada para su Empresa con Soluciones de Ciberseguridad, </span>
+                        seguramos las operaciones de su empresa con una red robusta y confiable.
                         <br/>
-                        Con nuestro servicio de ciberseguridad empresarial, tu compañía disfrutará de protección avanzada contra amenazas digitales,
-                         manteniendo tus comunicaciones y datos seguros en todo momento. Nuestra solución de seguridad en la nube (Cloud Security) 
-                         opera con los más altos estándares internacionales.
+                        Su empresa contará con protección avanzada contra amenazas digitales, manteniendo sus comunicaciones 
+                        y datos seguros en todo momento. Nuestra solución de seguridad en la nube (Cloud Security) opera con los más altos estándares internacionales.
                         </p>
                         &nbsp;
                         <p className={Styles.parrafosP}>
@@ -82,13 +81,13 @@ function Ciberseguridad() {
                                 </li>
                                 <li className={Styles.liP}>
                                     <img src="/img/cheque(1).png" className={Styles.imgP}/>
-                                    Protege tus datos y aplicaciones en la nube, 
+                                    Proteja sus datos y aplicaciones en la nube, 
                                     <span style={parrafColor}>garantizando </span>
                                     su integridad y confidencialidad.
                                 </li>
                                 <li className={Styles.liP}>
                                     <img src="/img/cheque(1).png" className={Styles.imgP}/>
-                                    Formación en ciberseguridad para tu equipo, para que puedan 
+                                    Formación en ciberseguridad para que su equipo pueda 
                                     <span style={parrafColor}>identificar y evitar </span>
                                     amenazas
                                 </li>
@@ -102,18 +101,17 @@ function Ciberseguridad() {
                         <div className={Styles.divCont}>
                             <h1 className={Styles.title2P}>¿Cuales son los beneficios de la Ciberseguridad?</h1>
                             <p className={Styles.parrafosP2}><span style={parrafColor}>1) Tranquilidad: </span> 
-                            Sabrás que tu empresa está protegida contra las amenazas digitales, lo que te permitirá 
-                            centrarte en lo que realmente importa: hacer crecer tu negocio.</p>
+                            Su empresa estará protegida contra las amenazas digitales.</p>
                             <p className={Styles.parrafosP2}><span style={parrafColor}>2) Reducción de riesgos: </span> 
-                            Al proteger tu empresa contra las amenazas digitales, reduces el riesgo de sufrir interrupciones 
-                            en tus operaciones o pérdidas financieras debido a un ciberataque.</p>
+                            Al proteger su empresa contra las amenazas digitales, reduce el riesgo de sufrir interrupciones 
+                            en sus operaciones o pérdidas financieras debido a un ciberataque.</p>
                             <p className={Styles.parrafosP2}><span style={parrafColor}>3) Confianza de los clientes: </span> 
-                            Al demostrar que tomas en serio la ciberseguridad, ganarás la confianza de tus clientes, lo que 
-                            puede ayudarte a atraer y retener a más clientes.</p>
+                            : Demostrar que se encuentra protegido contra ciberataques le ayudará a ganar la confianza de sus clientes 
+                            actuales y potenciales.</p>
                             <p className={Styles.parrafosP2}><span style={parrafColor}>4) Competitividad: </span> 
-                            En un mundo cada vez más digital, tener una sólida estrategia de ciberseguridad puede darte una ventaja competitiva.</p>
+                            En un mundo cada vez más digital, tener una sólida estrategia de ciberseguridad otorga una ventaja competitiva.</p>
                             <p className={Styles.parrafosP2}><span style={parrafColor}>5) Cumplimiento de Normativas: </span> 
-                            Al cumplir con las normativas de seguridad de la información, evitarás posibles sanciones y mejorará tu reputación en el mercado.</p>
+                            Al cumplir con las normativas de seguridad de la información, se evitará posibles sanciones y mejorará su reputación en el mercado.</p>
                         </div>
                     </div>
                     <div className={`${Styles.seccion2} ${Styles.nonePC}`}>

@@ -49,19 +49,18 @@ function EnlaceDatos() {
                     <div className={Styles.seccion1}>
                         <h1 className={Styles.titleP}>Enlace de Datos</h1>
                         <p className={Styles.parrafosP}>
-                        Enlace de datos te brindan soluciones que te permiten manejar en línea tus operaciones 
-                        e implementar soluciones de videoconferencia, video vigilancia, servicios en línea para 
-                        tus clientes.
+                        Nuestros servicios de enlace de datos ofrece soluciones que permiten gestionar las operaciones en línea e implementar herramientas como 
+                        videoconferencia, videovigilancia y servicios en línea para los clientes.
                         </p>
                         &nbsp;
                             <ul className={Styles.ulP}>
                                 <li className={Styles.liP}>
                                     <img src="/img/cheque(1).png" className={Styles.imgP}/>
-                                    Información en tiempo real de tus clientes y ventas.
+                                    Información en tiempo real para acceder a datos actualizados sobre los clientes y las ventas de manera instantánea.
                                 </li>
                                 <li className={Styles.liP}>
                                     <img src="/img/cheque(1).png" className={Styles.imgP}/>
-                                    Suministra un tránsito de datos confiable.
+                                    Tránsito de datos confiable con la que garantizamos un flujo de datos seguro y confiable.
                                 </li>
                                 <li className={Styles.liP}>
                                     <img src="/img/cheque(1).png" className={Styles.imgP}/>
@@ -69,18 +68,16 @@ function EnlaceDatos() {
                                 </li>
                                 <li className={Styles.liP}>
                                     <img src="/img/cheque(1).png" className={Styles.imgP}/>
-                                    Ahorrar costos de comunicación con soluciones de voz en todas 
-                                    sus sedes
+                                    Ahorrar costos de comunicación mediante soluciones de voz en todas las sedes, sin depender
+                                     de las redes de telefonía pública básica conmutada y sin costos adicionales
                                 </li>
                                 <li className={Styles.liP}>
-                                    sin utilizar las redes de telefonía pública básica conmutada y 
-                                    sin ningún costo.
+                            
                                 </li>
                             </ul>
                         &nbsp;
                             <p className={Styles.parrafosP}>
-                            Enlace de Datos para toda Colombia, Debemos efectuar una 
-                            visita de pre-viabilidad técnica.
+                            Nuestros servicios de Enlace de Datos están disponibles en toda Colombia. Para evaluar la viabilidad técnica, debemos efectuar una visita previa.
                             </p>
                     </div>
                     <div className={`${Styles.seccion2} ${Styles.noneM}`}>
@@ -89,7 +86,8 @@ function EnlaceDatos() {
                         </div>
                         <div className={Styles.divCont}>
                             <h1 className={Styles.title2P}>¿Cuales son los beneficios del Enlace de datos?</h1>
-                            <p className={Styles.parrafosP2}><span style={parrafColor}>1) Mayor productividad.</span> Promoción, venta y atención a pedidos en línea con mejores tiempos de respuesta.</p>
+                            <p className={Styles.parrafosP2}><span style={parrafColor}>1) Mayor productividad.</span> : Facilitamos la promoción, venta y atención a pedidos en línea con mejores tiempos de respuesta. Su empresa podrá 
+                            operar de manera más eficiente y ágil.</p>
                             <p className={Styles.parrafosP2}><span style={parrafColor}>2) Seguridad.</span> Servicio seguro, tienes un canal dedicado solo para ti.</p>
                             <p className={Styles.parrafosP2}><span style={parrafColor}>3) Menor inversión.</span> Transmite y vigila grandes volúmenes de información en línea, disminuye las inversiones de software.</p>
                             <p className={Styles.parrafosP2}><span style={parrafColor}>4) Red dedicado veloz.</span> Servicio único para tu empresa, canal exclusivo de alto rendimiento, usuarios protegidos de interrupción alguna.</p>

@@ -50,10 +50,8 @@ function InternetDedicado() {
                 <div className={Styles.seccion1}>
                     <h1 className={Styles.titleP}>Internet Dedicado</h1>
                     <p className={Styles.parrafosP}>
-                    Obtendrás un servicio de internet empresarial de alta velocidad (Carrier Class) 
-                    opera en configuración local o internacional y te permitirá optimizar las comunicaciones 
-                    con un estable y continuo acceso a internet, con una excelente calidad en velocidad de conexión, 
-                    costos y soporte técnico.
+                    Su organización obtendrá un servicio de internet empresarial de alta velocidad (Carrier Class) que opera en configuración local o internacional y permitirá optimizar las comunicaciones con un acceso estable y continuo a internet,
+                     garantizando una excelente calidad en velocidad de conexión, costos y soporte técnico.
                     </p>
                     <p className={Styles.parrafosP}>
                     <br/>
@@ -64,7 +62,8 @@ function InternetDedicado() {
                         <ul className={Styles.ulP}>
                             <li className={Styles.liP}>
                                 <img src="/img/cheque(1).png" className={Styles.imgP}/>
-                                Medio de conexión inalámbrico o soluciones de fibra óptica.
+                                Ofrecemos medios de conexión inalámbricos o soluciones de fibra óptica, 
+                                según sus preferencias y requisitos técnicos.
                             </li>
                             <li className={Styles.liP}>
                                 <img src="/img/cheque(1).png" className={Styles.imgP}/>
@@ -72,19 +71,15 @@ function InternetDedicado() {
                             </li>
                             <li className={Styles.liP}>
                                 <img src="/img/cheque(1).png" className={Styles.imgP}/>
-                                Servicio de atención al cliente centralizado para atender la 
-                                administración de fallas, implementación del servicio y consultas 
-                                en general.
+                                Atención al Cliente Centralizada para ayudar con la administración de fallas, 
+                                implementación del servicio y consultas en general. 
                             </li>
                             <li className={Styles.liP}>
                                 <img src="/img/cheque(1).png" className={Styles.imgP}/>
-                                Dominio propio, puede registrar a nombre del cliente un dominio propio. 
-                                Los servidores de nombres primarios asociados con el dominio serán 
-                                responsabilidad
+                                Puede registrar un dominio propio a nombre de su empresa. 
+                                Los servidores de nombres primarios asociados con el dominio serán su responsabilidad.
                             </li>
-                            <li className={Styles.liP}>
-                                del cliente.
-                            </li>
+                          
                         </ul>
                     &nbsp;
                         <p className={Styles.parrafosP}>
@@ -99,11 +94,11 @@ function InternetDedicado() {
                     <div className={Styles.divCont}>
                         <h1 className={Styles.title2P}>¿Cuales son los beneficios del Internet Dedicado?</h1>
                         <p className={Styles.parrafosP2}><span style={parrafColor}>1) Mayor productividad.</span> Promoción, venta y atención a pedidos en línea con mejores tiempos de respuesta.</p>
-                        <p className={Styles.parrafosP2}><span style={parrafColor}>2) Seguridad.</span> Servicio seguro, tienes un canal dedicado solo para ti.</p>
-                        <p className={Styles.parrafosP2}><span style={parrafColor}>3) Menor inversión.</span> Transmite y vigila grandes volúmenes de información en línea, disminuye las inversiones de software.</p>
-                        <p className={Styles.parrafosP2}><span style={parrafColor}>4) Red dedicado veloz.</span> Servicio único para tu empresa, canal exclusivo de alto rendimiento, usuarios protegidos de interrupción alguna.</p>
-                        <p className={Styles.parrafosP2}><span style={parrafColor}>5) Ips múltiples.</span> Podrás generar tantas IPs como necesites y eliminarlas cuando lo desees.</p>
-                        <p className={Styles.parrafosP2}><span style={parrafColor}>6) Estabilidad.</span> Tendrás el ancho de banda que requieres, sin que ningún fallo de la red arruine tu trabajo o el de tu equipo.</p>
+                        <p className={Styles.parrafosP2}><span style={parrafColor}>2) Seguridad garantizada.</span> Su empresa tendrá acceso a un canal exclusivo y dedicado, lo que proporciona un servicio seguro.</p>
+                        <p className={Styles.parrafosP2}><span style={parrafColor}>3) Menor inversión.</span> Transmisión y monitoreo de grandes volúmenes de información en línea, lo que reduce las inversiones en software.</p>
+                        <p className={Styles.parrafosP2}><span style={parrafColor}>4) Red dedicado veloz.</span> Servicio único para su empresa, canal exclusivo de alto rendimiento, usuarios protegidos de interrupción alguna.</p>
+                        <p className={Styles.parrafosP2}><span style={parrafColor}>5) Ips múltiples.</span> Podrás generar tantas IPs como se necesite y eliminarlas cuando lo desee.</p>
+                        <p className={Styles.parrafosP2}><span style={parrafColor}>6) Estabilidad.</span> Tendrá el ancho de banda necesario, sin que ningún fallo de la red arruine su trabajo o el de su equipo.</p>
                     </div>
                 </div>
                 <div className={`${Styles.seccion2} ${Styles.nonePC}`}>
