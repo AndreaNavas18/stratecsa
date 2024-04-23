@@ -1,8 +1,49 @@
 "use client";
 import Styles from './contacto.module.css';
 import GoogleMapComponent from '../googlemaps';
+import React, { useState } from 'react';
 
 function Contacto () {
+
+  const [formData, setFormData] = useState({
+    nombre: '',
+    empresa: '',
+    pais: '',
+    provincia: '',
+    telefono: '',
+    correo: '',
+    asunto: '',
+    mensaje: '',
+  });
+  
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch('http://localhost:8000/enviar-correo', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+      console.log(data); // Manejar la respuesta del backend
+    } catch (error) {
+      console.error('Error al enviar el formulario:', error);
+    }
+  };
+
+  // handleSubmit(formData);
 
   const containerSty = {
     backgroundImage: `url(/new/contacto4.png)`,
@@ -20,44 +61,44 @@ function Contacto () {
         </div>
       </div>
       <div className={Styles.parD}>
-        <form className={`${Styles.formulario} ${Styles.formularioM}`}>
+        <form onSubmit={handleSubmit} className={`${Styles.formulario} ${Styles.formularioM}`}>
           <div className={`${Styles.contenedor3} ${Styles.contenedor3M}`}>
             <div className={`${Styles.contenedor4} ${Styles.contenedor4M}`}>
               <label className={`${Styles.labelCT} ${Styles.labelCTM}`}>Nombre</label>
-              <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="text" placeholder="John Smith" name='nombre' />
+              <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="text" placeholder="John Smith" name='nombre' onChange={handleChange} value={formData.nombre} />
             </div>
             <div className={`${Styles.contenedor4} ${Styles.contenedor4M}`}>
               <label className={`${Styles.labelCT} ${Styles.labelCTM}`}>Empresa</label>
-              <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="text" placeholder="Stratecsa SAS" name='empresa' />
+              <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="text" placeholder="Stratecsa SAS" name='empresa' onChange={handleChange} value={formData.empresa} />
             </div>
             <div className={`${Styles.contenedor4} ${Styles.contenedor4M}`}>
               <label className={`${Styles.labelCT} ${Styles.labelCTM}`}>País</label>
-              <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="text" placeholder="Colombia" name='pais' />
+              <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="text" placeholder="Colombia" name='pais' onChange={handleChange} value={formData.pais} />
             </div>
           </div>
           <div className={`${Styles.contenedor3} ${Styles.contenedor3M}`}>
             <div className={`${Styles.contenedor4} ${Styles.contenedor4M}`}>
                 <label className={`${Styles.labelCT} ${Styles.labelCTM}`}>Provincia</label>
-                <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="text" placeholder="Valle del Cauca" name='provincia' />
+                <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="text" placeholder="Valle del Cauca" name='provincia' onChange={handleChange} value={formData.provincia} />
             </div>
             <div className={`${Styles.contenedor4} ${Styles.contenedor4M}`}>
               <label className={`${Styles.labelCT} ${Styles.labelCTM}`}>Teléfono</label>
-              <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="tel" placeholder="320 550 1223" name='telefono' />
+              <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="tel" placeholder="320 550 1223" name='telefono' onChange={handleChange} value={formData.telefono} />
             </div>
             <div className={`${Styles.contenedor4} ${Styles.contenedor4M}`}>
               <label className={`${Styles.labelCT} ${Styles.labelCTM}`}>Correo</label>
-              <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="email" placeholder="Correo" name='correo' />
+              <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="email" placeholder="Correo" name='correo' onChange={handleChange} value={formData.correo} />
             </div>
           </div>
           <div className={`${Styles.contenedor3} ${Styles.contenedor3M}`}>
             <div className={`${Styles.contenedor4} ${Styles.contenedor4M}`}>
               <label className={`${Styles.labelCT} ${Styles.labelCTM}`}>Asunto</label>
-              <input className={`${Styles.inputCT2} ${Styles.inputCT2M}`} type="text" placeholder="Asunto" name='asunto' />
+              <input className={`${Styles.inputCT2} ${Styles.inputCT2M}`} type="text" placeholder="Asunto" name='asunto' onChange={handleChange} value={formData.asunto} />
             </div>
           </div>
           <div className={`${Styles.contenedor5} ${Styles.contenedor5M}`}>
             <label className={`${Styles.labelCT} ${Styles.labelCTM}`}>Mensaje</label>
-            <textarea className={Styles.textAreaCT} placeholder="Mensaje" name='mensaje' ></textarea>
+            <textarea className={Styles.textAreaCT} placeholder="Mensaje" name='mensaje' onChange={handleChange} value={formData.mensaje} ></textarea>
           </div>
           <div className={`${Styles.contenedor6} ${Styles.contenedor6M}`}>
             <button className={`${Styles.botonCT} ${Styles.botonCTM}`} type="submit">Enviar</button>
@@ -66,15 +107,15 @@ function Contacto () {
       </div> 
       <div className={Styles.parM}>
         {/* Formulario movil  */}
-        <form className={`${Styles.formulario} ${Styles.formularioM}`}>
+        <form onSubmit={handleSubmit} className={`${Styles.formulario} ${Styles.formularioM}`}>
           <div className={`${Styles.contenedor3} ${Styles.contenedor3M}`}>
             <div className={`${Styles.contenedor4} ${Styles.contenedor4M}`}>
               <label className={`${Styles.labelCT} ${Styles.labelCTM}`}>Nombre</label>
-              <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="text" placeholder="John Smith" name='nombre' />
+              <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="text" placeholder="John Smith" name='nombre' onChange={handleChange} value={formData.nombre} />
             </div>
             <div className={`${Styles.contenedor4} ${Styles.contenedor4M}`}>
               <label className={`${Styles.labelCT} ${Styles.labelCTM}`}>Empresa</label>
-              <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="text" placeholder="Stratecsa SAS" name='empresa' />
+              <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="text" placeholder="Stratecsa SAS" name='empresa' onChange={handleChange} value={formData.empresa} />
             </div>
             
           </div>
@@ -82,11 +123,11 @@ function Contacto () {
           <div className={`${Styles.contenedor3} ${Styles.contenedor3M}`}>
             <div className={`${Styles.contenedor4} ${Styles.contenedor4M}`}>
               <label className={`${Styles.labelCT} ${Styles.labelCTM}`}>País</label>
-              <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="text" placeholder="Colombia" name='pais' />
+              <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="text" placeholder="Colombia" name='pais' onChange={handleChange} value={formData.pais} />
             </div>
             <div className={`${Styles.contenedor4} ${Styles.contenedor4M}`}>
                 <label className={`${Styles.labelCT} ${Styles.labelCTM}`}>Provincia</label>
-                <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="text" placeholder="Valle del Cauca" name='provincia' />
+                <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="text" placeholder="Valle del Cauca" name='provincia' onChange={handleChange} value={formData.provincia} />
             </div>
            
           </div>
@@ -94,21 +135,21 @@ function Contacto () {
           <div className={`${Styles.contenedor3} ${Styles.contenedor3M}`}>
             <div className={`${Styles.contenedor4} ${Styles.contenedor4M}`}>
               <label className={`${Styles.labelCT} ${Styles.labelCTM}`}>Teléfono</label>
-              <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="tel" placeholder="320 550 1223" name='telefono' />
+              <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="tel" placeholder="320 550 1223" name='telefono' onChange={handleChange} value={formData.telefono} />
             </div>
             <div className={`${Styles.contenedor4} ${Styles.contenedor4M}`}>
               <label className={`${Styles.labelCT} ${Styles.labelCTM}`}>Correo</label>
-              <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="email" placeholder="Correo" name='correo' />
+              <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="email" placeholder="Correo" name='correo' onChange={handleChange} value={formData.correo} />
             </div>
             
           </div>
           <div className={`${Styles.contenedor5} ${Styles.contenedor5M}`}>
             <div className={`${Styles.contenedor4} ${Styles.contenedor44M}`}>
               <label className={`${Styles.labelCT} ${Styles.labelCTM}`}>Asunto</label>
-              <input className={`${Styles.inputCT2} ${Styles.inputCT2M}`} type="text" placeholder="Asunto" name='asunto' />
+              <input className={`${Styles.inputCT2} ${Styles.inputCT2M}`} type="text" placeholder="Asunto" name='asunto' onChange={handleChange} value={formData.asunto} />
             </div>
             <label className={`${Styles.labelCT} ${Styles.labelCTM}`}>Mensaje</label>
-            <textarea className={`${Styles.textAreaCT} ${Styles.textAreaCTM}`} placeholder="Mensaje" name='mensaje' ></textarea>
+            <textarea className={`${Styles.textAreaCT} ${Styles.textAreaCTM}`} placeholder="Mensaje" name='mensaje' onChange={handleChange} value={formData.mensaje} ></textarea>
           </div>
 
           <div className={`${Styles.contenedor6} ${Styles.contenedor6M}`}>

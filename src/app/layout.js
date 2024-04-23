@@ -16,8 +16,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
     <head>
-    <script id="chatway" async="true" src="https://cdn.chatway.app/widget.js?id=evTLAzR0Ancg"></script>
-    <script id="pixel-chaty" async="true" src="https://cdn.chaty.app/pixel.js?id=unBeUuC3"></script>
+    <script id="chatway" async={true} src="https://cdn.chatway.app/widget.js?id=evTLAzR0Ancg"></script>
+    <script id="pixel-chaty" async={true} src="https://cdn.chaty.app/pixel.js?id=unBeUuC3"></script>
     </head>
       <body className={inter.className}>
         <Header/>
