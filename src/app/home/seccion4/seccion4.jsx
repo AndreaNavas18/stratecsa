@@ -96,9 +96,9 @@ export default function Seccion4() {
                         src="/img/prueba3.jpg"/> */}
                     <h1 className={Styles.titleS4}>Nuestros productos y servicios</h1>
                     <p className={Styles.descripS4}>
-                    Contamos con múltiples servicios y productos de excelente calidad
-                    que te ayudarán a dar solución a tus problemas IT, para que cumplas
-                    con tus objetivos empresariales.
+                    Contamos con múltiples servicios de excelente calidad
+                    que le ayudarán a dar solución a sus problemas IT, para que cumpla
+                    con sus objetivos empresariales.
                     </p>
                     {/* La idea es poner un slider de botones ya que son muchos servicios */}
                     <div className={Styles.botonesS4}>

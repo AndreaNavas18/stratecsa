@@ -197,7 +197,7 @@ function Header2() {
                                 </li>
                             </div>
                             <li className={Styles.liNav}>
-                                <a href="/contacto">Contactenos</a>
+                                <a href="/contacto">Contáctenos</a>
                             </li>
                         </ul>
                     </nav>
@@ -288,7 +288,7 @@ function Header2() {
                             </li>
                         </div>
                         <li className={Styles.liMenuMovil}>
-                            <a href="/contacto">Contactenos</a>
+                            <a href="/contacto">Contáctenos</a>
                         </li>
                     </ul>
                 </nav>

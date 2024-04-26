@@ -75,7 +75,13 @@ function Footer1() {
                                     <a href="/nosotros">Acerca de nosotros</a>
                                 </li>
                                 <li className={Styles.liNavF1}>
-                                    <a href="/cobertura">Cobertura</a>
+                                    <a href="/cobertura/colombia">Cobertura en Colombia</a>
+                                </li>
+                                <li className={Styles.liNavF1}>
+                                    <a href="/cobertura/brasil">Cobertura en Brasil</a>
+                                </li>
+                                <li className={Styles.liNavF1}>
+                                    <a href="/cobertura/latinoamerica">Cobertura en Latinoamérica</a>
                                 </li>
                                 <li className={Styles.liNavF1}>
                                     <a href="/#">Términos y condiciones</a>
@@ -83,9 +89,9 @@ function Footer1() {
                                 <li className={Styles.liNavF1}>
                                     <a href="/#">Políticas de protección de datos</a>
                                 </li>
-                                <li className={Styles.liNavF1}>
+                                {/* <li className={Styles.liNavF1}>
                                     <a href="/#">Soporte</a>
-                                </li>
+                                </li> */}
                                 <li className={Styles.liNavF1}>
                                     <a href="/contact">Contáctenos</a>
                                 </li>
@@ -95,32 +101,44 @@ function Footer1() {
                     </div>
 
                     <div className={Styles.prodF1}>
-                        <h2 className={Styles.titleMapaF1}>PRODUCTOS</h2>
+                        <h2 className={Styles.titleMapaF1}>SERVICIOS</h2>
                         <nav>
                             <ul className={Styles.ulNavF1}>
-                                <li className={Styles.liNavF1}>
-                                    <a href="/servicios">Internet dedicado</a>
+                            <li className={Styles.liNavF1}>
+                                    <a href="/servicios/internet-dedicado">Internet dedicado</a>
                                 </li>
                                 <li className={Styles.liNavF1}>
-                                    <a href="/servicios">Ultima milla</a>
+                                    <a href="/servicios/ciberseguridad">Ciberseguridad</a>
                                 </li>
                                 <li className={Styles.liNavF1}>
-                                    <a href="/servicios">Ciberseguridad</a>
+                                    <a href="/servicios/red-mpls">Red MPLS</a>
                                 </li>
                                 <li className={Styles.liNavF1}>
-                                    <a href="/#">Enlace de datos</a>
+                                    <a href="/servicios/cloud-backup">Cloud Backup</a>
                                 </li>
                                 <li className={Styles.liNavF1}>
-                                    <a href="/#">Comunicaciones unificadas</a>
+                                    <a href="/servicios/cloud-server">Cloud server</a>
                                 </li>
                                 <li className={Styles.liNavF1}>
-                                    <a href="/#">Servidor dedicado</a>
+                                    <a href="/servicios/colocation">Colocation</a>
                                 </li>
                                 <li className={Styles.liNavF1}>
-                                    <a href="/#">Colocation</a>
+                                    <a href="/servicios/comunicaciones-unificadas">Comunicaciones unificadas</a>
                                 </li>
                                 <li className={Styles.liNavF1}>
-                                    <a href="/#">Cloud server</a>
+                                    <a href="/servicios/enlace-datos">Enlace de datos</a>
+                                </li>
+                                <li className={Styles.liNavF1}>
+                                    <a href="/servicios/outsourcing">Outsourcing TIC</a>
+                                </li>
+                                <li className={Styles.liNavF1}>
+                                    <a href="/servicios/servidor-dedicado">Servidor dedicado</a>
+                                </li>
+                                <li className={Styles.liNavF1}>
+                                    <a href="/servicios/security-cloud">Security Cloud</a>
+                                </li>
+                                <li className={Styles.liNavF1}>
+                                    <a href="/servicios/correo-corporativo">Correo corporativo</a>
                                 </li>
                             </ul>
                         </nav>

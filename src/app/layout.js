@@ -18,6 +18,7 @@ export default function RootLayout({ children }) {
     <head>
     <script id="chatway" async={true} src="https://cdn.chatway.app/widget.js?id=evTLAzR0Ancg"></script>
     <script id="pixel-chaty" async={true} src="https://cdn.chaty.app/pixel.js?id=unBeUuC3"></script>
+    <link rel='icon' href='/logo-11.ico'/>
     </head>
       <body className={inter.className}>
         <Header/>

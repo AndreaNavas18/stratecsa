@@ -17,9 +17,9 @@ export default function Seccion3() {
                     </div>
                     <div className={Styles.card2S3}>
                         <h2 className={Styles.h2G}>Servicio personalizado</h2>
-                        <p className={Styles.pG}>En Stratecsa los clientes son la prioridad, asi que contamos con
-                        múltiples servicios que te ayudaran a solucionar tus problemas IT y a 
-                        cumplir tus metas.
+                        <p className={Styles.pG}>En Stratecsa los clientes son la prioridad, así que contamos con
+                        múltiples servicios que le ayudaran a solucionar sus problemas IT y a 
+                        cumplir sus metas.
                         </p>
                         <button className={Styles.btnG}>Explorar</button>
                     </div>
@@ -32,7 +32,7 @@ export default function Seccion3() {
                     </div>
                     <div className={Styles.card4S3}>
                         <h2 className={Styles.h2G}>Pago en línea</h2>
-                        <p className={Styles.pG}>Hacer sus pagos desde la comodidad de su cada nunca fue tan
+                        <p className={Styles.pG}>Hacer sus pagos desde la comodidad de su casa nunca fue tan
                         fácil, con nuestro portal podra realizar sus pagos de forma rápida
                         y segura.
                         </p>

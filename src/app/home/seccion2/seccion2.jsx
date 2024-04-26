@@ -9,7 +9,7 @@ export default function Seccion2() {
                         expertos en el área de telecomunicaciones.
                     </h2>
                     <p className={`${Styles.descripS2} ${Styles.descripS2M}`}>
-                        Nuestro equipo tecnologico está dispuesto a mejorar la experiencia
+                        Nuestro equipo tecnológico está dispuesto a mejorar la experiencia
                         de sus clientes a tráves de soluciones innovadoras y de alta calidad.
                     </p>
                 </div>

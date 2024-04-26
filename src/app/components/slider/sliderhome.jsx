@@ -19,7 +19,7 @@ const sliders = [
             </>
 
         ),
-        boton: 'Contactanos'
+        boton: 'Contáctanos'
     },
     {
         id: 2,
@@ -34,7 +34,7 @@ const sliders = [
             </>
 
         ),
-        boton: 'Contactanos'
+        boton: 'Contáctanos'
     },
     {
         id: 3,
@@ -48,7 +48,7 @@ const sliders = [
                 Optimiza la productividad y protege tus datos con Stratecsa.
             </>
         ),
-        boton: 'Contactanos'
+        boton: 'Contáctanos'
     },
     {
         id: 4,
@@ -62,7 +62,7 @@ const sliders = [
                 Confía en Stratecsa para proteger y acelerar tu negocio.
             </>
         ),
-        boton: 'Contactanos'
+        boton: 'Contáctanos'
     },
 ]
 

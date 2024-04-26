@@ -111,7 +111,7 @@ function ComunicacionesUnificadas() {
                         <Beneficios datosSliders={datosSliders} />
                     </div>
                     <div className={Styles.botonID}>
-                        <button className={Styles.buttonP2}>Solicitar información</button>
+                    <a href='/contacto' className={Styles.buttonP2}>Solicitar información</a>
                     </div>
                 </div>
             </div>
