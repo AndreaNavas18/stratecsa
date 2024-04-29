@@ -84,14 +84,14 @@ function Footer1() {
                                     <a href="/cobertura/latinoamerica">Cobertura en Latinoamérica</a>
                                 </li>
                                 <li className={Styles.liNavF1}>
-                                    <a href="/#">Términos y condiciones</a>
+                                    <a href="/terminos">Términos y condiciones</a>
                                 </li>
                                 <li className={Styles.liNavF1}>
-                                    <a href="/#">Políticas de protección de datos</a>
+                                    <a href="/politicas">Políticas de protección de datos</a>
                                 </li>
-                                {/* <li className={Styles.liNavF1}>
-                                    <a href="/#">Soporte</a>
-                                </li> */}
+                                <li className={Styles.liNavF1}>
+                                    <a href="https://www.stratecsa.cloud">Soporte</a>
+                                </li>
                                 <li className={Styles.liNavF1}>
                                     <a href="/contact">Contáctenos</a>
                                 </li>
@@ -180,13 +180,13 @@ function Footer1() {
                                     <a href="/cobertura">Cobertura</a>
                                 </li>
                                 <li className={Styles.liNavF1M}>
-                                    <a href="/#">Términos y condiciones</a>
+                                    <a href="/terminos">Términos y condiciones</a>
                                 </li>
                                 <li className={Styles.liNavF1M}>
-                                    <a href="/#">Políticas de protección de datos</a>
+                                    <a href="/politicas">Políticas de protección de datos</a>
                                 </li>
                                 <li className={Styles.liNavF1M}>
-                                    <a href="/#">Soporte</a>
+                                    <a href="https://www.stratecsa.cloud">Soporte</a>
                                 </li>
                                 <li className={Styles.liNavF1M}>
                                     <a href="/contact">Contáctenos</a>

@@ -1,134 +1,221 @@
 import Styles from './politicas.module.css';
 
-function Nosotros() {
+function Politicas() {
     const containerSty = {
         backgroundImage: `url(/new/img2.jpg)`,
-        backgroundSize: 'cover',
         backgroundPosition: 'center',
+        width: 'auto',
+        height: 'auto',
       };
-    const containerMV = {
-        backgroundImage: `url(/new/img8.jpg)`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        height: '100%', 
-        width: '100%',
-    };
 
-    const containerMVM = {
-        backgroundImage: `url(/img/misionvision.jpg)`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        height: '100%', 
-        width: '100%',
-    };
-
-    return(
+    return (
         <>
             <div className={`${Styles.container} ${Styles.containerM}`} style={containerSty}>
-                <h1 className={`${Styles.titleSR} ${Styles.titleSRM}`}>Politicas</h1>
+                <h1 className={`${Styles.titleSR} ${Styles.titleSRM}`}>Políticas de protección de datos</h1>
             </div>
-
-            <div className={`${Styles.container2} ${Styles.container2M}`}>
-                <h1 className={`${Styles.titleNosotros} ${Styles.titleNosotrosM}`}>Stratecsa</h1>
-                <p className={`${Styles.parrafosP} ${Styles.parrafosPM}`}>
-                
-                Somos un 
-                <span className={Styles.spanPM}> equipo tecnológico </span> 
-                dispuesto a mejorar la experiencia de sus 
-                clientes a través de nuestro servicio para así generar conversiones.
+          &nbsp;
+          <div className={Styles.polit}>
+            <p className={Styles.textos}>Contamos con múltiples servicios que te ayudarán a la solución de tus problemas IT y al cumplimiento de tus metas. </p>
+            <h2 className={Styles.titulos}>POLÍTICA DE TRATAMIENTO PROTECCIÓN DE DATOS PERSONALES DE STRATEGIC TECHNOLOGICAL DE COLOMBIA SAS - STRATECSA</h2>
+            <p className={Styles.textos}>
+                En cumplimiento a lo dispuesto en la ley 1581 de 2012 de protección de datos personales y del decreto reglamentario 1377 de 
+                2013 mediante el cual se reglamenta parcialmente la ley 1581 de 2012, STRATECSA SAS redacta la siguiente política para el 
+                tratamiento de datos personales de sus empleados, proveedores y clientes.
+            <br/><br/>
+                IDENTIFICACIÓN DEL RESPONSABLE:
+            <br/><br/>
+                STRATEGIC TECHNOLOGICAL DE COLOMBIA SAS - STRATECSA SAS, identificada con el NIT 900.019.355-8 con domicilio en la ciudad 
+                de Cali, condirección de notificación en la avenida 4n # 26n 18, número telefónico de contacto 3959595 correo electrónico 
+                info@stratecsa.com.
                 <br/>
-                Somos una empresa de tecnología, proveedores de internet
-                <span className={Styles.spanPM}> empresarial </span> 
-                expertos 
-                en el área de telecomunicaciones, diseñamos software a la medida.
-                </p>
+
+                1. TRATAMIENTO Y FINALIDAD DE LOS DATOS PERSONALES
+            <br/>
+                STRATECSA SAS en función de su operación comercial; Recolecta, almacena, maneja, entre otras los datos personales de personas 
+                naturales, jurídicas, públicas o privadas, por lo cual deberá obtener autorización previa e informada del titular, indicándole 
+                que su información personal será objeto de tratamiento y verificación.
+            <br/>
+                STRATECSA SAS capta datos personales en el desarrollo de su actividad comercial en los siguientes campos:
+            <br/>
+                a. Registro de información de clientes.
+                <br/>
+                b. Registro de proveedores.
+                <br/>
+                c. Selección de personal, pago de nómina
+                <br/>
+                d. Información a través de páginas web
+                <br/>
+                Durante la ejecución de estas actividades la recolección de datos personales, STRATECSA SAS se limitará a aquellos datos que sean 
+                pertinentes y adecuados para la finalidad con la cual fueron recolectados o requeridos. El departamento de recursos humanos, área 
+                encargada de realizar este proceso, deberán informar al titular el motivo por el cual se solicita la información y el uso específico 
+                que se le dará a la misma.
+                <br/><br/>
+                Conceptos Fundamentales:
+                <br/>
+                AUTORIZACIÓN: consentimiento previo, expreso e informado del titular para llevar a cabo el tratamiento de datos personales.
+                <br/>
+                BASE DE DATOS: conjunto organizado de datos personales que sea objeto de tratamiento.
+                <br/>
+                DATO PERSONAL: cualquier pieza de información vinculada a una o varias personas determinadas o determinables o que puedan asociarse 
+                a una persona natural o jurídica.
+                <br/>
+                DATO PÚBLICO: es el dato que no sea semi privado, privado o sensible. Son considerados datos públicos, entre otros, los datos relativos 
+                al estado civil de las personas, a su profesión  u oficio y a su calidad de comerciante o de servidor público. Por su naturaleza, los datos 
+                públicos pueden estar contenidos, entre otros, en registros públicos, documentos públicos, gacetas y boletines oficiales y sentencias 
+                judiciales debidamente ejecutoriadas que no estén sometidas a reserva.
+                <br/>
+                ENCARGADO DEL TRATAMIENTO: persona natural, jurídica, pública o privada, que por sí misma o en asocio con otros, realice el tratamiento de 
+                datos personales por cuenta del responsable del tratamiento.
+                <br/>
+                TRATAMIENTO: cualquier operación o conjunto de operaciones sobre datos personales, tales como la recolección, almacenamiento, uso, circulación 
+                o supresión.
+                <br/>
+                TITULAR: persona natural cuyos datos personales sean objeto de Tratamiento.
+                <br/>
+                AVISO DE PRIVACIDAD: comunicación verbal o escrita generada por el responsable dirigida al titular para el tratamiento de sus datos personales.
+                <br/>
+                DATOS SENSIBLES: se entiende por datos sensibles aquellos que afectan la intimidad del titular o cuyo uso indebido puede generar su 
+                discriminación, tales como aquellos que revelen el origen racial o étnico, la orientación política, las convicciones religiosas o filosóficas, 
+                la pertenencia a sindicatos, organizaciones sociales, de derechos humanos o que promueva intereses de cualquier partido político o que garanticen 
+                los derechos y garantías de partidos políticos de oposición, así como los datos relativos a la salud, a la vida sexual, y los datos biométricos.
+                <br/>
+                PRINCIPIO DE LIBERTAD: el tratamiento solo se puede ejercer con el consentimiento previo, expreso, e informado del titular. Los datos personales 
+                no podrán ser obtenidos o divulgados sin previa autorización, o en ausencia de mandato legal o judicial que releve el consentimiento.
+                <br/><br/>
+                2. VIGENCIA DE LA INFORMACIÓN PERSONAL CONTENIDA EN LAS BASES DE DATOS
+                La base de datos de STRATECSA SAS tendrán una vigencia igual al periodo de tiempo en que se mantenga la finalidad o finalidades del tratamiento 
+                en cada base de datos o aquel requerido de acuerdo a las normas contables, comerciales, tributarias, laborales, o cualquiera aplicable según la 
+                materia, y a los aspectos administrativos, contables, fiscales, jurídicos e históricos de la información almacenadas en las mismas, con un plazo 
+                máximo de cincuenta años. Como consecuencia de lo anterior, y siempre y cuando ello no vaya en contra vía del cumplimiento de una norma vigente, 
+                una vez cumplida la o las finalidades del tratamiento de los datos, STRATECSA SAS procederá a su supresión. No obstante lo anterior, los datos 
+                personales serán conservados cuando se requieran para dar cumplimiento a una obligación legal o contractual.
+                <br/><br/>
+                3. TRATAMIENTO DE DATOS SENSIBLES
+                El Tratamiento sobre datos sensibles y los pertenecientes a niños, niñas y adolescentes está prohibido. No obstante lo anterior, STRATECSA SAS 
+                realizaría el tratamiento de datos de este tipo en caso de ser necesario mediante autorización previa y expresa de su representante legal.
+                Datos sensibles: STRATECSA SAS realiza el tratamiento de datos sensibles autorizados por el Artículo 6 de la Ley 1581 de 2012, capturados de sus 
+                empleados y con fines únicos y exclusivos de manejo de la relación laboral con la compañía y para dar cumplimiento a las obligaciones legales, 
+                contractuales y/o convencionales derivadas de la misma, en vigencia y/o finalizada la misma. Lo anterior sin perjuicio de las autorizaciones que 
+                puedan conceder los titulares en los términos del Artículo 6 del Decreto 1377 de 2013.
+                <br/>
+                Dichos datos son manejados en bases de datos del área de recursos humanos de STRATECSA SAS.
+                <br/>
+                Para el tratamiento de datos sensibles STRATECSA SAS deberá:
+                <br/>
+                •  Informar al Titular que por tratarse de datos sensibles no está obligado a autorizar su Tratamiento. 
+                <br/>
+                •  Informar al Titular de forma explícita y previa, además de los requisitos generales de la autorización para la recolección de cualquier tipo 
+                de dato      personal, cuáles de los datos que serán objeto de tratamiento son sensibles y la finalidad del tratamiento, así como obtener su 
+                consentimiento expreso. 
+                <br/>
+                •  No podrá condicionar ninguna actividad al suministro de datos personales sensibles. El Tratamiento de este tipo de datos será permitido siempre 
+                y      cuando responda y respete el interés superior de los niños, niñas y adolescentes, y se asegure el respeto de sus derechos fundamentales. 
+                <br/><br/>
+                Cumplidos los anteriores requisitos, STRATECSA SAS deberá obtener la autorización del representante legal del niño, niña o adolescente para la 
+                captura, almacenamiento, envío a terceros y uso de los datos con los fines antes señalados.
+                <br/><br/>
+                4. DERECHOS DEL TITULAR
+                En aplicación de los términos de la ley, STRATECSA SAS asume el papel de responsable del tratamiento en todos los casos cuando recolecte, almacene, 
+                use, circule, suprima, transfiera o transmita datos de Titulares. Los derechos que le asisten conforme a la ley al Titular de los datos son los 
+                siguientes:
+                <br/>
+                1.	Conocer, actualizar y rectificar sus datos personales, este derecho se podrá ejercer, entre otros frente a datos parciales, inexactos, 
+                incompletos, fraccionados, que induzcan a error, o aquellos cuyo Tratamiento esté expresamente prohibido o no haya sido autorizado.
+                <br/>
+                2.	Solicitar prueba de la autorización otorgada al Responsable del Tratamiento salvo cuando expresamente se exceptúe como requisito para el 
+                Tratamiento de conformidad con lo previsto en el artículo 10 de la Ley 1581 de 2012.
+                <br/>
+                3.	Ser informado por el Responsable del Tratamiento o el Encargado del Tratamiento, previa solicitud, respecto del uso que le ha dado a sus datos 
+                personales.
+                <br/>
+                4.	Presentar ante la Superintendencia de Industria y Comercio quejas por infracciones a lo dispuesto en la presente ley y las demás normas que 
+                la modifiquen, adicionen o complementen.
+                <br/>
+                5.	Revocar la autorización y/o solicitar la supresión del dato cuando en el Tratamiento no se respeten los principios, derechos y garantías 
+                constitucionales y legales. La revocatoria y/o supresión procederá cuando la Superintendencia de Industria y Comercio haya determinado que en el Tratamiento el Responsable o Encargado han incurrido en conductas contrarias a esta ley y a la Constitución.
+                <br/>
+                6.	Acceder en forma gratuita a sus datos personales que hayan sido objeto de Tratamiento.
+                <br/><br/>
+                5. ATENCIÓN DE CONSULTAS, SOLICITUDES Y RECLAMOS
+                <br/>
+                STRATECSA SAS deberá permitir el acceso gratuito del Titular de los datos a su información cuando así lo requiera para realizar consultas así como 
+                garantizar el derecho a los Titulares de presentar reclamos y solicitudes de corrección, actualización o supresión de datos personales.
+                STRATECSA SAS deberá recibir las solicitudes antes señaladas sobre Datos Personales radicadas por el titular.
+                <br/>
+                STRATECSA SAS permitirá el recibo de consultas, solicitudes y reclamos por medio escrito a su dirección avenida 4n # 26n-18 Cali, de manera oral a 
+                través del teléfono 3959595 y a través de su correo electrónico info@stractecsa.com
+                <br/>
+                Las consultas sobre datos personales serán resueltas por STRATECSA SAS en un término máximo de diez (10) días hábiles contados a partir de la fecha 
+                de recibo de la misma. Cuando no fuere posible atender la consulta dentro de dicho término, se informará al Titular o sus causahabientes, 
+                manifestando los motivos de la demora y señalando la fecha en que se atenderá su consulta, la cual en ningún caso podrá superar los cinco (5) días 
+                hábiles siguientes al vencimiento del primer término. En caso que la consulta sea realizada vía telefónica, deberá informarse al Titular que debe 
+                hacerla por escrito con el fin de mantener prueba de esta.
+                <br/>
+                El trámite de estas consultas y reclamos será gratuito, excepto en los casos señalados expresamente por la ley. La solicitud de supresión de la 
+                información y la revocatoria de la autorización no procederán cuando el Titular del dato tenga un deber legal o contractual de permanecer en las 
+                bases de datos de STRATECSA SAS. El área responsable en STRATECSA SAS para la protección de datos personales que dará trámite a las solicitudes, 
+                consultas y reclamos relacionados con Habeas Data, es el departamento de recursos humanos.
+                <br/><br/>
+                6. RECEPCIÓN DE SOLICITUDES Y CONSULTAS
+                <br/>
+                1.	Por medio físico o mediante mail: El Titular o las demás personas permitidas por la ley podrán realizar consultas, solicitudes o reclamos 
+                utilizando otro formato o a través de un escrito dirigido a la compañía y lo enviarán por correo físico a la avenida 4n # 26n-18 en la ciudad de 
+                Cali, o al correo electrónico: info@stratecsa.com Los tiempos de respuesta serán de diez (10) días hábiles para consultas y de quince (15) días 
+                hábiles para reclamos.
+                <br/>
+                2.	Por medio telefónico: Las consultas, peticiones y reclamos recibidos por este medio serán tramitados por la compañía y su respuesta será dada 
+                por escrito a la dirección de notificación aportada por el Titular. Los tiempos de respuesta serán de diez (10) días hábiles para consultas y de 
+                quince (15) días hábiles para reclamos.
+                <br/>
+                3.	Solicitud para conocimiento, actualización y rectificación de datos personales: Esta procederá frente a datos parciales, inexactos, incompletos, 
+                fraccionados, que induzcan a error, o aquellos cuyo tratamiento esté expresamente prohibido o no haya sido autorizado por el Titular. La solicitud 
+                que realice el Titular sobre el particular, deberá ser enviada por correo físico a la avenida 4n # 26n-18 en la ciudad de Cali, o al correo 
+                electrónico: info@stratecsa.com Los tiempos de respuesta serán de diez (10) días hábiles para consultas y de quince (15) días hábiles para reclamos.
+                <br/>
+                4.	Solicitud para revocar la autorización y/o solicitar la supresión del dato: Esta procederá a solicitud del Titular (excepto en los casos donde la 
+                ley señala expresamente que no procede) o cuando la Superintendencia de Industria y Comercio así lo determine, previa verificación del incumplimiento 
+                por parte de STRATECSA SAS de los principios, derechos y garantías constitucionales y legales. La solicitud que realice el Titular sobre el 
+                particular, deberá ser enviada por correo físico a la avenida 4n # 26n-18 en la ciudad de Cali, o al correo electrónico: info@stratecsa.com. 
+                Los tiempos de respuesta serán de diez (10) días hábiles para consultas y de quince (15) días hábiles para reclamos.
+                <br/>
+                5.	Reclamos por inexactitud o incumplimiento de obligaciones: El Titular o sus causahabientes que consideren que la información contenida en una 
+                base de datos debe ser objeto de corrección, actualización o supresión, o cuando consideren que se ha presentado un incumplimiento de cualquiera de 
+                los deberes contenidos en la Ley 1581 de 2012, podrán presentar reclamo ante STRATECSA SAS por correo físico a la avenida 4n # 26n-18 Cali, o al 
+                correo electrónico: info@stratecsa.com. Dicho reclamo será tramitado bajo las siguientes reglas:
+                <br/>
+                6.	El reclamo se formulará mediante solicitud dirigida a STRATECSA SAS, con la identificación del Titular, la descripción de los hechos que dan 
+                lugar al reclamo, la dirección, y acompañando los documentos que se quiera hacer valer. Si el reclamo resulta incompleto, se requerirá al interesado 
+                dentro de los cinco (5) días siguientes a la recepción del reclamo para que subsane las fallas. Transcurridos dos (2) meses desde la fecha del 
+                requerimiento, sin que el solicitante presente la información requerida, se entenderá que ha desistido del reclamo. En caso de que quien reciba el 
+                reclamo no sea competente para resolverlo, dará traslado a quien corresponda en un término máximo de dos (2) días hábiles e informará de la 
+                situación al interesado.
+                <br/>
+                7.	Una vez recibido el reclamo completo, se incluirá en la base de datos una leyenda que diga “reclamo en trámite” y el motivo del mismo, en un 
+                término no mayor a dos (2) días hábiles. Dicha leyenda deberá mantenerse hasta que el reclamo sea decidido.
+                <br/>
+                8.	El término máximo para atender el reclamo será de quince (15) días hábiles contados a partir del día siguiente a la fecha de su recibo. Cuando 
+                no fuere posible atender el reclamo dentro de dicho término, se informará al interesado los motivos de la demora y la fecha en que se atenderá su 
+                reclamo, la cual en ningún caso podrá superar los ocho (8) días hábiles siguientes al vencimiento del primer término. Cuando exista un reclamo, 
+                STRATECSA SAS deberá informar a los terceros con quienes hubiere compartido los datos personales que están siendo objeto de reclamo, que dicho 
+                reclamo existe y que se encuentra en trámite. Adicional a lo anterior, deberá insertar en la base de datos la leyenda “información en discusión 
+                judicial” una vez notificado por parte de la autoridad competente sobre procesos judiciales relacionados con la calidad del dato personal. Mientras 
+                la información este siendo controvertida por su Titular ante la autoridad, STRATECSA SAS no podrá circular con terceros.
+                <br/><br/>
+                7. ACTUALIZACIÓN DE ESTA POLÍTICA
+                <br/>
+                STRATECSA SAS se reserva el derecho de actualizar la presente Política cuando así lo requiera de acuerdo a sus procedimientos internos y ejercicio de 
+                sus actividades. Cuando sea actualizada, deberá informarlo a través de medios idóneos a los Titulares de los datos contenidos en sus bases de datos, 
+                previo a su implementación.
+                <br/><br/>
+                8. FECHA DE ENTRADA EN VIGENCIA DE LA POLÍTICA
+                <br/>
+                La presente política es publicada el día 29 de abril de 2024.
+
+            </p>
                 &nbsp;
-                {/* <ul className={Styles.ulP}>
-                    <li className={Styles.liP}>
-                        <img src="/img/cheque(1).png" className={Styles.imgP}/>
-                        El valor agregado de Stratecsa es su rápido tiempo de respuesta.
-                    </li>
-                    <li className={Styles.liP}>
-                        <img src="/img/cheque(1).png" className={Styles.imgP}/>
-                        En conjunto con la capacitación e interacción constante con los 
-                        requerimientos del mercado, nos permite ofrecer la óptima
-                    </li>
-                    <li className={Styles.liP}>
-                        solución informática para su negocio dando solución a sus requerimientos 
-                        en poco tiempo.
-                    </li>
-                    <li className={Styles.liP}>
-                        <img src="/img/cheque(1).png" className={Styles.imgP}/>
-                        Nuestro equipo humano está conformado por asesores multidisciplinarios y especialistas 
-                        en cada tipo de 
-                    </li>
-                    <li className={Styles.liP}>
-                        industria e ingenieros y desarrolladores de tecnología.
-                    </li>
-                </ul> */}
-
-
-            </div>
-
-            <div className={`${Styles.seccionNN} ${Styles.noneMovil}`}>
-                <SeccionN/>
-            </div>
-
-            <div className={`${Styles.nonePC} ${Styles.seccionNNM}`}>
-                <SeccionMovil/>
-            </div>
-
-            <div style={containerMV} className={Styles.noneMovil}>
-                <div className={Styles.containMv}>
-                    <div className={Styles.div1MV}>
-                        <h1 className={Styles.titleMV}>MISIÓN</h1>
-                        <p className={Styles.parrafosMV}>
-                        Ofrecer a nuestros clientes la más amplia gama de servicios y 
-                        soluciones tecnológicas, que les permitan optimizar sus procesos, 
-                        cumplir sus objetivos y productividad. Para ello implementamos 
-                        soluciones prácticas adaptadas a sus necesidades y desarrollamos 
-                        nuevas soluciones creativas. Nuestra base parte del aprovechamiento 
-                        de las nuevas redes, para aumentar la rentabilidad de  nuestros 
-                        clientes.</p>
-                    </div>
-                    <div className={Styles.div2MV}>
-                        <h1 className={Styles.titleMV}>VISIÓN</h1>
-                        <p className={Styles.parrafosMV} >Queremos estar comprometidos con las 
-                        necesidades de nuestros clientes de forma transparente y eficaz para 
-                        convertirnos en su socio de confianza. En nuestra visión queremos ser 
-                        una empresa de referencia, que camina con el cambio de la tecnología y 
-                        la sociedad, Esta labor se debe desempeñar de forma ética y satisfactoria 
-                        para nosotros, nuestros clientes y el resto de la sociedad.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div style={containerMVM} className={Styles.nonePC}>
-                <div className={Styles.containMvM}>
-                    <div className={Styles.div1MVM}>
-                        <h1 className={Styles.titleMVM}>MISIÓN</h1>
-                        <p className={Styles.parrafosMVM}>
-                        Ofrecer a nuestros clientes la más amplia gama de servicios y 
-                        soluciones tecnológicas, que les permitan optimizar sus procesos, 
-                        cumplir sus objetivos y productividad. Para ello implementamos 
-                        soluciones prácticas adaptadas a sus necesidades y desarrollamos 
-                        nuevas soluciones creativas. Nuestra base parte del aprovechamiento 
-                        de las nuevas redes, para aumentar la rentabilidad de  nuestros 
-                        clientes.</p>
-                    </div>
-                    <div className={Styles.div2MVM}>
-                        <h1 className={Styles.titleMVM2}>VISIÓN</h1>
-                        <p className={Styles.parrafosMVM2} >Queremos estar comprometidos con las 
-                        necesidades de nuestros clientes de forma transparente y eficaz para 
-                        convertirnos en su socio de confianza. En nuestra visión queremos ser 
-                        una empresa de referencia, que camina con el cambio de la tecnología y 
-                        la sociedad, Esta labor se debe desempeñar de forma ética y satisfactoria 
-                        para nosotros, nuestros clientes y el resto de la sociedad.</p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </>
     );
 }
 
-export default Nosotros;
+export default Politicas;
