@@ -56,7 +56,7 @@ function Ciberseguridad() {
                         <h1 className={Styles.titleP}>Ciberseguridad</h1>
                         <p className={Styles.parrafosP}>
                         <span style={parrafColor}>Protección Avanzada para su Empresa con Soluciones de Ciberseguridad, </span>
-                        seguramos las operaciones de su empresa con una red robusta y confiable.
+                        aseguramos las operaciones de su empresa con una red robusta y confiable.
                         <br/>
                         Su empresa contará con protección avanzada contra amenazas digitales, manteniendo sus comunicaciones 
                         y datos seguros en todo momento. Nuestra solución de seguridad en la nube (Cloud Security) opera con los más altos estándares internacionales.

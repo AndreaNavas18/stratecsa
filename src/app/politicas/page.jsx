@@ -2,7 +2,7 @@ import Styles from './politicas.module.css';
 
 function Politicas() {
     const containerSty = {
-        backgroundImage: `url(/new/img2.jpg)`,
+        backgroundImage: `url(/new/politicas.jpg)`,
         backgroundPosition: 'center',
         width: 'auto',
         height: 'auto',

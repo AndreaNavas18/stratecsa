@@ -2,7 +2,7 @@ import Styles from '../politicas/politicas.module.css';
 
 function Terminos() {
     const containerSty = {
-        backgroundImage: `url(/new/img2.jpg)`,
+        backgroundImage: `url(/new/terminos.jpg)`,
         backgroundPosition: 'center',
         width: 'auto',
         height: 'auto',
