@@ -64,22 +64,22 @@ function RedMpls() {
                         &nbsp;
                             <ul className={Styles.ulP}>
                                 <li className={Styles.liP}>
-                                    <img src="/img/cheque(1).png" className={Styles.imgP}/>
+                                    <img alt="" src="/img/cheque(1).png" className={Styles.imgP}/>
                                     <span style={parrafColor}>Medio de conexión: </span>
                                     Puede ser inalámbrico o basado en soluciones de fibra óptica.
                                 </li>
                                 <li className={Styles.liP}>
-                                    <img src="/img/cheque(1).png" className={Styles.imgP}/>
+                                    <img alt="" src="/img/cheque(1).png" className={Styles.imgP}/>
                                     <span style={parrafColor}>Interconexión </span>
                                     de datos entre empresas y clientes, proveedores o equipos de manera efectiva.
                                 </li>
                                 <li className={Styles.liP}>
-                                    <img src="/img/cheque(1).png" className={Styles.imgP}/>
+                                    <img alt="" src="/img/cheque(1).png" className={Styles.imgP}/>
                                     Puede involucrar diversas tecnologías, como 
                                     <span style={parrafColor}>fibra óptica, conexiónes inalámbricas o híbridas.</span>
                                 </li>
                                 <li className={Styles.liP}>
-                                    <img src="/img/cheque(1).png" className={Styles.imgP}/>
+                                    <img alt="" src="/img/cheque(1).png" className={Styles.imgP}/>
                                     <span style={parrafColor}>Capacidad de transmición</span>
                                     según las necesidades.
                                 </li>
@@ -88,7 +88,7 @@ function RedMpls() {
                     </div>
                     <div className={`${Styles.seccion2} ${Styles.noneM}`}>
                         <div className={Styles.divImg}>
-                            <img src="/new/img40.jpeg" className={Styles.img2P}/>
+                            <img alt="" src="/new/img40.jpeg" className={Styles.img2P}/>
                         </div>
                         <div className={Styles.divCont}>
                             <h1 className={Styles.title2P}>¿Cuales son los beneficios de la Última Milla?</h1>

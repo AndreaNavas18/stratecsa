@@ -73,16 +73,16 @@ function CloudServer () {
                             &nbsp;
                                 <ul className={Styles.ulP}>
                                     <li className={Styles.liP}>
-                                        <img src="/img/cheque(1).png" className={Styles.imgP}/>
+                                        <img alt="" src="/img/cheque(1).png" className={Styles.imgP}/>
                                         Elegir la cantidad de núcleos, memoria RAM y almacenamiento que su negocio requiera.
                                     </li>
                                     <li className={Styles.liP}>
-                                        <img src="/img/cheque(1).png" className={Styles.imgP}/>
+                                        <img alt="" src="/img/cheque(1).png" className={Styles.imgP}/>
                                         Proteger el ingreso y salida de datos, así como de aplicaciones, servicio de antivirus 
                                         NAT, DHCP, Load Balancer, DLP. 
                                     </li>
                                     <li className={Styles.liP}>
-                                        <img src="/img/cheque(1).png" className={Styles.imgP}/>
+                                        <img alt="" src="/img/cheque(1).png" className={Styles.imgP}/>
                                         Conectar su nube a Internet de 5 Mbps, con dirección IP permanente (VXLAN) y transferencia ilimitada. 
                                     </li>
                                 </ul>
@@ -90,7 +90,7 @@ function CloudServer () {
                         </div>
                         <div className={`${Styles.seccion2} ${Styles.noneM}`}>
                             <div className={Styles.divImg}>
-                                <img src="/new/img34.jpeg" className={Styles.img2P}/>
+                                <img alt="" src="/new/img34.jpeg" className={Styles.img2P}/>
                             </div>
                             <div className={Styles.divCont}>
                                 <h1 className={Styles.title2P}>¿Cuales son los beneficios del Cloud Server?</h1>

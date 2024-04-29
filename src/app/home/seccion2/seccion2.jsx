@@ -16,7 +16,7 @@ export default function Seccion2() {
                 <div className={`${Styles.divLogoS2} ${Styles.divLogoS2M}`}>
                     <div className={`${Styles.divIconS2} ${Styles.divIconS2M}`}>
                         <a href="/">
-                            <img
+                            <img alt=""
                                 className={`${Styles.iconStraS2} ${Styles.iconStraS2M}`}
                                 src="/new/banner4.png"/>
                         </a>

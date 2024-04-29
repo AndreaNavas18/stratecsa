@@ -71,7 +71,7 @@ export default function Seccion4() {
             onClick={() => handleClick(servicio.id)}
             // onClick={() => seleccionarServicio(servicio.id)}
         >
-          <img
+          <img alt=""
             className={Styles.iconoServicioS4}
             src={servicio.icono} 
             />
@@ -111,14 +111,14 @@ export default function Seccion4() {
                         // className={Styles.buttonS4}
                         onClick={anteriorPagina}
                         >
-                        <img
+                        <img alt=""
                         className={Styles.backS4} 
                         src="/img/flecha-atras.png"/>
                         </button>
                         <button 
                         // className={Styles.buttonS4} 
                         onClick={siguientePagina}>
-                        <img
+                        <img alt=""
                         className={Styles.sigS4} 
                         src="/img/flecha-sig.png"/>
                         </button>

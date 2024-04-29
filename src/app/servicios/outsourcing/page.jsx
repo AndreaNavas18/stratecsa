@@ -65,12 +65,12 @@ function Outsourcing() {
                         &nbsp;
                             <ul className={Styles.ulP}>
                                 <li className={Styles.liP}>
-                                    <img src="/img/cheque(1).png" className={Styles.imgP}/>
+                                    <img alt="" src="/img/cheque(1).png" className={Styles.imgP}/>
                                     Atención inmediata a los incidentes o problemas con la continuidad operativa 
                                     y reducción en que el sistema no opera.
                                 </li>
                                 <li className={Styles.liP}>
-                                    <img src="/img/cheque(1).png" className={Styles.imgP}/>
+                                    <img alt="" src="/img/cheque(1).png" className={Styles.imgP}/>
                                     Seguimiento y progreso a cada solicitud de servicio. 
                                 </li>
                                 
@@ -78,7 +78,7 @@ function Outsourcing() {
                     </div>
                     <div className={`${Styles.seccion2} ${Styles.noneM}`}>
                         <div className={Styles.divImg}>
-                            <img src="/new/img36.jpeg" className={Styles.img2P}/>
+                            <img alt="" src="/new/img36.jpeg" className={Styles.img2P}/>
                         </div>
                         <div className={Styles.divCont}>
                             <h1 className={Styles.title2P}>¿Cuales son los beneficios del Outsourcing IT?</h1>

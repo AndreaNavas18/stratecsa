@@ -18,8 +18,8 @@ function Terminos() {
             <p className={Styles.textos}>Contamos con múltiples servicios que te ayudarán a la solución de tus problemas IT y al cumplimiento de tus metas. </p>
             <h2 className={Styles.titulos}>Términos y Condiciones Legales de Utilización del Portal Web de STRATECSA</h2>
             <p className={Styles.textos}>
-            El acceso y uso por parte de los usuarios (el "Usuario" o "Usuarios") del portal www.stratecsa.com y https://stratecsa.cloud(en adelante, los 
-            "Portales Web de STRATECSA") de propiedad de STRATEGIC TECHNOLOGICAL DE COLOMBIA SAS (en adelante, "La Empresa"), se regirá por los siguientes 
+            El acceso y uso por parte de los usuarios (el &quot;Usuario&quot; o &quot;Usuarios&quot;) del portal www.stratecsa.com y https://stratecsa.cloud(en adelante, los 
+            &quot;Portales Web de STRATECSA&quot;) de propiedad de STRATEGIC TECHNOLOGICAL DE COLOMBIA SAS (en adelante, &quot;La Empresa&quot;), se regirá por los siguientes 
             términos y condiciones: El acceso a los Portales Web de STRATECSA atribuye la condición de Usuario del mismo e implica la aceptación plena y sin 
             reserva de todos los términos y condiciones que se encuentren vigentes en el momento mismo en que el Usuario acceda al Portal Web de STRATECSA. 
             La Empresa se reserva la facultad de efectuar, en cualquier momento y sin necesidad de previo aviso, modificaciones respecto a la información 
@@ -61,7 +61,7 @@ function Terminos() {
             <br/>
             Sitios Vinculados
             <br/>
-            El Portal Web de STRATECSA contiene vínculos ("links") a otros sitios en Internet que permiten al Usuario tener acceso a ellos, pero de ninguna manera puede 
+            El Portal Web de STRATECSA contiene vínculos (&quot;links&quot;) a otros sitios en Internet que permiten al Usuario tener acceso a ellos, pero de ninguna manera puede 
             derivarse para La Empresa responsabilidad alguna en relación con la calidad de los productos o servicios ofrecidos en el sitio al que se hace el vínculo o por 
             las transacciones que llegue a efectuar el Usuario en dichos lugares de la red.
             <br/>

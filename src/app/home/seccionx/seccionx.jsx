@@ -25,7 +25,7 @@ function Seccionx() {
             <div className={Styles.containerX}>
                     <div className={Styles.div1X}>
                         <div className={Styles.cobert}>
-                        <img className={Styles.imgX} 
+                        <img alt="" className={Styles.imgX} 
                             src="/new/img23.png"/>
 
                             <div className={Styles.textoX}>
@@ -35,7 +35,7 @@ function Seccionx() {
                             </div>
                         </div>
                         <div className={Styles.pago}>
-                        <img className={Styles.imgX} 
+                        <img alt="" className={Styles.imgX} 
                             src="/new/img24.png"/>
 
                             <div className={Styles.textoX}>
@@ -48,7 +48,7 @@ function Seccionx() {
                     </div>
                     <div className={Styles.div2X}>
                         <div className={Styles.atenc}>
-                        <img className={Styles.imgX} 
+                        <img alt="" className={Styles.imgX} 
                             src="/new/img25.png"/>
 
                             <div className={Styles.textoX}>
@@ -57,7 +57,7 @@ function Seccionx() {
                             </div>
                         </div>
                         <div className={Styles.sop}>
-                        <img className={Styles.imgX} 
+                        <img alt="" className={Styles.imgX} 
                             src="/new/img26.png"/>
 
                             <div className={Styles.textoX}>

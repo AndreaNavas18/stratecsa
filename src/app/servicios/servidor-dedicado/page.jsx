@@ -66,13 +66,13 @@ return (
                     &nbsp;
                         <ul className={Styles.ulP}>
                             <li className={Styles.liP}>
-                                <img src="/img/cheque(1).png" className={Styles.imgP}/>
+                                <img alt="" src="/img/cheque(1).png" className={Styles.imgP}/>
                                 <span style={parrafColor}>Servidor Virtual: </span>
                                 Corresponde a una máquina virtual alojada en un servidor físico, 
                                 en el cual se tienen otras máquinas virtuales.
                             </li>
                             <li className={Styles.liP}>
-                                <img src="/img/cheque(1).png" className={Styles.imgP}/>
+                                <img alt="" src="/img/cheque(1).png" className={Styles.imgP}/>
                                 <span style={parrafColor}>Servidor Físico: </span>
                                 Servidor exclusivo para un solo cliente. 
                             </li>
@@ -81,7 +81,7 @@ return (
                 </div>
                 <div className={`${Styles.seccion2} ${Styles.noneM}`}>
                     <div className={Styles.divImg}>
-                        <img src="/new/img19.jpeg" className={Styles.img2P}/>
+                        <img alt="" src="/new/img19.jpeg" className={Styles.img2P}/>
                     </div>
                     <div className={Styles.divCont}>
                         <h1 className={Styles.title2P}>¿Cuales son los beneficios del Servidor Dedicado?</h1>

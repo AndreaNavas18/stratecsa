@@ -59,35 +59,35 @@ function ComunicacionesUnificadas() {
                         &nbsp;
                             <ul className={Styles.ulP}>
                                 <li className={Styles.liP}>
-                                    <img src="/img/cheque(1).png" className={Styles.imgP}/>
+                                    <img alt="" src="/img/cheque(1).png" className={Styles.imgP}/>
                                     Telefonía IP.
                                 </li>
                                 <li className={Styles.liP}>
-                                    <img src="/img/cheque(1).png" className={Styles.imgP}/>
+                                    <img alt="" src="/img/cheque(1).png" className={Styles.imgP}/>
                                     Videoconferencias.
                                 </li>
                                 <li className={Styles.liP}>
-                                    <img src="/img/cheque(1).png" className={Styles.imgP}/>
+                                    <img alt="" src="/img/cheque(1).png" className={Styles.imgP}/>
                                     Audio conferencias.
                                 </li>
                                 <li className={Styles.liP}>
-                                    <img src="/img/cheque(1).png" className={Styles.imgP}/>
+                                    <img alt="" src="/img/cheque(1).png" className={Styles.imgP}/>
                                     Conferencias web integradas.
                                 </li>
                                 <li className={Styles.liP}>
-                                    <img src="/img/cheque(1).png" className={Styles.imgP}/>
+                                    <img alt="" src="/img/cheque(1).png" className={Styles.imgP}/>
                                     Softphones IP móviles.
                                 </li>
                                 <li className={Styles.liP}>
-                                    <img src="/img/cheque(1).png" className={Styles.imgP}/>
+                                    <img alt="" src="/img/cheque(1).png" className={Styles.imgP}/>
                                     Voicemail.
                                 </li>
                                 <li className={Styles.liP}>
-                                    <img src="/img/cheque(1).png" className={Styles.imgP}/>
+                                    <img alt="" src="/img/cheque(1).png" className={Styles.imgP}/>
                                     Mensajería unificada.
                                 </li>
                                 <li className={Styles.liP}>
-                                    <img src="/img/cheque(1).png" className={Styles.imgP}/>
+                                    <img alt="" src="/img/cheque(1).png" className={Styles.imgP}/>
                                     Centros de contacto.
                                 </li>
                             </ul>
@@ -95,7 +95,7 @@ function ComunicacionesUnificadas() {
                     </div>
                     <div className={`${Styles.seccion2} ${Styles.noneM}`}>
                         <div className={Styles.divImg}>
-                            <img src="/new/img13.jpg" className={Styles.img2P}/>
+                            <img alt="" src="/new/img13.jpg" className={Styles.img2P}/>
                         </div>
                         <div className={Styles.divCont}>
                             <h1 className={Styles.title2P}>¿Cuales son los beneficios de las comunicaciones unificadas?</h1>

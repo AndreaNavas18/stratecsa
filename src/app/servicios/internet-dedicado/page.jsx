@@ -61,21 +61,21 @@ function InternetDedicado() {
                     &nbsp;
                         <ul className={Styles.ulP}>
                             <li className={Styles.liP}>
-                                <img src="/img/cheque(1).png" className={Styles.imgP}/>
+                                <img alt="" src="/img/cheque(1).png" className={Styles.imgP}/>
                                 Ofrecemos medios de conexión inalámbricos o soluciones de fibra óptica, 
                                 según sus preferencias y requisitos técnicos.
                             </li>
                             <li className={Styles.liP}>
-                                <img src="/img/cheque(1).png" className={Styles.imgP}/>
+                                <img alt="" src="/img/cheque(1).png" className={Styles.imgP}/>
                                 Flexibilidad en las opciones de facturación.
                             </li>
                             <li className={Styles.liP}>
-                                <img src="/img/cheque(1).png" className={Styles.imgP}/>
+                                <img alt="" src="/img/cheque(1).png" className={Styles.imgP}/>
                                 Atención al Cliente Centralizada para ayudar con la administración de fallas, 
                                 implementación del servicio y consultas en general. 
                             </li>
                             <li className={Styles.liP}>
-                                <img src="/img/cheque(1).png" className={Styles.imgP}/>
+                                <img alt="" src="/img/cheque(1).png" className={Styles.imgP}/>
                                 Puede registrar un dominio propio a nombre de su empresa. 
                                 Los servidores de nombres primarios asociados con el dominio serán su responsabilidad.
                             </li>
@@ -89,7 +89,7 @@ function InternetDedicado() {
                 </div>
                 <div className={`${Styles.seccion2} ${Styles.noneM}`}>
                     <div className={Styles.divImg}>
-                        <img src="/new/img11.jpg" className={Styles.img2P}/>
+                        <img alt="" src="/new/img11.jpg" className={Styles.img2P}/>
                     </div>
                     <div className={Styles.divCont}>
                         <h1 className={Styles.title2P}>¿Cuales son los beneficios del Internet Dedicado?</h1>

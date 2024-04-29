@@ -147,21 +147,21 @@ function Contacto () {
                   </p>
                   <div className={`${Styles.contdivsCTT} ${Styles.contdivsCTTM}`}>
                     <div className={`${Styles.firstDiv} ${Styles.firstDivM}`}>
-                      <img className={`${Styles.backS4} ${Styles.backS4M}`} src="/new/iconoubi.png"/>
+                      <img alt="" className={`${Styles.backS4} ${Styles.backS4M}`} src="/new/iconoubi.png"/>
                         <div className={`${Styles.textoCTT} ${Styles.textoCTTM}`}>
                           <h1 className={`${Styles.titleCT2} ${Styles.titleCT2M}`}>UBICACIÓN</h1>
                           <p className={`${Styles.parrafoCT3} ${Styles.parrafoCT3M}`}>Avenida 4 Norte # 26N - 18. Cali, Valle del Cauca</p>
                         </div>
                     </div>
                     <div className={`${Styles.firstDiv} ${Styles.firstDivM}`}>
-                    <img className={`${Styles.backS4} ${Styles.backS4M}`} src="/new/iconotel.png"/>
+                    <img alt="" className={`${Styles.backS4} ${Styles.backS4M}`} src="/new/iconotel.png"/>
                       <div className={`${Styles.textoCTT} ${Styles.textoCTTM}`}>
                         <h1 className={`${Styles.titleCT2} ${Styles.titleCT2M}`}>LINEAS TELEFÓNICAS</h1>
                         <p className={`${Styles.parrafoCT3} ${Styles.parrafoCT3M}`}>(+57) 314 865 4018</p>
                       </div>
                     </div>
                     <div className={`${Styles.firstDiv} ${Styles.firstDivM}`}>
-                    <img className={`${Styles.backS4} ${Styles.backS4M}`} src="/new/iconomes.png"/>
+                    <img alt="" className={`${Styles.backS4} ${Styles.backS4M}`} src="/new/iconomes.png"/>
                       <div className={`${Styles.textoCTT} ${Styles.textoCTTM}`}>
                         <h1 className={`${Styles.titleCT2} ${Styles.titleCT2M}`}>EMAIL</h1>
                         <p className={`${Styles.parrafoCT3} ${Styles.parrafoCT3M}`}>info@stratecsa.com</p>

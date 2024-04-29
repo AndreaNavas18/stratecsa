@@ -66,12 +66,12 @@ return (
                     &nbsp;
                         <ul className={Styles.ulP}>
                             <li className={Styles.liP}>
-                                <img src="/img/cheque(1).png" className={Styles.imgP}/>
+                                <img alt="" src="/img/cheque(1).png" className={Styles.imgP}/>
                                 <span style={parrafColor}>Basic Colocation: </span>Corresponde al alquiler de racks
                                 exclusivos para el cliente, ubicados en salas de uso común.
                             </li>
                             <li className={Styles.liP}>
-                                <img src="/img/cheque(1).png" className={Styles.imgP}/>
+                                <img alt="" src="/img/cheque(1).png" className={Styles.imgP}/>
                                 <span style={parrafColor}>Premium Colocation: </span>Bajo esta modalidad, el cliente 
                                 podrá contar con salas completas de uso exclusivo, para colocación de equipos. 
                             </li>
@@ -85,7 +85,7 @@ return (
                 </div>
                 <div className={`${Styles.seccion2} ${Styles.noneM}`}>
                     <div className={Styles.divImg}>
-                        <img src="/new/img17.jpg" className={Styles.img2P}/>
+                        <img alt="" src="/new/img17.jpg" className={Styles.img2P}/>
                     </div>
                     <div className={Styles.divCont}>
                         <h1 className={Styles.title2P}>¿Cuales son los beneficios de Colocation?</h1>

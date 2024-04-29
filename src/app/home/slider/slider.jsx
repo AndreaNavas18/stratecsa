@@ -18,14 +18,14 @@ const images = [
 // Componente personalizado para el botón de retroceso
 const CustomPrevButton = ({ onClick, ...rest }) => (
     <button {...rest} onClick={onClick} className={Styles.btnBack}>
-        <img className={Styles.backSli} src="/new/backk.png"/>
+        <img alt="" className={Styles.backSli} src="/new/backk.png"/>
     </button>
 );
 
 // Componente personalizado para el botón de avance
 const CustomNextButton = ({ onClick, ...rest }) => (
     <button {...rest} onClick={onClick} className={Styles.btnBef}>
-        <img className={Styles.sigSli} src="/new/sigg.png"/>
+        <img alt="" className={Styles.sigSli} src="/new/sigg.png"/>
     </button>
 );
 

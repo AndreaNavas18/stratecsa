@@ -66,11 +66,11 @@ function CorreoCorporativo() {
                         &nbsp;
                             <ul className={Styles.ulP}>
                                 <li className={Styles.liP}>
-                                    <img src="/img/cheque(1).png" className={Styles.imgP}/>
+                                    <img alt="" src="/img/cheque(1).png" className={Styles.imgP}/>
                                     Elegir la cantidad de núcleos, memoria RAM y almacenamiento que su negocio requiera.
                                 </li>
                                 <li className={Styles.liP}>
-                                    <img src="/img/cheque(1).png" className={Styles.imgP}/>
+                                    <img alt="" src="/img/cheque(1).png" className={Styles.imgP}/>
                                     Proteger el ingreso y salida de datos, así como de aplicaciones. 
                                 </li>
                                 
@@ -78,7 +78,7 @@ function CorreoCorporativo() {
                     </div>
                     <div className={`${Styles.seccion2} ${Styles.noneM}`}>
                         <div className={Styles.divImg}>
-                            <img src="/new/img33.jpeg" className={Styles.img2P}/>
+                            <img alt="" src="/new/img33.jpeg" className={Styles.img2P}/>
                         </div>
                         <div className={Styles.divCont}>
                             <h1 className={Styles.title2P}>¿Cuales son los beneficios del Correo Corporativo?</h1>

@@ -69,20 +69,20 @@ return (
                     &nbsp;
                         <ul className={Styles.ulP}>
                             <li className={Styles.liP}>
-                                <img src="/img/cheque(1).png" className={Styles.imgP}/>
+                                <img alt="" src="/img/cheque(1).png" className={Styles.imgP}/>
                                 Proteja los equipos contra las amenazas informáticas conocidas y de día cero.
                             </li>
                             <li className={Styles.liP}>
-                                <img src="/img/cheque(1).png" className={Styles.imgP}/>
+                                <img alt="" src="/img/cheque(1).png" className={Styles.imgP}/>
                                 Una línea de defensa en el propio servidor, ya sea físico, virtual o en Internet.
                             </li>
                             <li className={Styles.liP}>
-                                <img src="/img/cheque(1).png" className={Styles.imgP}/>
+                                <img alt="" src="/img/cheque(1).png" className={Styles.imgP}/>
                                 Ayuda a las organizaciones a evitar que se produzca fuga de datos e interrupciones 
                                 en la productividad empresarial.
                             </li>
                             <li className={Styles.liP}>
-                                <img src="/img/cheque(1).png" className={Styles.imgP}/>
+                                <img alt="" src="/img/cheque(1).png" className={Styles.imgP}/>
                                 Fomentar la identificación de actividades y comportamientos sospechosos 
                                 y tomar medidas proactivas y preventivas.
                             </li>
@@ -91,7 +91,7 @@ return (
                 </div>
                 <div className={`${Styles.seccion2} ${Styles.noneM}`}>
                     <div className={Styles.divImg}>
-                        <img src="/new/img15.jpeg" className={Styles.img2P}/>
+                        <img alt="" src="/new/img15.jpeg" className={Styles.img2P}/>
                     </div>
                     <div className={Styles.divCont}>
                         <h1 className={Styles.title2P}>¿Cuales son los beneficios de seguridad en la nube?</h1>

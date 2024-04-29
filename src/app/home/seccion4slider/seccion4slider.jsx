@@ -135,7 +135,7 @@ function Seccion4Slider () {
                                                     className={`${Styles.buttonS4} ${Styles.buttonS4M}`}
                                                     onClick={() => window.location.href = servicio.url}
                                                 >
-                                                <img
+                                                <img alt=""
                                                     className={`${Styles.iconoServicioS4} ${Styles.iconoServicioS4M}`}
                                                     src={servicio.icono} 
                                                     />

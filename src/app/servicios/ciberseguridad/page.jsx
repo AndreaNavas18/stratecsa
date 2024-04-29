@@ -68,25 +68,25 @@ function Ciberseguridad() {
                         &nbsp;
                             <ul className={Styles.ulP}>
                                 <li className={Styles.liP}>
-                                    <img src="/img/cheque(1).png" className={Styles.imgP}/>
+                                    <img alt="" src="/img/cheque(1).png" className={Styles.imgP}/>
                                     Servicio de 
                                     <span style={parrafColor}>protección  </span>
                                     completa contra todo tipo de amenazas.
                                 </li>
                                 <li className={Styles.liP}>
-                                    <img src="/img/cheque(1).png" className={Styles.imgP}/>
+                                    <img alt="" src="/img/cheque(1).png" className={Styles.imgP}/>
                                     Herramientas avanzadas de 
                                     <span style={parrafColor}>detección de amenazas </span>
                                     y respuestas a incidentes.
                                 </li>
                                 <li className={Styles.liP}>
-                                    <img src="/img/cheque(1).png" className={Styles.imgP}/>
+                                    <img alt="" src="/img/cheque(1).png" className={Styles.imgP}/>
                                     Proteja sus datos y aplicaciones en la nube, 
                                     <span style={parrafColor}>garantizando </span>
                                     su integridad y confidencialidad.
                                 </li>
                                 <li className={Styles.liP}>
-                                    <img src="/img/cheque(1).png" className={Styles.imgP}/>
+                                    <img alt="" src="/img/cheque(1).png" className={Styles.imgP}/>
                                     Formación en ciberseguridad para que su equipo pueda 
                                     <span style={parrafColor}>identificar y evitar </span>
                                     amenazas
@@ -96,7 +96,7 @@ function Ciberseguridad() {
                     </div>
                     <div className={`${Styles.seccion2} ${Styles.noneM}`}>
                         <div className={Styles.divImg}>
-                            <img src="/new/img39.jpeg" className={Styles.img2P}/>
+                            <img alt="" src="/new/img39.jpeg" className={Styles.img2P}/>
                         </div>
                         <div className={Styles.divCont}>
                             <h1 className={Styles.title2P}>¿Cuales son los beneficios de la Ciberseguridad?</h1>

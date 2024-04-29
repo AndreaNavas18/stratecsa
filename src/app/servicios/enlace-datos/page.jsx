@@ -55,19 +55,19 @@ function EnlaceDatos() {
                         &nbsp;
                             <ul className={Styles.ulP}>
                                 <li className={Styles.liP}>
-                                    <img src="/img/cheque(1).png" className={Styles.imgP}/>
+                                    <img alt="" src="/img/cheque(1).png" className={Styles.imgP}/>
                                     Información en tiempo real para acceder a datos actualizados sobre los clientes y las ventas de manera instantánea.
                                 </li>
                                 <li className={Styles.liP}>
-                                    <img src="/img/cheque(1).png" className={Styles.imgP}/>
+                                    <img alt="" src="/img/cheque(1).png" className={Styles.imgP}/>
                                     Tránsito de datos confiable con la que garantizamos un flujo de datos seguro y confiable.
                                 </li>
                                 <li className={Styles.liP}>
-                                    <img src="/img/cheque(1).png" className={Styles.imgP}/>
+                                    <img alt="" src="/img/cheque(1).png" className={Styles.imgP}/>
                                     Contabilidad en línea.
                                 </li>
                                 <li className={Styles.liP}>
-                                    <img src="/img/cheque(1).png" className={Styles.imgP}/>
+                                    <img alt="" src="/img/cheque(1).png" className={Styles.imgP}/>
                                     Ahorrar costos de comunicación mediante soluciones de voz en todas las sedes, sin depender
                                      de las redes de telefonía pública básica conmutada y sin costos adicionales
                                 </li>
@@ -82,7 +82,7 @@ function EnlaceDatos() {
                     </div>
                     <div className={`${Styles.seccion2} ${Styles.noneM}`}>
                         <div className={Styles.divImg}>
-                            <img src="/new/img10.jpg" className={Styles.img2P}/>
+                            <img alt="" src="/new/img10.jpg" className={Styles.img2P}/>
                         </div>
                         <div className={Styles.divCont}>
                             <h1 className={Styles.title2P}>¿Cuales son los beneficios del Enlace de datos?</h1>
