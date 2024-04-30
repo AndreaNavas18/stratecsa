@@ -40,7 +40,7 @@ function Contacto () {
         </div>
       </div>
       <div className={Styles.parD}>
-        <form action="https://formspree.io/f/xwkgaaag" method="POST" onSubmit={handleSubmit} className={`${Styles.formulario} ${Styles.formularioM}`}>
+        <form action="https://formspree.io/f/xnqewpyw" method="POST" onSubmit={handleSubmit} className={`${Styles.formulario} ${Styles.formularioM}`}>
           <div className={`${Styles.contenedor3} ${Styles.contenedor3M}`}>
             <div className={`${Styles.contenedor4} ${Styles.contenedor4M}`}>
               <label className={`${Styles.labelCT} ${Styles.labelCTM}`}>Nombre</label>
@@ -86,7 +86,7 @@ function Contacto () {
       </div> 
       <div className={Styles.parM}>
         {/* Formulario movil  */}
-        <form action="https://formspree.io/f/xwkgaaag" method="POST" onSubmit={handleSubmit} className={`${Styles.formulario} ${Styles.formularioM}`}>
+        <form action="https://formspree.io/f/xnqewpyw" method="POST" onSubmit={handleSubmit} className={`${Styles.formulario} ${Styles.formularioM}`}>
           <div className={`${Styles.contenedor3} ${Styles.contenedor3M}`}>
             <div className={`${Styles.contenedor4} ${Styles.contenedor4M}`}>
               <label className={`${Styles.labelCT} ${Styles.labelCTM}`}>Nombre</label>
