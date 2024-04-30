@@ -148,7 +148,7 @@ function Footer1() {
                         <h2 className={Styles.titleSusF1}>SUSCRÍBETE AHORA</h2>
                         <p className={Styles.parrafoSusF1}>Ofertas exclusivas solo para nuestros suscriptores</p>
                         <div className={Styles.divCorreo}>
-                            <input className={Styles.inputF1} type="text" placeholder="Escribe tu correo "/>
+                            <input className={Styles.inputF1} type="text" placeholder="Escriba su correo "/>
                             <button className={Styles.btnCorreo}>
                                 <a href="/#">
                                     <img className={Styles.avionF1} src="/new/avion.png"/>
@@ -243,7 +243,7 @@ function Footer1() {
                         <h2 className={Styles.titleSusF1M}>SUSCRÍBETE AHORA</h2>
                         <p className={Styles.parrafoSusF1M}>Ofertas exclusivas solo para nuestros suscriptores</p>
                         <div className={Styles.divCorreoM}>
-                            <input className={Styles.inputF1M} type="text" placeholder="Escribe tu correo "/>
+                            <input className={Styles.inputF1M} type="text" placeholder="Escriba su correo "/>
                             <button className={Styles.btnCorreoM}>
                                 <a href="/#">
                                     <img className={Styles.avionF1M} src="/new/avion.png"/>

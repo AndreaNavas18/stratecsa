@@ -38,7 +38,7 @@ function ComunicacionesUnificadas() {
         {
             imagen: '/new/img13.jpg',
             span: 'Mayor productividad. ',
-            parrafo: 'para tu empresa con el mejor sistema de comunicaciones unificadas.',
+            parrafo: 'para su empresa con el mejor sistema de comunicaciones unificadas.',
         },
 
     ];
@@ -104,7 +104,7 @@ function ComunicacionesUnificadas() {
                             <p className={Styles.parrafosP2}><span style={parrafColor}>3) Menor inversión.</span> Disminuye las inversiones significativamente en líneas telefónicas.</p>
                             <p className={Styles.parrafosP2}><span style={parrafColor}>4) Escalable.</span> Una computadora estándar puede manejar fácilmente un gran número de líneas telefónicas y extensiones.</p>
                             <p className={Styles.parrafosP2}><span style={parrafColor}>5) Mejor servicio al cliente.</span> Mayor agilidad para la atención de tus clientes.</p>
-                            <p className={Styles.parrafosP2}><span style={parrafColor}>6) Mayor productividad.</span> para tu empresa con el mejor sistema de comunicaciones unificadas.</p>
+                            <p className={Styles.parrafosP2}><span style={parrafColor}>6) Mayor productividad.</span> para su empresa con el mejor sistema de comunicaciones unificadas.</p>
                         </div>
                     </div>
                     <div className={`${Styles.seccion2} ${Styles.nonePC}`}>

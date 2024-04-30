@@ -4,7 +4,9 @@ import GoogleMapComponent from '../googlemaps';
 import { useState } from 'react';
 
 function Contacto () {
-  const [message, setMessage] = useState('')
+  const [message, setMessage] = useState('');
+  const [enviado, setEnviado] = useState(false);
+
   const handleSubmit = async (e) => {
     e.preventDefault()
     const data = new FormData(e.target)
@@ -22,25 +24,29 @@ function Contacto () {
       return false
     }
     setMessage('Mensaje enviado con éxito')
+    setEnviado(true);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   const containerSty = {
     backgroundImage: `url(/new/contacto4.png)`,
   };
 
+
   return (
     <>
       <div className={`${Styles.container} ${Styles.containerM}`} style={containerSty}>
         <div className={`${Styles.contenedor2} ${Styles.contenedor2M}`}>
           <h1 className={`${Styles.titleCT} ${Styles.titleCTM}`}>Contacto</h1>
-          <p className={`${Styles.parrafoCT} ${Styles.parrafoCTM} ${Styles.parD}`}>¡Listos para mejorar tu red y llevar tu empresa <br/> al siguiente nivel!</p>
+          <p className={`${Styles.parrafoCT} ${Styles.parrafoCTM} ${Styles.parD}`}>¡Listos para mejorar su red y llevar su empresa <br/> al siguiente nivel!</p>
           {/* Parrafo movil */}
-          <p className={`${Styles.parrafoCT} ${Styles.parrafoCTM} ${Styles.parM}`}>¡Listos para mejorar tu red y llevar tu empresa al siguiente nivel!</p>
+          <p className={`${Styles.parrafoCT} ${Styles.parrafoCTM} ${Styles.parM}`}>¡Listos para mejorar su red y llevar su empresa al siguiente nivel!</p>
           <p className={`${Styles.parrafoCT2} ${Styles.parrafoCT2M}`}>Completa el formulario y descubre cómo podemos <br/> hacerlo juntos.</p>
         </div>
       </div>
       <div className={Styles.parD}>
-        <form action="https://formspree.io/f/xnqewpyw" method="POST" onSubmit={handleSubmit} className={`${Styles.formulario} ${Styles.formularioM}`}>
+      {enviado ? ( <p className={Styles.aviso}>¡Gracias por preferirnos, nos comunicaremos contigo pronto!</p>) : (
+        <form action="https://formspree.io/f/mgegdkvo" method="POST" onSubmit={handleSubmit} className={`${Styles.formulario} ${Styles.formularioM}`}>
           <div className={`${Styles.contenedor3} ${Styles.contenedor3M}`}>
             <div className={`${Styles.contenedor4} ${Styles.contenedor4M}`}>
               <label className={`${Styles.labelCT} ${Styles.labelCTM}`}>Nombre</label>
@@ -83,10 +89,12 @@ function Contacto () {
             <button className={`${Styles.botonCT} ${Styles.botonCTM}`} type="submit">Enviar</button>
           </div>
         </form>
+      )}
       </div> 
       <div className={Styles.parM}>
         {/* Formulario movil  */}
-        <form action="https://formspree.io/f/xnqewpyw" method="POST" onSubmit={handleSubmit} className={`${Styles.formulario} ${Styles.formularioM}`}>
+        {enviado ? ( <p className={Styles.aviso}>¡Gracias por preferirnos, nos comunicaremos contigo pronto!</p>) : (
+        <form action="https://formspree.io/f/mgegdkvo" method="POST" onSubmit={handleSubmit} className={`${Styles.formulario} ${Styles.formularioM}`}>
           <div className={`${Styles.contenedor3} ${Styles.contenedor3M}`}>
             <div className={`${Styles.contenedor4} ${Styles.contenedor4M}`}>
               <label className={`${Styles.labelCT} ${Styles.labelCTM}`}>Nombre</label>
@@ -135,6 +143,7 @@ function Contacto () {
             <button className={`${Styles.botonCT} ${Styles.botonCTM}`} type="submit">Enviar</button>
           </div>
         </form>
+      )}
       </div>
         <div className={`${Styles.contLocationCT} ${Styles.contLocationCTM}`}>
           <h1 className={`${Styles.titleLCT2} ${Styles.titleLCT2M}`}>Nuestra Locación</h1>

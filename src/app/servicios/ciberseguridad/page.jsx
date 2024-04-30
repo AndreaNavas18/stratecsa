@@ -18,17 +18,17 @@ function Ciberseguridad() {
         {
             imagen: '/new/img39.jpeg',
             span: 'Tranquilidad',
-            parrafo: 'Sabrás que tu empresa está protegida contra las amenazas digitales, lo que te permitirá centrarte en lo que realmente importa: hacer crecer tu negocio.',
+            parrafo: 'Sabrás que su empresa está protegida contra las amenazas digitales, lo que te permitirá centrarte en lo que realmente importa: hacer crecer su negocio.',
         },
         {
             imagen: '/new/img39.jpeg',
             span: 'Reducción de riesgos',
-            parrafo: 'Al proteger tu empresa contra las amenazas digitales, reduces el riesgo de sufrir interrupciones en tus operaciones o pérdidas financieras debido a un ciberataque.',
+            parrafo: 'Al proteger su empresa contra las amenazas digitales, reduces el riesgo de sufrir interrupciones en sus operaciones o pérdidas financieras debido a un ciberataque.',
         },
         {
             imagen: '/new/img39.jpeg',
             span: 'Confianza de los clientes',
-            parrafo: 'Al demostrar que tomas en serio la ciberseguridad, ganarás la confianza de tus clientes, lo que puede ayudarte a atraer y retener a más clientes.',
+            parrafo: 'Al demostrar que tomas en serio la ciberseguridad, ganarás la confianza de sus clientes, lo que puede ayudarte a atraer y retener a más clientes.',
         },
         {
             imagen: '/new/img39.jpeg',
@@ -38,7 +38,7 @@ function Ciberseguridad() {
         {
             imagen: '/new/img39.jpeg',
             span: 'Cumplimiento de Normativas',
-            parrafo: 'Al cumplir con las normativas de seguridad de la información, evitarás posibles sanciones y mejorará tu reputación en el mercado.',
+            parrafo: 'Al cumplir con las normativas de seguridad de la información, evitarás posibles sanciones y mejorará su reputación en el mercado.',
         },
 
 

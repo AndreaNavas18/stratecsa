@@ -28,7 +28,7 @@ function EnlaceDatos() {
         {
             imagen: '/new/img10.jpg',
             span: 'Red dedicado veloz. ',
-            parrafo: 'Servicio único para tu empresa, canal exclusivo de alto rendimiento, usuarios protegidos de interrupción alguna.',
+            parrafo: 'Servicio único para su empresa, canal exclusivo de alto rendimiento, usuarios protegidos de interrupción alguna.',
         },
         {
             imagen: '/new/img10.jpg',
@@ -38,7 +38,7 @@ function EnlaceDatos() {
         {
             imagen: '/new/img10.jpg',
             span: 'Estabilidad. ',
-            parrafo: 'Tendrás el ancho de banda que requieres, sin que ningún fallo de la red arruine tu trabajo o el de tu equipo.',
+            parrafo: 'Tendrás el ancho de banda que requieres, sin que ningún fallo de la red arruine su trabajo o el de su equipo.',
         },
     ];
     return (
@@ -90,9 +90,9 @@ function EnlaceDatos() {
                             operar de manera más eficiente y ágil.</p>
                             <p className={Styles.parrafosP2}><span style={parrafColor}>2) Seguridad.</span> Servicio seguro, tienes un canal dedicado solo para ti.</p>
                             <p className={Styles.parrafosP2}><span style={parrafColor}>3) Menor inversión.</span> Transmite y vigila grandes volúmenes de información en línea, disminuye las inversiones de software.</p>
-                            <p className={Styles.parrafosP2}><span style={parrafColor}>4) Red dedicado veloz.</span> Servicio único para tu empresa, canal exclusivo de alto rendimiento, usuarios protegidos de interrupción alguna.</p>
+                            <p className={Styles.parrafosP2}><span style={parrafColor}>4) Red dedicado veloz.</span> Servicio único para su empresa, canal exclusivo de alto rendimiento, usuarios protegidos de interrupción alguna.</p>
                             <p className={Styles.parrafosP2}><span style={parrafColor}>5) Ips múltiples.</span> Podrás generar tantas IPs como necesites y eliminarlas cuando lo desees.</p>
-                            <p className={Styles.parrafosP2}><span style={parrafColor}>6) Estabilidad.</span> Tendrás el ancho de banda que requieres, sin que ningún fallo de la red arruine tu trabajo o el de tu equipo.</p>
+                            <p className={Styles.parrafosP2}><span style={parrafColor}>6) Estabilidad.</span> Tendrás el ancho de banda que requieres, sin que ningún fallo de la red arruine su trabajo o el de su equipo.</p>
                         </div>
                     </div>
                     <div className={`${Styles.seccion2} ${Styles.nonePC}`}>

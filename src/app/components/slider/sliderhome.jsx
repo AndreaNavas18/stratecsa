@@ -59,7 +59,7 @@ const sliders = [
             <>
                 Priorizamos la seguridad cibernética y la velocidad en la gestión de datos empresariales. 
                 <br/>
-                Confía en Stratecsa para proteger y acelerar tu negocio.
+                Confía en Stratecsa para proteger y acelerar su negocio.
             </>
         ),
         boton: 'Contáctanos'

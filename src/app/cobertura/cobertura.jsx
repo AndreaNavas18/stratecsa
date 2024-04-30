@@ -34,7 +34,7 @@ function Cobertura() {
                     <button className={Styles.button1}>
                         <img src="/new/ubicacion.png" className={Styles.icono}/>
                     </button>
-                    <input className={Styles.input1} placeholder='  Escribe tu dirección'></input>
+                    <input className={Styles.input1} placeholder='  Escriba su dirección'></input>
                     <button className={Styles.button2}>
                         <img src="/new/filtro.png" className={Styles.icono}/>
                     </button>

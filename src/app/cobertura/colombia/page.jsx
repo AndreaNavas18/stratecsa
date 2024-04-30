@@ -48,7 +48,7 @@ function Colombia() {
                     </div>
                     <div>
                         <button>
-                            <a href="/contacto" className={`${Styles.botonCT} ${Styles.botonCTM}`}>Solicita tu asesoría con nuestros especialistas</a>
+                            <a href="/contacto" className={`${Styles.botonCT} ${Styles.botonCTM}`}>Solicite su asesoría con nuestros especialistas</a>
                         </button>
                     </div>
                 </div>

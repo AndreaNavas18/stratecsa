@@ -22,7 +22,7 @@ function ServidorDedicado () {
     {
         imagen: '/new/img19.jpeg',
         span: 'Autonomía. ',
-        parrafo: 'Con esta solución tendrás total control sobre el ambiente de tu hosting.',
+        parrafo: 'Con esta solución tendrás total control sobre el ambiente de su hosting.',
     },
     {
         imagen: '/new/img19.jpeg',
@@ -88,7 +88,7 @@ return (
                         <p className={Styles.parrafosP2}><span style={parrafColor}>1) Rendimiento.</span> 
                         Favorece el rendimiento de sitios web y aplicaciones.</p>
                         <p className={Styles.parrafosP2}><span style={parrafColor}>2) Autonomía.</span> 
-                        Con esta solución tendrás total control sobre el ambiente de tu hosting..</p>
+                        Con esta solución tendrás total control sobre el ambiente de su hosting..</p>
                         <p className={Styles.parrafosP2}><span style={parrafColor}>3) Estabilidad.</span> 
                         Otro aspecto significativo del servidor dedicado es la estabilidad, que suele ser 
                         superior por el hecho de ser exclusivo.</p>

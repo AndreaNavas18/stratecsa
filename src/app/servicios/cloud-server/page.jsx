@@ -27,12 +27,12 @@ function CloudServer () {
         {
             imagen: '/new/img34.jpeg',
             span: 'Ahorro de costos. ',
-            parrafo: 'Servicios adaptados a cada necesidad de tu empresa.',
+            parrafo: 'Servicios adaptados a cada necesidad de su empresa.',
         },
         {
             imagen: '/new/img34.jpeg',
             span: 'Olvídate de los problemas de rendimiento. ',
-            parrafo: 'Aumentar los recursos y la capacidad de tu servidor siempre que lo necesitas.',
+            parrafo: 'Aumentar los recursos y la capacidad de su servidor siempre que lo necesitas.',
         },
         {
             imagen: '/new/img34.jpeg',
@@ -42,7 +42,7 @@ function CloudServer () {
         {
             imagen: '/new/img34.jpeg',
             span: 'Aumento en la productividad. ',
-            parrafo: 'Mayor productividad para tu empresa.',
+            parrafo: 'Mayor productividad para su empresa.',
         },
     ];
 
@@ -99,13 +99,13 @@ function CloudServer () {
                                 <p className={Styles.parrafosP2}><span style={parrafColor}>2) Escalabilidad. </span> 
                                 Posibilidad de aumentar la cantidad de almacenamiento.</p>
                                 <p className={Styles.parrafosP2}><span style={parrafColor}>3) Ahorro de costos. </span> 
-                                Servicios adaptados a cada necesidad de tu empresa.</p>
+                                Servicios adaptados a cada necesidad de su empresa.</p>
                                 <p className={Styles.parrafosP2}><span style={parrafColor}>4) Olvídate de los problemas de rendimiento. </span> 
-                                Aumentar los recursos y la capacidad de tu servidor siempre que lo necesitas.</p>
+                                Aumentar los recursos y la capacidad de su servidor siempre que lo necesitas.</p>
                                 <p className={Styles.parrafosP2}><span style={parrafColor}>5) Seguridad. </span> 
                                 Mayor seguridad con el mejor servicio de cloud server de país.</p>
                                 <p className={Styles.parrafosP2}><span style={parrafColor}>6) Aumento en la productividad. </span> 
-                                Mayor productividad para tu empresa.</p>
+                                Mayor productividad para su empresa.</p>
                             </div>
                         </div>
                         <div className={`${Styles.seccion2} ${Styles.nonePC}`}>

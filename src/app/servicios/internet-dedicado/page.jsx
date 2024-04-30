@@ -28,7 +28,7 @@ function InternetDedicado() {
         {
             imagen: '/benf/intded.png',
             span: 'Red dedicado veloz. ',
-            parrafo: 'Servicio único para tu empresa, canal exclusivo de alto rendimiento, usuarios protegidos de interrupción alguna.',
+            parrafo: 'Servicio único para su empresa, canal exclusivo de alto rendimiento, usuarios protegidos de interrupción alguna.',
         },
         {
             imagen: '/benf/intded.png',
@@ -38,7 +38,7 @@ function InternetDedicado() {
         {
             imagen: '/benf/intded.png',
             span: 'Estabilidad. ',
-            parrafo: 'Tendrás el ancho de banda que requieres, sin que ningún fallo de la red arruine tu trabajo o el de tu equipo.',
+            parrafo: 'Tendrás el ancho de banda que requieres, sin que ningún fallo de la red arruine su trabajo o el de su equipo.',
         },
 
     ];
