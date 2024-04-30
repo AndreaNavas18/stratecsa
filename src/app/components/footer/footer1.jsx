@@ -90,7 +90,7 @@ function Footer1() {
                                     <a href="/politicas">Políticas de protección de datos</a>
                                 </li>
                                 <li className={Styles.liNavF1}>
-                                    <a href="https://www.stratecsa.cloud">Soporte</a>
+                                    <a href="/new">Soporte</a>
                                 </li>
                                 <li className={Styles.liNavF1}>
                                     <a href="/contact">Contáctenos</a>
@@ -186,7 +186,7 @@ function Footer1() {
                                     <a href="/politicas">Políticas de protección de datos</a>
                                 </li>
                                 <li className={Styles.liNavF1M}>
-                                    <a href="https://www.stratecsa.cloud">Soporte</a>
+                                    <a href="/new">Soporte</a>
                                 </li>
                                 <li className={Styles.liNavF1M}>
                                     <a href="/contact">Contáctenos</a>
