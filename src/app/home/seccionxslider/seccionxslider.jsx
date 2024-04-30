@@ -65,10 +65,10 @@ function SeccionXSlider() {
                  <div style={divSobre}>
                     <Slider {...settings}>
                         {
-                            sliders.map((slider, index) => {
+                            sliders.map((slider) => {
                                 return(
                                 <>
-                                        <div key={index} className={Styles.cardMM}>
+                                        <div key={slider.id} className={Styles.cardMM}>
                                             <img src={slider.imagen} alt={slider.alt} className={Styles.imagenMM} />
                                             <h2 className={Styles.titleXMM}>{slider.titulo}</h2>
                                             <p className={Styles.parrafoMM}>{slider.parrafo}</p>

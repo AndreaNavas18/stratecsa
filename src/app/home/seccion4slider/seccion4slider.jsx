@@ -126,12 +126,12 @@ function Seccion4Slider () {
                     <div className={`${Styles.tamanoSlider} ${Styles.tamanoSliderM}`}>
                         <Slider {...settings}>
                             {
-                                servicios.map((servicio, index) => {
+                                servicios.map((servicio) => {
                                     return(
                                     <>
                                         <div className={`${Styles.botonesS4} ${Styles.botonesS4M}`}>
                                                 <button 
-                                                    key={index} 
+                                                    key={servicio.id} 
                                                     className={`${Styles.buttonS4} ${Styles.buttonS4M}`}
                                                     onClick={() => window.location.href = servicio.url}
                                                 >

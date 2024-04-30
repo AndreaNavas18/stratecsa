@@ -1,7 +1,9 @@
 "use client";
 import Styles from './contacto.module.css';
-import GoogleMapComponent from '../googlemaps';
 import { useState } from 'react';
+import dynamic from 'next/dynamic';
+
+const GoogleMapComponent = dynamic(() => import('../googlemaps'), { ssr: false });
 
 function Contacto () {
   const [message, setMessage] = useState('');
