@@ -5,43 +5,31 @@ import Styles from '../servicios/servicios.module.css';
 function New() {
     const [nombre, setNombre] = useState('');
     const [edad, setEdad] = useState('');
+    const [email, setEmail] = useState('');
 
-    const handleSubmit = async (event) => {
-        event.preventDefault();
 
-        // Datos del formulario
-        const formData = new FormData();
-        formData.append('nombre', nombre);
-        formData.append('edad', edad);
+    const handleSubmit = async (e) => {
+        e.preventDefault();
 
         try {
-            // Realizar la solicitud POST al backend
-            const response = await fetch('http://localhost:8000/guardar', {
+            const response = await fetch('http://localhost/phpBackend/index.php', {
                 method: 'POST',
-                body: formData,
                 headers: {
-                    'Access-Control-Allow-Methods': 'GET, POST, PUT, PATCH, DELETE',
-                    "Access-Control-Allow-Origin":"http://localhost:3000",
-                    "access-control-allow-headers":"X-Requested-With, Content-Type, X-Token-Auth, Authorization"
+                    'Content-Type': 'application/json'
                 },
+                body: JSON.stringify({ nombre, edad, email })
             });
 
-            if (!response.ok) {
-                throw new Error('Error al enviar los datos');
+            if (response.ok) {
+                console.log('Correo enviado correctamente');
+            } else {
+                console.error('Error al enviar correo');
             }
-
-            // Limpiar el formulario después de enviar los datos
-            setNombre('');
-            setEdad('');
-
-            // Manejar la respuesta del backend si es necesario
-            const responseData = await response.json();
-            console.log('Respuesta del servidor:', responseData);
         } catch (error) {
-            console.error('Error al enviar los datos:', error.message);
+            console.error('Error de red:', error);
         }
     };
-
+    
     const containerSty = {
         backgroundImage: `url(/img/service.png)`,
         backgroundPosition: 'center',
@@ -60,6 +48,8 @@ function New() {
                     <input type="text" name="nombre" value={nombre} onChange={(e) => setNombre(e.target.value)} />
                     <label>Edad:</label>
                     <input type="text" name="edad" value={edad} onChange={(e) => setEdad(e.target.value)} />
+                    <label>Email:</label>
+                    <input type="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} />
                     <button type="submit">Enviar</button>
                 </form>
             </div>
