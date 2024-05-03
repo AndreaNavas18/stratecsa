@@ -1,6 +1,35 @@
+"use client";
 import Styles from './footer1.module.css';
+import { useEffect, useState } from 'react';
 
 function Footer1() {
+
+    const [enviado, setEnviado] = useState(false);
+    const [email, setEmail] = useState('');
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+    
+        try {
+            const response = await fetch('http://localhost/phpBackend/suscripcion.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ email })
+            });
+    
+            if (response.ok) {
+                console.log('Correo guardado correctamente');
+            } else {
+                console.error('Error al enviar el correo al backend');
+            }
+          setEnviado(true);
+    
+        } catch (error) {
+            console.error('Error de red:', error);
+        }
+    };
 
     const backFooter = {
         backgroundImage: `url(/new/img7.jpg)`,
@@ -38,27 +67,27 @@ function Footer1() {
 
                         
                         <div className={Styles.divRedesF1}>
-                            <a className={Styles.cRedesF1} href="https://www.facebook.com/">
+                            <a className={Styles.cRedesF1} href="https://www.facebook.com/Stratecsa?locale=es_LA" target="_blank" rel="noopener noreferrer">
                                 <img
                                     className={Styles.iconSocialF1}
                                     src="/logos/straface.png"/>
                             </a>
-                            <a className={Styles.cRedesF1} href="https://www.instagram.com/">
+                            <a className={Styles.cRedesF1} href="https://www.instagram.com/stratecsa/" target="_blank" rel="noopener noreferrer">
                                 <img
                                     className={Styles.iconSocialF1}
                                     src="/logos/strains.png"/>
                             </a>
-                            <a className={Styles.cRedesF1} href="https://www.linkedin.com/">
+                            <a className={Styles.cRedesF1} href="https://www.linkedin.com/company/stratecsa" target="_blank" rel="noopener noreferrer">
                                 <img
                                     className={Styles.iconSocialF1}
                                     src="/logos/stralink.png"/>
                             </a>
-                            <a className={Styles.cRedesF1} href="https://www.whatsapp.com/">
+                            <a className={Styles.cRedesF1} href="https://wa.link/7kydod" target="_blank" rel="noopener noreferrer">
                                 <img 
                                     className={Styles.iconSocialF1}
                                     src="/logos/strawhats.png"/>
                             </a>
-                            <a className={Styles.cRedesF1} href="https://www.youtube.com/">
+                            <a className={Styles.cRedesF1} href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
                                 <img 
                                     className={Styles.iconSocialF1}
                                     src="/logos/strayou.png"/>
@@ -90,7 +119,7 @@ function Footer1() {
                                     <a href="/politicas">Políticas de protección de datos</a>
                                 </li>
                                 <li className={Styles.liNavF1}>
-                                    <a href="/new">Soporte</a>
+                                    <a href="https://www.stratecsa.cloud">Soporte</a>
                                 </li>
                                 <li className={Styles.liNavF1}>
                                     <a href="/contact">Contáctenos</a>
@@ -145,16 +174,20 @@ function Footer1() {
                     </div>
 
                     <div className={Styles.susF1}>
-                        <h2 className={Styles.titleSusF1}>SUSCRÍBETE AHORA</h2>
-                        <p className={Styles.parrafoSusF1}>Ofertas exclusivas solo para nuestros suscriptores</p>
-                        <div className={Styles.divCorreo}>
-                            <input className={Styles.inputF1} type="text" placeholder="Escriba su correo "/>
-                            <button className={Styles.btnCorreo}>
-                                <a href="/#">
-                                    <img className={Styles.avionF1} src="/new/avion.png"/>
-                                </a>
-                            </button>
-                        </div>
+                    {enviado ? ( <p className={Styles.aviso}>🎉¡Bienvenido a <br/> Stratecsa!🎊</p>) : (
+                        <form onSubmit={handleSubmit}>
+                            <h2 className={Styles.titleSusF1}>SUSCRÍBETE AHORA</h2>
+                            <p className={Styles.parrafoSusF1}>Ofertas exclusivas solo para nuestros suscriptores</p>
+                            <div className={Styles.divCorreo}>
+                                <input className={Styles.inputF1} type="text" placeholder="Escriba su correo " name="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                                <button className={Styles.btnCorreo} type='submit'>
+                                    <a>
+                                        <img className={Styles.avionF1} src="/new/avion.png"/>
+                                    </a>
+                                </button>
+                            </div>
+                        </form>
+                    )}
                     </div>
 
                 </div>
@@ -186,7 +219,7 @@ function Footer1() {
                                     <a href="/politicas">Políticas de protección de datos</a>
                                 </li>
                                 <li className={Styles.liNavF1M}>
-                                    <a href="/new">Soporte</a>
+                                    <a href="https://www.stratecsa.cloud">Soporte</a>
                                 </li>
                                 <li className={Styles.liNavF1M}>
                                     <a href="/contact">Contáctenos</a>
@@ -240,41 +273,45 @@ function Footer1() {
                     </div>
 
                     <div className={Styles.susF1M}>
-                        <h2 className={Styles.titleSusF1M}>SUSCRÍBETE AHORA</h2>
-                        <p className={Styles.parrafoSusF1M}>Ofertas exclusivas solo para nuestros suscriptores</p>
-                        <div className={Styles.divCorreoM}>
-                            <input className={Styles.inputF1M} type="text" placeholder="Escriba su correo "/>
-                            <button className={Styles.btnCorreoM}>
-                                <a href="/#">
-                                    <img className={Styles.avionF1M} src="/new/avion.png"/>
-                                </a>
-                            </button>
-                        </div>
+                    {enviado ? ( <p className={Styles.aviso}>🎉¡Bienvenido a <br/> Stratecsa!🎊</p>) : (
+                        <form onSubmit={handleSubmit}>
+                            <h2 className={Styles.titleSusF1M}>SUSCRÍBETE AHORA</h2>
+                            <p className={Styles.parrafoSusF1M}>Ofertas exclusivas solo para nuestros suscriptores</p>
+                            <div className={Styles.divCorreoM}>
+                                <input className={Styles.inputF1M} type="text" placeholder="Escriba su correo " name="email" value={email} onChange={(e) => setEmail(e.target.value)}/>
+                                <button className={Styles.btnCorreoM} type='submit'>
+                                    <a>
+                                        <img className={Styles.avionF1M} src="/new/avion.png"/>
+                                    </a>
+                                </button>
+                            </div>
+                        </form>
+                    )}
                     </div>
 
                     <div className={Styles.redesM}>
                         <div className={Styles.divRedesF1M}>
-                            <a className={Styles.cRedesF1M} href="https://www.facebook.com/">
+                            <a className={Styles.cRedesF1M} href="https://www.facebook.com/Stratecsa?locale=es_LA" target="_blank" rel="noopener noreferrer">
                                 <img
                                     className={Styles.iconSocialF1M}
                                     src="/logos/straface.png"/>
                             </a>
-                            <a className={Styles.cRedesF1M} href="https://www.instagram.com/">
+                            <a className={Styles.cRedesF1M} href="https://www.instagram.com/stratecsa/" target="_blank" rel="noopener noreferrer">
                                 <img
                                     className={Styles.iconSocialF1M}
                                     src="/logos/strains.png"/>
                             </a>
-                            <a className={Styles.cRedesF1M} href="https://www.linkedin.com/">
+                            <a className={Styles.cRedesF1M} href="https://www.linkedin.com/company/stratecsa" target="_blank" rel="noopener noreferrer">
                                 <img
                                     className={Styles.iconSocialF1M}
                                     src="/logos/stralink.png"/>
                             </a>
-                            <a className={Styles.cRedesF1M} href="https://www.whatsapp.com/">
+                            <a className={Styles.cRedesF1M} href="https://wa.link/7kydod" target="_blank" rel="noopener noreferrer">
                                 <img 
                                     className={Styles.iconSocialF1M}
                                     src="/logos/strawhats.png"/>
                             </a>
-                            <a className={Styles.cRedesF1M} href="https://www.youtube.com/">
+                            <a className={Styles.cRedesF1M} href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
                                 <img 
                                     className={Styles.iconSocialF1M}
                                     src="/logos/strayou.png"/>

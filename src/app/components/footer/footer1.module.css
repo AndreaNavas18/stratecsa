@@ -276,11 +276,13 @@
     .titleSusF1 {
         font-size: 19px;
         font-weight: 600;
+        margin-bottom: 10px;
+
     }
 
     .parrafoSusF1 {
         font-size: 16px;
-
+        margin-bottom: 10px;
     }
 
     .divCorreo {
@@ -293,7 +295,7 @@
         background-color: white;
         padding: 15px;
         border-radius: 10px 0px 0px 10px;
-
+        color: black;
     }
 
     .btnCorreo {
@@ -306,6 +308,17 @@
     .avionF1 {
         width: 20px;
         height: auto;
+    }
+
+    .aviso {
+        background-color: #009cda;
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+        font-family: 'Century Gothic', sans-serif;
     }
 
     .seccion2 {

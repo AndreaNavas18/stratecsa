@@ -48,7 +48,7 @@ function Contacto () {
     } catch (error) {
         console.error('Error de red:', error);
     }
-};
+  };
 
 
   const containerSty = {
