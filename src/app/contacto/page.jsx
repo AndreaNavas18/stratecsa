@@ -29,7 +29,7 @@ function Contacto () {
     e.preventDefault();
 
     try {
-        const response = await fetch('http://localhost/phpBackend/contacto.php', {
+        const response = await fetch('https://agata.stratecsa.com/phpBackend/contacto.php', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
