@@ -6,6 +6,7 @@ import Footer1 from './components/footer/footer1';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import TawkTo from "./tawkto/tawkto";
 import { GoogleTagManager } from '@next/third-parties/google'
+import GoogleTagManagerr from "./google-tag-manager/google-tag-manager";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
     <GoogleTagManager gtmId="TVZ5B95" />
+    <GoogleTagManagerr/>
     <head>
     {/* <script id="chatway" async={true} src="https://cdn.chatway.app/widget.js?id=evTLAzR0Ancg"></script>
     <script id="pixel-chaty" async={true} src="https://cdn.chaty.app/pixel.js?id=unBeUuC3"></script> */}
