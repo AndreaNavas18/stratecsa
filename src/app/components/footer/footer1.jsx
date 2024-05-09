@@ -11,7 +11,7 @@ function Footer1() {
         e.preventDefault();
     
         try {
-            const response = await fetch('https://agata.stratecsa.com/phpBackend/suscripcion.php', {
+            const response = await fetch('https://agata.stratecsa.com/suscripcion.php', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
