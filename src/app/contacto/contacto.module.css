@@ -53,6 +53,7 @@
     .formularioM {
         display: flex;
         flex-direction: column;
+        margin: 0 auto;
         margin-left: 10px;
         margin-top: 10px;
         font-family: 'Century Gothic', sans-serif;
@@ -306,7 +307,10 @@
     .formulario {
         display: flex;
         flex-direction: column;
-        margin-left: 100px;
+        width: 80%;
+        margin: 0 auto;
+        align-items: center;
+        /* margin-left: 100px; */
         margin-top: 20px;
         font-family: 'Century Gothic', sans-serif;
     }
@@ -359,7 +363,7 @@
 
     .textAreaCT {
         display: flex;
-        width: 1090px;
+        width: 725px;
         height: 250px;
         border-radius: 3px;
         border: 1px solid #d3d3d3;

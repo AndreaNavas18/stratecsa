@@ -34,7 +34,7 @@ function Contacto () {
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ name, company, pais, departamento, phone, asunto, mensaje, servicio, email })
+            body: JSON.stringify({ name, phone, mensaje, email })
         });
 
         if (response.ok) {
@@ -53,6 +53,10 @@ function Contacto () {
 
   const containerSty = {
     backgroundImage: `url(/new/contacto4.png)`,
+  };
+
+  const wii = {
+    width: '720px',
   };
 
 
@@ -76,48 +80,15 @@ function Contacto () {
               <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="text" placeholder="John Smith" name='name' value={name} onChange={(e) => setName(e.target.value)} required />
             </div>
             <div className={`${Styles.contenedor4} ${Styles.contenedor4M}`}>
-              <label className={`${Styles.labelCT} ${Styles.labelCTM}`}>Empresa</label>
-              <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="text" placeholder="Stratecsa SAS" name='company' value={company} onChange={(e) => setCompany(e.target.value)} />
-            </div>
-            <div className={`${Styles.contenedor4} ${Styles.contenedor4M}`}>
-              <label className={`${Styles.labelCT} ${Styles.labelCTM}`}>País</label>
-              <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="text" placeholder="Colombia" name='pais' value={pais} onChange={(e) => setPais(e.target.value)} />
-            </div>
-          </div>
-          <div className={`${Styles.contenedor3} ${Styles.contenedor3M}`}>
-            <div className={`${Styles.contenedor4} ${Styles.contenedor4M}`}>
-                <label className={`${Styles.labelCT} ${Styles.labelCTM}`}>Departamento / Estado</label>
-                <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="text" placeholder="Valle del Cauca" name='departamento' value={departamento} onChange={(e) => setDepartamento(e.target.value)} />
-            </div>
-            <div className={`${Styles.contenedor4} ${Styles.contenedor4M}`}>
               <label className={`${Styles.labelCT} ${Styles.labelCTM}`}>Teléfono</label>
               <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="number" placeholder="320 550 1223" name='phone' value={phone} onChange={(e) => setPhone(e.target.value)} required/>
             </div>
-            <div className={`${Styles.contenedor4} ${Styles.contenedor4M}`}>
+           
+          </div>
+          <div className={`${Styles.contenedor3} ${Styles.contenedor3M}`}>         
+            <div className={`${Styles.contenedor4} ${Styles.contenedor4M}`} style={wii}>
               <label className={`${Styles.labelCT} ${Styles.labelCTM}`}>Correo</label>
               <input className={`${Styles.inputCT} ${Styles.inputCTM}`} type="email" placeholder="Correo" name='email' value={email} onChange={(e) => setEmail(e.target.value)} required />
-            </div>
-          </div>
-          <div className={`${Styles.contenedor3} ${Styles.contenedor3M}`}>
-            <div className={`${Styles.contenedor4} ${Styles.contenedor4M}`}>
-              <label className={`${Styles.labelCT} ${Styles.labelCTM}`}>Servicio</label>
-              <select className={`${Styles.inputCT} ${Styles.inputCT2M}`} name="servicio" value={servicio} onChange={(e) => setServicio(e.target.value)}>
-                <option value="internetDedicado">Internet dedicado</option>
-                <option value="ciberseguridad">Ciberseguridad</option>
-                <option value="redmpls">Red MPLS</option>
-                <option value="cloudbackup">Cloud backup</option>
-                <option value="cloudserver">Cloud server</option>
-                <option value="colocation">Colocation</option>
-                <option value="comunicacionesunificadas">Comunicaciones unificadas</option>
-                <option value="enlacededatos">Enlace de datos</option>
-                <option value="outsourcing">Outsourcing TIC</option>
-                <option value="servidordedicado">Servidor dedicado</option>
-                <option value="securitycloud">Security cloud</option>
-              </select>
-            </div>
-            <div className={`${Styles.contenedor4} ${Styles.contenedor4M}`}>
-              <label className={`${Styles.labelCT} ${Styles.labelCTM}`}>Asunto</label>
-              <input className={`${Styles.inputCT} ${Styles.inputCT2M}`} type="text" placeholder="Asunto" name='asunto' value={asunto} onChange={(e) => setAsunto(e.target.value)} />
             </div>
           </div>
           <div className={`${Styles.contenedor5} ${Styles.contenedor5M}`}>
