@@ -5,7 +5,7 @@ import Header2 from './components/header2/header2';
 import Footer1 from './components/footer/footer1';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import TawkTo from "./tawkto/tawkto";
-import { GoogleTagManager } from '@next/third-parties/google'
+import { GTMnoscript, GTMscript } from "./components/GTM";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,33 +14,24 @@ export const metadata = {
   description: "Desarrollado por Stratecsa 2024",
 };
 
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-    <GoogleTagManager gtmId="TVZ5B95" />
     <head>
     {/* <script id="chatway" async={true} src="https://cdn.chatway.app/widget.js?id=evTLAzR0Ancg"></script>
     <script id="pixel-chaty" async={true} src="https://cdn.chaty.app/pixel.js?id=unBeUuC3"></script> */}
     <link rel='icon' href='/logo-11.ico'/>
     </head>
       <body className={inter.className}>
-      {/* <!-- Google Tag Manager (noscript) --> */}
-      <noscript>
-        <iframe 
-          src="https://www.googletagmanager.com/ns.html?id=GTM-TVZ5B95"
-          height="0" 
-          width="0" 
-          style={{ display: "none", visibility: "hidden" }}>
-        </iframe>
-      </noscript>
-      {/* <!-- End Google Tag Manager (noscript) --> */}
+      <GTMnoscript />
         <Header/>
         <Header2/>
         <TawkTo/>
           {children}
         <Footer1/>
-
       </body>
+      <GTMscript />
     </html>
   );
 }
