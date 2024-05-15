@@ -54,7 +54,7 @@ export default function Footer() {
                                     <a href="/cobertura">Cobertura</a>
                                 </li>
                                 <li className={Styles.liNav}>
-                                    <a href="/contact">Contactenos</a>
+                                    <a href="/contacto">Contactenos</a>
                                 </li>
                             </ul>
                         </nav>

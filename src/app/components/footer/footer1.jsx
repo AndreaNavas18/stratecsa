@@ -222,7 +222,7 @@ function Footer1() {
                                     <a href="https://www.agata.stratecsa.com">Soporte</a>
                                 </li>
                                 <li className={Styles.liNavF1M}>
-                                    <a href="/contact">Contáctenos</a>
+                                    <a href="/contacto">Contáctenos</a>
                                 </li>
                             </ul>
                         </nav>
