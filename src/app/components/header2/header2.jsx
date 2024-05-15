@@ -203,7 +203,7 @@ function Header2() {
                     </nav>
                 </div>
                 <div className={`${Styles.navMovil} ${Styles.navMovilS}`}>
-                    {/* <a href='https://www.stratecsa.cloud'>
+                    {/* <a href='https://www.agata.stratecsa.com'>
                         <FontAwesomeIcon icon={faUser} className={Styles.iconClient} />
                     </a> */}
                     <FontAwesomeIcon icon={faBars} className={Styles.iconFabars} onClick={toggleMenu2} />

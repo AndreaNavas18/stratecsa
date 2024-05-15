@@ -9,7 +9,7 @@ function Header() {
                 src="/img/lupa.png"/> */}
             
             <a 
-                href='https://www.stratecsa.cloud' 
+                href='https://www.agata.stratecsa.com' 
                 className={`${Styles.buttonContact} ${Styles.buttonContactM}`}>
                     Zona Clientes
             </a>

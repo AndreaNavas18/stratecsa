@@ -18,7 +18,7 @@ function Terminos() {
             <p className={Styles.textos}>Contamos con múltiples servicios que te ayudarán a la solución de tus problemas IT y al cumplimiento de tus metas. </p>
             <h2 className={Styles.titulos}>Términos y Condiciones Legales de Utilización del Portal Web de STRATECSA</h2>
             <p className={Styles.textos}>
-            El acceso y uso por parte de los usuarios (el &quot;Usuario&quot; o &quot;Usuarios&quot;) del portal www.stratecsa.com y https://stratecsa.cloud(en adelante, los 
+            El acceso y uso por parte de los usuarios (el &quot;Usuario&quot; o &quot;Usuarios&quot;) del portal www.stratecsa.com y https://agata.stratecsa.com(en adelante, los 
             &quot;Portales Web de STRATECSA&quot;) de propiedad de STRATEGIC TECHNOLOGICAL DE COLOMBIA SAS (en adelante, &quot;La Empresa&quot;), se regirá por los siguientes 
             términos y condiciones: El acceso a los Portales Web de STRATECSA atribuye la condición de Usuario del mismo e implica la aceptación plena y sin 
             reserva de todos los términos y condiciones que se encuentren vigentes en el momento mismo en que el Usuario acceda al Portal Web de STRATECSA. 
