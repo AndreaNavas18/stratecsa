@@ -8,8 +8,6 @@ import "slick-carousel/slick/slick.css";
 const sliders = [
     {
         id: 1,
-        imagen:  '/new/caption1.jpg',
-        alt: 'imagen1',
         titulo: 'Cobertura exclusiva en Latinoamérica.',
         parrafo: (
             <>
@@ -23,8 +21,6 @@ const sliders = [
     },
     {
         id: 2,
-        imagen: '/new/caption2.jpg',
-        alt: 'imagen2',
         titulo: 'Tecnología que conecta.',
         parrafo: (
             <>
@@ -38,8 +34,6 @@ const sliders = [
     },
     {
         id: 3,
-        imagen: '/new/caption5.jpg',
-        alt: 'imagen3',
         titulo: 'Internet veloz y seguro para empresas.',
         parrafo:(
             <>
@@ -52,8 +46,6 @@ const sliders = [
     },
     {
         id: 4,
-        imagen: '/new/img4.jpg',
-        alt: 'imagen4',
         titulo: 'Seguridad y velocidad empresarial.',
         parrafo: (
             <>
@@ -81,35 +73,35 @@ function SliderHome() {
   return (
     <>
         <div className={`${Styles.sectionSlider} ${Styles.sectionSliderM}`}>
-            <Slider {...settings}>
-                {
-                    sliders.map((slider, index) => {
-                        return (
-                            <div key={index} className={`${Styles.sliderSH} ${Styles.sliderSHM}`}>
-                                <div className={`${Styles.divimgSH} ${Styles.divimgSHM}`}>
-                                    <img
-                                        className={`${Styles.imagenSH} ${Styles.imagenSHM}`}
-                                        src={slider.imagen}
-                                        alt={slider.alt}
-                                    />
-                                </div>
-                                <div className={`${Styles.divSlider} ${Styles.divsito}`}>
-                                    <h1 className={`${Styles.titleSlider} ${Styles.titleSliderM}`}> 
-                                        {slider.titulo} 
-                                    </h1>
-                                    <p className={`${Styles.descripSlider} ${Styles.descripSliderM}`}>
-                                        {slider.parrafo}
-                                    </p>
-                                    <a href='/contacto' className={`${Styles.buttonSlider} ${Styles.buttonSliderM}`}>
-                                        {slider.boton}
-                                    </a>
-                                </div>
-                            </div>
-                        )
-                    
-                    })
-                }
-            </Slider>
+        
+            {/* Video de fondo */}
+            <div className={`${Styles.videoBackgroundContainer}`}>
+                {/* Contenedor del slider */}
+                <div className={`${Styles.sliderContent}`}>
+                    <Slider {...settings}>
+                        {
+                            sliders.map((slider, index) => {
+                                return (
+                                    <div key={index} className={`${Styles.sliderSH} ${Styles.sliderSHM}`}>
+                                        <div className={`${Styles.divSlider} ${Styles.divsito}`}>
+                                            <h1 className={`${Styles.titleSlider} ${Styles.titleSliderM}`}> 
+                                                {slider.titulo} 
+                                            </h1>
+                                            <p className={`${Styles.descripSlider} ${Styles.descripSliderM}`}>
+                                                {slider.parrafo}
+                                            </p>
+                                            <a href='/contacto' className={`${Styles.buttonSlider} ${Styles.buttonSliderM}`}>
+                                                {slider.boton}
+                                            </a>
+                                        </div>
+                                    </div>
+                                )
+                            
+                            })
+                        }
+                    </Slider>
+                </div>
+            </div>
             
         </div>
     </>
