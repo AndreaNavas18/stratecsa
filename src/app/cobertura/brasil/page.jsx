@@ -59,10 +59,13 @@ function Brasil() {
                     </div>
                 </div>
                 <div className={`${Styles.mapaBra} ${Styles.mapaBraM}`}>
-                    <img 
-                        src="/new/brazil.png" 
-                        alt="Brasil" 
+                    <video
                         className={`${Styles.imgBra} ${Styles.imgBraM}`}
+                        src="/videos/brasil.mp4"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
                     />
                 </div>
                 <div className={Styles.nonePc}>

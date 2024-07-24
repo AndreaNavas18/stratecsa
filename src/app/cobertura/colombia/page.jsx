@@ -53,10 +53,13 @@ function Colombia() {
                     </div>
                 </div>
                 <div className={`${Styles.mapaCol} ${Styles.mapaColM}`}>
-                    <img 
-                        src="/new/colombia.png" 
-                        alt="Colombia" 
-                        className={`${Styles.imgCol} ${Styles.imgColM}`}
+                     <video
+                         className={`${Styles.imgCol} ${Styles.imgColM}`}
+                        src="/videos/colombia.mp4"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
                     />
                 </div>
                 <div className={Styles.nonePc}>
