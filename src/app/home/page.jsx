@@ -4,6 +4,7 @@ import Seccion4 from './seccion4/seccion4';
 import Seccionx from './seccionx/seccionx';
 import Seccion4Slider from './seccion4slider/seccion4slider';
 import SliderHome from '../components/slider/sliderhome';
+import VideoFondo from '../components/videoFondo/videofondo';
 import Load from '../components/load/load';
 
 
@@ -13,7 +14,8 @@ function Home() {
     <>
        {/* <CustomSlider /> */}
        <Load />
-       <SliderHome />
+       {/* <SliderHome /> */}
+       <VideoFondo />
        <Seccion2 />
        <Seccionx />
        <Seccion4Slider />

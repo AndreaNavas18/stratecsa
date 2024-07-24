@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('../../../../public/fonts/CenturyGothic.ttf') format('truetype');
+}
+
+
+.contenedor {
+    /* background-color: black; */
+    width: 100%;
+    height: 500px;
+    font-family: 'Century Gothic', sans-serif;
+    @media (max-width: 766px)  {
+        height: 250px;
+    }
+}
+
+.videoV {
+    width: 100% !important;
+    height: 500px;
+    object-fit: cover;
+    @media (max-width: 766px)  {
+        height: 250px;
+    }
+}
+
+.contenedor h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+.divVideo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.divSlider {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 10;
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+    margin-left: 40px;
+    height: 500px;
+    gap: 10px;
+    bottom: 50px;
+    @media (max-width: 766px)  {
+        width: 90%;
+        bottom: 60px;
+        height: 250px;
+        gap: 5px;
+        margin-top: 50px;
+        margin-left: 40px;
+    }
+}
+
+.divSlider .titleSlider {
+    color: #ffffff;
+    z-index: 10;
+    font-weight: bold;
+    font-size: 30px;
+    @media (max-width: 766px)  {
+        font-size: 20px;
+        font-weight: 600;
+        text-align: left;
+    }
+    
+}
+
+.divSlider .descripSlider{
+    font-size: 20px;
+    color: #ffffff;
+    z-index: 10;
+    @media (max-width: 766px)  {
+        font-size: 12px;
+        margin-bottom: 40px;
+    }
+}
+
+.divSlider .buttonSlider {
+    position: absolute;
+    color: #ffffff;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #009cda;
+    z-index: 10;
+    font-weight: bold;
+    top: 70%;
+    @media (max-width: 766px)  {
+        padding: 8px;
+        font-weight: 600;
+        font-size: 11px;
+        bottom: 40px;
+    }
+}
+
+.buttonSlider:hover, .buttonSlider:active {
+    background-color: white;
+    color: #009cda;
+}
+
