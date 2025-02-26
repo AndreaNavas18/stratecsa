@@ -1,0 +1,191 @@
+.titleHero {
+  font-weight: 400;
+  font-size: 3.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  /* Color del texto */
+}
+
+.lead {
+  font-size: 1.20rem;
+  /* Tamaño de fuente para el texto descriptivo */
+  color: #fff;
+  font-weight: 500;
+  max-width: 600px; /* Limita el ancho del texto para mejor legibilidad */
+  margin: 0 auto; /* Centra el texto */
+  /* Color del texto */
+}
+
+.contactForm {
+  background-color: rgba(255, 255, 255, 0.9);
+  /* Fondo del formulario con opacidad */
+  padding: 30px;
+  /* Espaciado interno */
+  border-radius: 8px;
+  /* Bordes redondeados */
+  box-shadow: 15px 8px 15px rgb(0 0 0 / 80%);
+  /* Sombra */
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto; /* Centra el formulario */
+}
+
+.formControl {
+  height: 50px;
+  /* Altura de los inputs */
+}
+
+.btnButton {
+  background-color: #ff6f20;
+  /* Color del botón */
+  border: none;
+  /* Sin borde */
+  width: 100%;
+  /* Botón ocupa todo el ancho */
+  height: 50px;
+  /* Altura del botón */
+}
+
+.btnButton:hover {
+  background-color: #d6591f;
+}
+
+@media (max-width: 768px) {
+  body {
+      height: auto;
+  }
+  
+  .contactForm {
+    box-shadow: none;
+  }
+
+  .backgroundContainer {
+    padding: 20px;
+  }
+
+  .contactForm {
+    margin-top: 30px;
+  }
+
+  .titleHero {
+    font-size: 2.5rem;
+  }
+}
+
+.backgroundContainer {
+  background-image: url('/imagesInternetDedicado/internetdedicado_stratecsa.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px 0; /* Ajustamos el padding vertical y quitamos el horizontal */
+  width: 100vw; /* Asegura que tome todo el ancho de la ventana */
+  position: relative; /* Para el posicionamiento */
+  left: 50%; /* Centrado horizontal */
+  right: 50%; /* Centrado horizontal */
+  margin-left: -50vw; /* Compensación para centrado */
+  margin-right: -50vw; /* Compensación para centrado */
+  min-height: 600px; /* Altura mínima para asegurar buen aspecto */
+  margin-top: -25px; /* Ajuste para el margen superior */
+}
+
+/* Contenedor para el contenido centrado */
+.backgroundContainer .row {
+  max-width: 1200px; /* O el ancho máximo que prefieras */
+  margin: 0 auto; /* Centra el contenido */
+  padding: 0 20px; /* Padding horizontal para el contenido */
+}
+
+.contactFormH2 {
+      font-size: 26px;
+      font-weight: bold;
+      color: #111;
+      margin-bottom: 28px;
+      text-align: center;
+  }
+
+  .contactFormInput {
+      width: 100%;
+      padding: 10px;
+      font-size: 21px;
+      border-radius: 6px;
+      border: 0px;
+      margin-bottom: 12px;
+      height: 68px;
+      border-radius: 31px;
+      margin-bottom: 20px;
+      background-color: rgb(236 238 236);
+      /* text-align: center; */
+      padding-left: 34px;
+      color: rgb(180 182 180);
+  }
+
+  .contactFormLabel {
+      font-size: 16px;
+      color: #444;
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+  }
+
+  .contactFormInputCheckbox {
+      margin-right: 6px;
+  }
+
+  .contactFormButton {
+      width: 100%;
+      padding: 12px;
+      font-size: 22px;
+      font-weight: bold;
+      background-color: #f06c2d;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      height: 68px;
+      border-radius: 34px;
+      margin-top: 10px;
+      transition: background-color 0.3s;
+  }
+
+  .contactFormButton:hover {
+      background-color: #d6591f;
+  }
+
+/* dispositivos pequeños */
+/* Estilos para pantallas pequeñas */
+@media (max-width: 576px) {
+  .titleHero {
+    font-size: 2rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+}
+
+.invalid-feedback {
+  display: block;
+  color: #dc3545;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.is-invalid {
+  border-color: #dc3545 !important;
+  background-color: #fff !important;
+}
+
+.form-check .is-invalid ~ .invalid-feedback {
+  margin-left: 0;
+}
+
+/* Indicador de campo requerido */
+input::placeholder {
+  color: #999;
+}
+
+input[required]::placeholder {
+  content: "*";
+}

@@ -1,0 +1,13 @@
+.contentListadoBeneficios {
+  padding: 50px;
+}
+
+
+/* disositivos pequeños */
+/* Estilos para pantallas pequeñas */
+@media (max-width: 576px) {
+
+  .titleBeneficiosInternetDedicado {
+      font-size: 18px; /* Tamaño más pequeño en móviles */
+  }
+}

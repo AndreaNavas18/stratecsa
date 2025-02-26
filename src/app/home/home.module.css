@@ -72,7 +72,7 @@
     }
 
     .iconStraS2M {
-        width: 250px;
+        width: 450px;
         height: auto;
         cursor: pointer;
 
@@ -266,7 +266,7 @@
     }
     
     .iconStraS2 {
-        width: 320px;
+        width: 450px;
         height: auto;
         cursor: pointer;
         transition: all 0.3s;

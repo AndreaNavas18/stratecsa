@@ -1,0 +1,39 @@
+.contentListCaracteristica {
+  margin-bottom: 2px;
+}
+
+.imageCaracteristicasInternetDedicado {
+  max-width: 100px;
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
+
+.textCaracteristicasInternetDedicado {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5;
+  display: block;
+}
+
+@media (min-width: 992px) {
+  .imageCaracteristicasInternetDedicado {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contentListCaracteristica {
+    margin-bottom: 15px;
+  }
+  
+  .textCaracteristicasInternetDedicado {
+    font-size: 14px;
+  }
+  
+  .imageCaracteristicasInternetDedicado {
+    width: 30px;
+    height: 30px;
+  }
+} 

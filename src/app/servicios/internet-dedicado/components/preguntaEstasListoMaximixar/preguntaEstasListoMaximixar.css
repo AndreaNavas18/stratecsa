@@ -1,0 +1,12 @@
+.contentQuestionStratecsa {
+  padding: 16px 5px 15px 5px;
+  background-color: rgb(62 182 232);
+  width: 100%;
+}
+
+.contentQuestionStratecsa h3 {
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}

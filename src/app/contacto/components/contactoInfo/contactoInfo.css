@@ -1,0 +1,100 @@
+.contactInfoSection {
+  padding: 50px 0;
+  background-color: white;
+}
+
+.contactText {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+
+.contactDetails {
+  margin-top: 30px;
+}
+
+.contactItem {
+  display: flex;
+  align-items: start;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+.contactIcon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.contactInfo {
+  color: #666;
+  font-size: 15px;
+}
+
+.contactImage {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.contactImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactPeopleImage {
+  width: 500px;
+  height: 450px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .contactText {
+    text-align: center;
+  }
+
+  .contactItem {
+    justify-content: center;
+  }
+
+  .contactDetails {
+    margin-bottom: 30px;
+  }
+
+  .contactPeopleImage {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+
+/* dispositivos pequeños */
+@media (max-width: 576px) {
+  .contactPeopleImage {
+    display: none;
+  }
+
+  .headerTitle {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .headerSubtitle {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 26px;
+    margin-bottom: 27px;
+  }
+
+  .headerText {
+    text-align: center;
+  }
+}

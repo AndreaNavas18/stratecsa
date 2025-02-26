@@ -36,13 +36,14 @@
     }
 
     .botonesS4M {
+        width: 200px; 
+        height: auto; 
         display: flex;
         flex-direction: row;
         justify-content: center;
         margin-top: 20px;
-        
-
     }
+    
     .buttonS4M {
         display: flex;
         flex-direction: row;

@@ -1,0 +1,309 @@
+.contentBeneficios {
+  margin-top: 40px;
+  /* Espacio superior para el contenedor */
+}
+
+.titleImpulsaEmpresa {
+  font-size: 25px;
+  font-weight: 500;
+  color: rgb(105, 135, 198);
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.itemBox {
+  background-color: #add8e6;
+  /* Color de fondo uniforme */
+  border: 2px solid #007bff;
+  /* Borde azul */
+  border-radius: 8px;
+  /* Bordes redondeados */
+  padding: 15px;
+  /* Espaciado interno */
+  margin: 10px;
+  /* Espaciado entre cuadros */
+  text-align: center;
+  /* Centrar texto */
+  box-shadow: none;
+  /* Eliminar sombra */
+}
+
+.itemBoxH5 {
+  margin: 0;
+  /* Elimina el margen del encabezado */
+  font-weight: bold;
+  /* Negrita para el texto */
+  color: #333;
+  /* Color del texto */
+}
+
+@media (max-width: 768px) {
+  .itemBox {
+    margin: 10px 0;
+    /* Espaciado entre cuadros en móviles */
+  }
+}
+
+.customImage {
+  max-width: 500px;
+  /* Ajusta el tamaño según sea necesario */
+  height: auto;
+  /* Mantiene la proporción de la imagen */
+}
+
+.titleInternetDedicado {
+  color: rgb(42 78 153);
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.textInternetDedicado {
+  font-size: 18px;
+  font-weight: normal;
+  color: #222;
+}
+
+.itemBox {
+  background-color: rgb(113 195 222);
+  padding: 1rem;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  color: #222;
+  border-radius: 8px;
+  position: relative;
+  font-weight: normal;
+}
+
+.itemBox::before,
+.itemBox::after {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  border: 2px solid rgba(116, 192, 229, 0.4);
+  border-radius: 12px;
+}
+
+.itemBox::after {
+  top: -15px;
+  left: -15px;
+  right: -15px;
+  bottom: -15px;
+  border: 2px solid rgba(116, 192, 229, 0.3);
+  border-radius: 16px;
+}
+
+.titleBeneficiosInternetDedicado {
+  font-size: 25px;
+  font-weight: normal;
+  color: #222;
+  text-align: center;
+}
+
+
+.btnPrimary {
+  background-color: #ff6f20;
+  /* Color del botón */
+  border: none;
+  /* Sin borde */
+  width: 100%;
+  /* Botón ocupa todo el ancho */
+  height: 50px;
+  color: white;
+  /* Altura del botón */
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.btnPrimary:hover {
+  background-color: #ff6f20;
+  /* Color del botón */
+  border: none;
+  /* Sin borde */
+  color: white;
+}
+
+
+
+.textInternetDedicado {
+  font-size: 18px;
+  font-weight: normal;
+  color: #222;
+}
+
+.itemBox {
+  background-color: rgb(113 195 222);
+  padding: 1rem;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  color: #222;
+  border-radius: 8px;
+  position: relative;
+  font-weight: normal;
+  max-width: 235px;
+}
+
+.itemBox::before,
+.itemBox::after {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  border: 2px solid rgba(116, 192, 229, 0.4);
+  border-radius: 12px;
+}
+
+.itemBox::after {
+  top: -15px;
+  left: -15px;
+  right: -15px;
+  bottom: -15px;
+  border: 2px solid rgba(116, 192, 229, 0.3);
+  border-radius: 16px;
+}
+
+.titleBeneficiosInternetDedicado {
+  font-size: 25px;
+  font-weight: normal;
+  color: #222;
+  text-align: center;
+}
+
+/* Estilos para pantallas medianas (portátiles) */
+@media (min-width: 577px) and (max-width: 1280px) {
+
+  .customImage {
+    max-width: 500px;
+    /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+  }
+
+  .box1 {
+    left: 61%;
+    top: 48px;
+  }
+
+  .box2 {
+    left: 47%;
+    top: 76px;
+  }
+
+  .box3 {
+    left: 72%;
+    top: 100px;
+  }
+
+  .box4 {
+    right: 53%;
+    top: 29px;
+  }
+
+  .box5 {
+    right: 25%;
+    top: 55px;
+  }
+
+  .box6 {
+    right: 25%;
+    top: 63px;
+  }
+}
+/* Estilos para pantallas grandes (escritorio) */
+@media (min-width: 1281px) {
+  .customImage {
+      max-width: 635px;
+      height: auto;
+  }
+  .box1 {
+    left: 97%;
+    top: 53px;
+  }
+
+  .box2 {
+    left: 85%;
+    top: 145px;
+  }
+
+  .box3 {
+    left: 120%;
+    top: 206px;
+  }
+
+  .box4 {
+    right: 80%;
+    top: 47px;
+  }
+
+  .box5 {
+    right: 43%;
+    top: 123px;
+  }
+
+  .box6 {
+    right: 43%;
+    top: 173px;
+  }
+}
+
+
+/* dispositivos pequeños */
+/* Estilos para pantallas pequeñas */
+@media (max-width: 576px) {
+  .itemBox {
+      position: relative;
+  }
+
+  .box1 {
+      left: 0%;
+      top: 0px;
+  }
+  
+  .box2 {
+      left: 0%;
+      top: 0px;
+  }
+
+  .box3 {
+      left: 0%;
+      top: 0px;
+  }
+
+  .box4 {
+      right: 0%;
+      top: 0px;
+  }
+
+  .box5 {
+      right: 0%;
+      top: 0px;
+  }
+
+  .box6 {
+      right: 0%;
+      top: 0px;
+  }
+  .titleInternetDedicado {
+      font-size: 22px; /* Tamaño más pequeño en móviles */
+  }
+
+  .textInternetDedicado {
+      font-size: 16px; /* Tamaño más pequeño en móviles */
+      margin-bottom: 0px;
+  }
+   .itemBox {
+      margin: 0px 12px 13px 12px;
+      max-width: 100%;
+  }
+
+  .customImage {
+     display: none;
+  }
+}

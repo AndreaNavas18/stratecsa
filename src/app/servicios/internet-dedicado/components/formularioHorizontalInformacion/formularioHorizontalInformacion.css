@@ -1,0 +1,35 @@
+.contentFormInternetHorizontal {
+  background-color: rgb(238 238 236);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.btnPrimary {
+  background-color: #ff6f20;
+  /* Color del botón */
+  border: none;
+  /* Sin borde */
+  /* Botón ocupa todo el ancho */
+  height: 55px;
+  color: white;
+  /* Altura del botón */
+  font-weight: bold;
+  font-size: 20px;
+  width: auto;
+  font-weight: 500;
+  padding: 5px 20px 5px 20px;
+}
+
+.btnPrimary:hover {
+  background-color: #ff6f20;
+  /* Color del botón */
+  border: none;
+  /* Sin borde */
+  color: white;
+}
+
+
+.formInputHorizontal {
+  height: 63px;
+  border-radius: 14px;
+}

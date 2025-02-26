@@ -1,0 +1,48 @@
+.contentCaracteristicasInternetDedicado {
+  padding: 20px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.titleCaracteristicasInternetDedicado {
+  font-size: 21px;
+  font-weight: normal;
+  color: #222;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.imageCaracteristicasInternetDedicado {
+  width: 150px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.contentListCaracteristica {
+  padding: 10px 30px 10px 30px;
+}
+
+.textCaracteristicasInternetDedicado {
+  font-size: 20px;
+  font-weight: normal;
+  color: #222;
+}
+
+/* dispositivos pequeños */
+/* Estilos para pantallas pequeñas */
+@media (max-width: 576px) {
+  .titleCaracteristicasInternetDedicado {
+      font-size: 18px; /* Tamaño más pequeño en móviles */
+  }
+
+  .textCaracteristicasInternetDedicado {
+      font-size: 16px; /* Tamaño más pequeño en móviles */
+  }
+
+  .imageCaracteristicasInternetDedicado {
+      width: 100px;
+      height: auto;
+      margin-right: 12px;
+  }
+}

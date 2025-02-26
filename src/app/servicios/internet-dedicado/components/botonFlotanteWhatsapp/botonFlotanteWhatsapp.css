@@ -1,0 +1,57 @@
+.whatsappFloat {
+  position: fixed;
+  right: 0px;
+  /* Pegado al borde derecho */
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+
+/* Ajuste del botón */
+.whatsappButton {
+  background-color: rgb(122, 175, 100);
+  /* Fondo verde suave */
+  border-radius: 40px 0 0 40px;
+  /* Bordes redondeados solo a la izquierda */
+  padding: 8px;
+  /* Espaciado uniforme */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Ajuste interno del contenido */
+.whatsappContent {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 2px 5px 2px;
+}
+
+/* Ajuste del ícono */
+.whatsappContent img {
+  width: 50px;
+  /* Tamaño proporcional */
+  height: 50px;
+  margin-bottom: 15px;
+  /* Espacio entre ícono y texto */
+}
+
+/* Ajuste del texto */
+.whatsappContent span {
+  font-size: 30px;
+  /* Letra más grande */
+  font-weight: bold;
+  writing-mode: vertical-rl;
+  /* Texto vertical */
+  transform: rotate(180deg);
+  /* Giro para que se lea vertical */
+  color: rgb(35, 66, 66);
+  /* Color solicitado (no blanco) */
+  letter-spacing: 2px;
+  /* Espaciado entre letras */
+}

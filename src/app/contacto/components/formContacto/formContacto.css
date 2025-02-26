@@ -1,0 +1,81 @@
+.formControl {
+  background-color: #f0f0f0;
+  border: none;
+  height: 50px;
+  padding: 12px 15px;
+}
+
+textarea.formControl {
+  height: 150px;
+  resize: none;
+}
+
+.formLabel {
+  color: #333;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.btnEnviar {
+  background-color: #009cda !important;
+  color: white !important;
+  padding: 12px 40px;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.btnEnviar:hover {
+  background-color: #0081b4;
+  color: white;
+}
+
+.headerTitle {
+  color: #333;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.headerSubtitle {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.headerText {
+  color: #666;
+  line-height: 1.5;
+}
+
+.imageContainer {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 40px 5px 25px 70px;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  min-height: 650px;
+}
+
+.formContainer {
+  padding: 30px;
+  background-color: white;
+}
+
+@media (max-width: 991px) {
+  .imageContainer img {
+      min-height: 400px;
+  }
+}
+
+
+/* dispositivos pequeños */
+@media (max-width: 576px) {
+  .imageContainer {
+    display: none;
+  }
+}

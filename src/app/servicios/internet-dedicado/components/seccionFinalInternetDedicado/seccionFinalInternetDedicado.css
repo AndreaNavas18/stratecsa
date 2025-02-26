@@ -1,0 +1,9 @@
+@media (max-width: 576px) {
+  .contentConectateMejores img {
+      display: none;
+  }
+
+  .contentConectateMejores p {
+      text-align: center;
+  }
+}
